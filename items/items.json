@@ -1,56 +1,708 @@
-//more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
-[  
+[
+  //Key Items
   {
-    "name": "Toggle",
-    "type": "toggle",
-    "img": "images/items/toggle.png",
-    "codes": "toggle"
-  },
-  {
-    "name": "Progressive",
+    "name": "Sword",
     "type": "progressive",
-    "allow_disabled": true,
-    "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/items/progressive.png",
-        "codes": "progressive",
-        "inherit_codes": false
+        "img": "images/items/sword1.png",
+        "codes": "sword, sword1"
       },
       {
-        "img": "images/items/progressive_2.png",
-        "codes": "progressive_2",
-        "inherit_codes": false
+        "img": "images/items/sword2.png",
+        "codes": "sword2, royalsword"
       }
     ]
   },
   {
-    "name": "Consumable",
+    "name": "Feather",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/feather.png",
+    "codes": "feather"
+  },
+  {
+    "name": "Seed Shooter",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/shooter.png",
+    "codes": "shooter"
+  },
+  {
+    "name": "Seed Satchel",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/satchel.png",
+    "codes": "satchel"
+  },
+  {
+    "name": "Cane of Somaria",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/somaria.png",
+    "codes": "cane, somaria"
+  },
+  {
+    "name": "Shovel",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/shovel.png",
+    "codes": "shovel"
+  },
+  {
+    "name": "Boomerang",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/boomerang.png",
+    "codes": "boomerang"
+  },
+  {
+    "name": "Bombs",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/bombs.png",
+    "codes": "bomb, bombs"
+  },
+  {
+    "name": "Flute",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/flute.png",
+    "codes": "flute, ocarina"
+  },
+  {
+    "name": "Harp",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/harp.png",
+        "codes": "harp",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/song_echoes.png",
+        "codes": "echoes, song1"
+      },
+      {
+        "img": "images/items/song_currents.png",
+        "codes": "currents, song2"
+      },
+      {
+        "img": "images/items/song_ages.png",
+        "codes": "ages, song3"
+      }
+    ]
+  },
+  {
+    "name": "Shield",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/shield1.png",
+        "codes": "shield, shield1"
+      },
+      {
+        "img": "images/items/shield2.png",
+        "codes": "shield2"
+      }
+    ]
+  },
+  {
+    "name": "Zora's Flippers/Mermaid Suit",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/flippers.png",
+        "codes": "flippers, swim, swim1"
+      },
+      {
+        "img": "images/items/mermaid.png",
+        "codes": "mermaid, swim2"
+      }
+    ]
+  },
+  {
+    "name": "Power Bracelet/Gloves",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/powerbracelet.png",
+        "codes": "bracelet, bracelet1, lift1"
+      },
+      {
+        "img": "images/items/powergloves.png",
+        "codes": "bracelet2, lift2"
+      }
+    ]
+  },
+  {
+    "name": "Switch Hook",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/switchhook1.png",
+        "codes": "hook1"
+      },
+      {
+        "img": "images/items/switchhook2.png",
+        "codes": "hook2"
+      }
+    ]
+  },
+  // Rings
+  {
+    "name": "Fist Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/ring_fist.png",
+    "codes": "ring_fist"
+  },
+  {
+    "name": "Expert's Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/ring_expert.png",
+    "codes": "ring_expert"
+  },
+  {
+    "name": "Energy Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/ring_energy.png",
+    "codes": "ring_energy"
+  },
+  {
+    "name": "Toss Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/ring_toss.png",
+    "codes": "ring_toss"
+  },
+  {
+    "name": "Peace Ring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/ring_peace.png",
+    "codes": "ring_peace"
+  },
+  //Misc. Progression Items
+  {
+    "name": "Cheval Rope",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/cheval.png",
+    "codes": "cheval, chevalrope"
+  },
+  {
+    "name": "Island Chart",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/chart.png",
+    "codes": "chart, islandchart"
+  },
+  {
+    "name": "Ricky's Gloves",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/gloves.png",
+    "codes": "gloves, rickygloves"
+  },
+  {
+    "name": "Scent Seedling",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/seedling.png",
+    "codes": "seedling"
+  },
+  {
+    "name": "Bomb Flower",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/bombflower.png",
+    "codes": "bombflower"
+  },
+  {
+    "name": "Zora Scale",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/scale.png",
+    "codes": "scale, zorascale"
+  },
+  {
+    "name": "Goron Emblem",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/emblem.png",
+    "codes": "emblem, goronemblem"
+  },
+  {
+    "name": "Letter of Introduction",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/letter.png",
+    "codes": "letter, introduction"
+  },
+  {
+    "name": "Lava Juice",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/lavajuice.png",
+    "codes": "lavajuice"
+  },
+  {
+    "name": "Goron Vase",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/vase.png",
+    "codes": "vase"
+  },
+  {
+    "name": "Goronade",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/goronade.png",
+    "codes": "goronade"
+  },
+  {
+    "name": "Rock Brisket",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/brisket.png",
+    "codes": "brisket"
+  },
+  {
+    "name": "Library Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/keylibrary.png",
+    "codes": "librarykey"
+  },
+  {
+    "name": "Book of Seals",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/book.png",
+    "codes": "book"
+  },
+  {
+    "name": "Fairy Powder",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/powder.png",
+    "codes": "powder"
+  },
+  // D1 Access
+  {
+    "name": "Graveyard Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/keygraveyard.png",
+    "codes": "d1key, gravekey"
+  },
+  // D4 Access
+  {
+    "name": "Tuni Nut",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/tuninut.png",
+        "codes": "tuninut"
+      },
+      {
+        "img": "images/items/tuninut_repaired.png",
+        "codes": "repairednut"
+      }
+    ]
+  },
+  // D5 Access
+  {
+    "name": "Crown Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/keycrown.png",
+    "codes": "d5key, crownkey"
+  },
+  // D6 Access (Past)
+  {
+    "name": "Mermaid Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/keymermaid.png",
+    "codes": "d6keypast"
+  },
+  // D6 Access (Present)
+  {
+    "name": "Old Mermaid Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/keymermaid_old.png",
+    "codes": "d6keypresent"
+  },
+  // D8 Access
+  {
+    "name": "Tokay Eyeball",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/eyeball.png",
+    "codes": "eyeball"
+  },
+  // Essences of Time
+  {
+    "name": "Eternal Spirit",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d1.png",
+    "codes": "d1"
+  },
+  {
+    "name": "Ancient Wood",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d2.png",
+    "codes": "d2"
+  },
+  {
+    "name": "Echoing Howl",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d3.png",
+    "codes": "d3"
+  },
+  {
+    "name": "Burning Flame",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d4.png",
+    "codes": "d4"
+  },
+  {
+    "name": "Sacred Soil",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d5.png",
+    "codes": "d5"
+  },
+  {
+    "name": "Lonely Peak",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d6.png",
+    "codes": "d6"
+  },
+  {
+    "name": "Rolling Sea",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d7.png",
+    "codes": "d7"
+  },
+  {
+    "name": "Falling Star",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/essences/d8.png",
+    "codes": "d8"
+  },
+  // Seeds
+  {
+    "name": "Ember Seeds",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/seedember.png",
+    "codes": "emberseeds"
+  },
+  {
+    "name": "Mystery Seeds",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/seedmystery.png",
+    "codes": "mysteryseeds"
+  },
+  {
+    "name": "Scent Seeds",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/seedscent.png",
+    "codes": "scentseeds"
+  },
+  {
+    "name": "Pegasus Seeds",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/seedpegasus.png",
+    "codes": "pegasusseeds"
+  },
+  {
+    "name": "Gale Seeds",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/seedgale.png",
+    "codes": "galeseeds"
+  },
+  // Carpenters
+  {
+    "name": "Carpenter Boss",
+    "type": "toggle",
+    "img": "images/items/carpenter.png",
+    "codes": "carpenterboss"
+  },
+  {
+    "name": "Carpenter 1",
+    "type": "toggle",
+    "img": "images/items/carpenter.png",
+    "codes": "carpenter1"
+  },
+  {
+    "name": "Carpenter 2",
+    "type": "toggle",
+    "img": "images/items/carpenter.png",
+    "codes": "carpenter2"
+  },
+  {
+    "name": "Carpenter 3",
+    "type": "toggle",
+    "img": "images/items/carpenter.png",
+    "codes": "carpenter3"
+  },
+  // Dungeon Keys
+  {
+    "name": "D1 Small Keys",
     "type": "consumable",
-    "img": "images/items/consumable.png",
-    "max_quantity": 8,
-    "increment": 1,
-    "decrement": 1,
-    "initial_quantity": 1,
-    "overlay_background": "#000000",
-    "overlay_font_size": 8,
-    "codes": "consumable"
+    "codes": "d1sk",
+    "max_quantity": 3,
+    "img": "images/items/smallkey.png"
   },
   {
-    "name": "Progressive Toggle",
-    "type": "progressive_toggle",
-    "initial_stage_idx": 0,
+    "name": "D2 Small Keys",
+    "type": "consumable",
+    "codes": "d2sk",
+    "max_quantity": 5,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D3 Small Keys",
+    "type": "consumable",
+    "codes": "d3sk",
+    "max_quantity": 4,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D4 Small Keys",
+    "type": "consumable",
+    "codes": "d4sk",
+    "max_quantity": 5,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D5 Small Keys",
+    "type": "consumable",
+    "codes": "d5sk",
+    "max_quantity": 5,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D6 Past Small Keys",
+    "type": "consumable",
+    "codes": "d6_1sk",
+    "max_quantity": 3,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D6 Present Small Keys",
+    "type": "consumable",
+    "codes": "d6_2sk",
+    "max_quantity": 3,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D7 Small Keys",
+    "type": "consumable",
+    "codes": "d7sk",
+    "max_quantity": 7,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D8 Small Keys",
+    "type": "consumable",
+    "codes": "d8sk",
+    "max_quantity": 5,
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D8 Slates",
+    "type": "consumable",
+    "codes": "d8slate",
+    "max_quantity": 4,
+    "img": "images/items/slate.png"
+  },
+  {
+    "name": "D1 Boss Key",
+    "type": "toggle",
+    "codes": "d1bk",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "D2 Boss Key",
+    "type": "toggle",
+    "codes": "d2bk",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "D3 Boss Key",
+    "type": "toggle",
+    "codes": "d3bk",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "D4 Boss Key",
+    "type": "toggle",
+    "codes": "d4bk",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "D5 Boss Key",
+    "type": "toggle",
+    "codes": "d5bk",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "D6 Boss Key",
+    "type": "toggle",
+    "codes": "d6bk",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "D7 Boss Key",
+    "type": "toggle",
+    "codes": "d7bk",
+    "img": "images/items/bosskey.png"
+  },
+  {
+    "name": "D8 Boss Key",
+    "type": "toggle",
+    "codes": "d8bk",
+    "img": "images/items/bosskey.png"
+  },
+  // OPTIONS
+  {
+    "name": "Animal Companion",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
     "stages": [
       {
-        "img": "images/items/progressive.png",
-        "codes": "progressive_toggle",
+        "codes": "companions",
+        "inherit_codes": false,
+        "img": "images/items/companions.png"
+      },
+      {
+        "codes": "nuun_ricky",
+        "inherit_codes": false,
+        "img": "images/items/ricky.png"
+      },
+      {
+        "codes": "nuun_dimitri",
+        "inherit_codes": false,
+        "img": "images/items/dimitri.png"
+      },
+      {
+        "codes": "nuun_moosh",
+        "inherit_codes": false,
+        "img": "images/items/moosh.png"
+      }
+    ]
+  },
+  // Tree Warp
+  {
+    "name": "Tree Warp?",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/treewarp_off.png",
+        "codes": "notreewarp",
         "inherit_codes": false
       },
       {
-        "img": "images/items/progressive_2.png",
-        "codes": "progressive_toggle_2",
+        "img": "images/items/treewarp_on.png",
+        "codes": "treewarp",
         "inherit_codes": false
       }
     ]
   },
+  // LOGIC
+  {
+    "name": "Logic",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/l_bas.png",
+        "codes": "l_bas",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/l_hard.png",
+        "codes": "l_hard",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Trick Logic",
+    "type": "toggle",
+    "loop": true,
+    "codes": "trick"
+  },
+  // GO MODE MAKU SEED
+  {
+    "name": "Maku Seed",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/makuseed.png",
+    "codes": "makuseed"
+  },
+  // RAFT
+  {
+    "name": "Raft",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/raft.png",
+    "codes": "raft"
+  },
+  // Potion to Cleanse the Seas
+  {
+    "name": "Magic Potion",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/potion.png",
+    "codes": "potion"
+  },
+  // Fairy Queen to Cleanse the Seas
+  {
+    "name": "Fairy Queen",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/greatfairy.png",
+    "codes": "cleanseas"
+  },
+  // Maku Path Key
+  {
+    "name": "Maku Path Small Key",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/smallkey.png",
+    "codes": "pathkey"
+  },
+  // Turn in Seedling
+  {
+    "name": "Turn in Seedling to Crescent",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/seedling.png",
+    "codes": "turninseedling"
+  }
 ]

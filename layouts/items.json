@@ -1,33 +1,240 @@
-// sets layouts for shadred items grids
-// bigger example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/layouts/items.json
 {
-    "shared_item_grid": {
+  "items": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "margin": "3,5,3,0",
+    "item_margin": "1,1",
+    "item_size": 36,
+    "rows": [
+      [
+        "sword",
+        "shield1",
+        "lift1",
+        "shooter",
+        "flippers",
+        "cane",
+        "shovel"
+      ],
+      [
+        "feather",
+        "hook1",
+        "bombs",
+        "satchel",
+        "boomerang",
+        "harp",
+        "flute"
+      ]
+    ]
+  },
+  "items2": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "margin": "3,5,3,0",
+    "item_margin": "0,-1",
+    "item_size": 29,
+    "rows": [
+      [
+        "emberseeds",
+        "mysteryseeds",
+        "scentseeds",
+        "pegasusseeds",
+        "galeseeds",
+        "ring_fist",
+        "ring_expert",
+        "ring_energy",
+        "ring_toss"
+      ]
+    ]
+  },
+  "items3": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "margin": "3,5,3,0",
+    "item_margin": "1,1",
+    "item_size": 36,
+    "rows": [
+      [
+        "cheval",
+        "chart",
+        "gloves",
+        "seedling",
+        "librarykey",
+        "book",
+        "scale"
+      ],
+      [
+        "bombflower",
+        "emblem",
+        "brisket",
+        "vase",
+        "lavajuice",
+        "goronade",
+        "letter"
+      ],
+      [
+        "gravekey",
+        "tuninut",
+        "crownkey",
+        "d6keypast",
+        "d6keypresent",
+        "powder",
+        "eyeball"
+      ]
+    ]
+  },
+  "instruments": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
         "type": "array",
-        "orientation": "vertical",
-        "margin": "0,0",
+        "orientation": "horizontal",
+        "margin": "21,0,-2,0",
         "content": [
-            {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "0,0",
-                "content": [
-                    {
-                        "type": "itemgrid",
-                        "item_margin": "10, 10",
-                        "h_alignment": "left",
-                        "rows": [
-                            [
-                                "toggle",
-                                "progressive"           
-                            ],
-                            [
-                                "consumable",
-                                "progressive_toggle"
-                            ]
-                        ]
-                    }
-                ]
-            }
+          {
+            "type": "itemgrid",
+            "item_margin": "0,5",
+            "item_size": 55,
+            "dock": "left",
+            "rows": [
+              [
+                "d1",
+                "d2",
+                "d3",
+                "d4"
+              ]
+            ]
+          }
         ]
-    }
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "31,-9,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "-3,-3",
+            "item_size": 20,
+            "rows": [
+              [
+                "d1sk",
+                "d1bk",
+                "",
+                "",
+                "d2sk",
+                "d2bk",
+                "",
+                "",
+                "d3sk",
+                "d3bk",
+                "",
+                "",
+                "d4sk",
+                "d4bk"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "21,-5,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "0,5",
+            "item_size": 55,
+            "dock": "left",
+            "rows": [
+              [
+                "d5",
+                "d6",
+                "d7",
+                "d8"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "31,-9,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "-2,-3",
+            "item_size": 20,
+            "rows": [
+              [
+                "d5sk",
+                "d5bk",
+                "",
+                "d6_1sk",
+                "d6_2sk",
+                "d6bk",
+                "",
+                "d7sk",
+                "d7bk",
+                "",
+                "d8sk",
+                "d8slate",
+                "d8bk"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "settings_tab": {
+    "type": "itemgrid",
+    "background": "#303841",
+    "h_alignment": "center",
+    "margin": "80,5,3,0",
+    "item_margin": "1,1",
+    "item_size": 55,
+    "rows": [
+      [
+        "companions",
+        "l_bas"
+      ]
+    ]
+  },
+  "item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "key": "items"
+      },
+      {
+        "type": "layout",
+        "key": "items2"
+      },
+      {
+        "type": "layout",
+        "key": "items3"
+      },
+      {
+        "type": "layout",
+        "key": "instruments"
+      }
+    ]
+  },
+  "settings_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "key": "settings_tab"
+      }
+    ]
+  }
 }

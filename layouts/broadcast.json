@@ -1,21 +1,43 @@
-﻿//sets the layout for the broadcast view
-{
+﻿{
   "tracker_broadcast": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content": [
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
+      "type": "array",
+      "background": "#FF000000",
+      "orientation": "vertical",
+      "margin": "1,1",
+      "content": [
           {
-            "type": "layout",
-            "key": "shared_item_grid"
-          }
-        ]
-      }
-    ]
+              "type": "itemgrid",
+              "h_alignment": "center",
+              "item_margin": "1,1",
+              "item_size": 36,
+              "rows": [
+                  ["sword", "shield1", "lift1", "shooter", "flippers", "cane", "shovel"],
+                  ["feather", "hook1", "bombs", "satchel", "boomerang", "harp", "flute"],
+                  ["powder", "gravekey", "tuninut", "crownkey", "d6key", "d6keyold", "eyeball"]
+              ]
+          },
+          {
+              "type": "itemgrid",
+              "h_alignment": "center",
+              "v_alignment": "center",
+              "margin": "15,0,0,0",
+              "item_margin": "5,0",
+              "item_size": 45,
+              "rows": [
+                  ["d1",  "d2", "d3", "d4"]
+              ]
+          },
+          {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "v_alignment": "center",
+            "margin": "40,0,0,0",
+            "item_margin": "5,0",
+            "item_size": 45,
+            "rows": [
+                ["d5", "d6", "d7", "d8"]
+            ]
+        }
+      ]
   }
 }

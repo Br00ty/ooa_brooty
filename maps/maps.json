@@ -1,15 +1,68 @@
-//more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#maps
 [
   {
-    "name": "map1",
-    "location_size": 48,
-    "location_border_thickness": 4,
-    "img": "images/maps/map.png"
+    "name": "map",
+    "location_size": 40,
+    "location_border_thickness": 8,
+    "img": "images/maps/worldmap.png"
   },
   {
-    "name": "map2",
+    "name": "animal_regions",
+    "location_size": 20,
+    "location_border_thickness": 4,
+    "img": "images/maps/animal_regions.png"
+  },  
+  {
+    "name": "d1",
     "location_size": 48,
     "location_border_thickness": 4,
-    "img": "images/maps/map_2.png"
+    "img": "images/maps/d1.png"
   },  
+  {
+    "name": "d2",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/d2.png"
+  },  
+  {
+    "name": "d3",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/d3.png"
+  },  
+  {
+    "name": "d4",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/d4.png"
+  },  
+  {
+    "name": "d5",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/d5.png"
+  },  
+  {
+    "name": "d6_1",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/d6_1.png"
+  },  
+  {
+    "name": "d6_2",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/d6_2.png"
+  },  
+  {
+    "name": "d7",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/d7.png"
+  },  
+  {
+    "name": "d8",
+    "location_size": 48,
+    "location_border_thickness": 4,
+    "img": "images/maps/d8.png"
+  } 
 ]
