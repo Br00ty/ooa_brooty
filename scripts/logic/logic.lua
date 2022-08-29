@@ -95,15 +95,15 @@ function ages()
 end
 
 function bomb_jump2() --hard logic
-  return (feather() and (bombs() or pegasus()))
+  return (feather() and (bombs() or pegasus_satchel()))
 end
 
 function jump3()
-  return (feather() and pegasus())
+  return (feather() and pegasus_satchel())
 end
 
 function bomb_jump3() --hard logic
-  return (feather() and pegasus() and bombs())
+  return (feather() and pegasus_satchel() and bombs())
 end
 
 function farm()
@@ -298,6 +298,10 @@ end
 
 function bush()
   return (sword() or hook1() or lift1() or (gale_satchel() and bush_safe()))
+end
+
+function destroy_bush_flute()
+  return (sword() or hook1() or lift1() or bombs() or ember() or gale_shooter() or flute())
 end
 
 function satchel_weapon()

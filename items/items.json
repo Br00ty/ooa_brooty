@@ -687,7 +687,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/greatfairy.png",
-    "codes": "cleanseas"
+    "codes": "curefairy"
   },
   // Maku Path Key
   {
@@ -704,5 +704,20 @@
     "loop": true,
     "img": "images/items/seedling.png",
     "codes": "turninseedling"
+  },
+  // King Zora/Jabu
+  {
+    "name": "King Zora",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/kingzora.png",
+    "codes": "curezora"
+  },
+  {
+    "name": "Jabu Entrance",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/jabu.png",
+    "codes": "enterjabu"
   }
 ]

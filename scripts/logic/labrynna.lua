@@ -94,7 +94,7 @@ function deku_forest()
 end
 
 function forest_tree()
-    return deku_forest() and (sword() or punch_object()) and seed_item() and
+    return deku_forest() and (sword() or punch_object()) and
                (ember() or ages() or hook1() or gale_satchel() or feather())
 end
 
@@ -166,8 +166,8 @@ function nuun()
 end
 
 function nuuncave()
-    return nuun() and (dimitri_flute() or (ricky_nuun() and (flute() or currents())) or
-               (moosh_nuun() and (flute() or currents() or (bush() and jump3()))))
+    return nuun() and (dimitri_flute() or (has("nuun_ricky") and (flute() or currents())) or
+               (has("nuun_moosh") and (flute() or currents() or (bush() and jump3()))))
 end
 
 function symmetrypresent()
@@ -175,11 +175,11 @@ function symmetrypresent()
 end
 
 function symmetrytree()
-    return seed_item() and symmetrypresent() and (sword() or punch_object() or (dimitri_flute() and d4_entrance()))
+    return symmetrypresent() and (sword() or punch_object() or (dimitri_flute() and d4_entrance()))
 end
 
 function symmetrytree_h()
-    return seed_item() and symmetrypresent() and (sword() or punch_object() or (dimitri_flute() and d4_entrance_h()))
+    return symmetrypresent() and (sword() or punch_object() or (dimitri_flute() and d4_entrance_h()))
 end
 
 function symmetrypast()
@@ -207,118 +207,46 @@ function d4_entrance_h()
 end
 
 -- rolling ridge // fucking messy
-function goronelder()
-    return has("bombflower") and
-               ((ridgewestpresent() and (ages() or (lift1() and echoes()))) or (hook1() and (feather() or ages())))
+function west_ridge_present()
+    return (feather() or ages()) and ((hook1() and currents()) or -- From start
+               (lynna_village() and mermaid() and currents() and jump3()))
 end
 
-function ridgewestpast()
-    return goronelder() or (ridgewestpresent() and (ages() or (lift1() and echoes())))
+function west_ridge_past()
+    return (has("bombflower") and hook1() and -- From start
+    (feather() or ages())) or (west_ridge_present() and ages() or (lift1() and echoes())) -- From present ridge
 end
 
-function ridgewestpresent()
-    return ridgeupperpresent() or (hook1() and currents() and (feather() or ages())) or (currents() and goronelder())
+-- zora village/zora seas
+function zoravillage()
+    return mermaid() and ages() and hook1()
 end
 
-function ridgewesttree()
-    return (sword() or punch_object()) and seed_item() and ridgewestpast()
+function zoratree()
+    return zoravillage() and (sword() or punch_object() or (dimitri_flute() and cleanseas()))
 end
 
-function defeatgreatmoblin()
-    return ridgewestpresent() and pegasus_satchel() and lift1()
+function zoravillagepresent()
+    return zoravillage()
 end
 
-function ridgeupperpresent()
-    return ridgemidpresent() or (ridgebasepresent() and jump3()) or (defeatgreatmoblin() and feather())
+function cleanseas()
+    return zoravillage() and has("powder")
 end
 
-function ridgeupperpresent_h()
-    return ridgemidpresent() or (ridgebasepresent() and (jump3() or (feather() and cane()))) or
-               (defeatgreatmoblin() and feather())
+function d7_entrance()
+    return kingzora() and cleanseas()
 end
 
-function d5_entrance()
-    return has("crownkey") and ridgeupperpresent()
+function kingzora()
+    return zoravillage() and has("syrup")
 end
 
-function ridgebasepresent()
-    return goronelder() or (ridgewestpresent() and (ages() or (lift1() and echoes())))
+-- d8 area
+function d8_entrance()
+    return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and (mermaid() or feather())
 end
 
-function d6present_entrance()
-    return has("d6keypresent") and ridgebasepresent()
-end
-
-function targetcarts()
-    return ridgemidpast() and hook1() and ridgemidpresent()
-end
-
-function gorongallery()
-    return targetcarts() and (ages() or (lift1() and echoes()))
-end
-
-function ridgebasepasteast()
-    return (gorongallery() or (lynna_city() and (feather() or ages()) or mermaid()) or
-               (ridgemidpast() and feather() and has("emblem")) or ridgeeasttree() or (ridgebasepresent() and ages()) or
-               (ridgebasepastwest() and flippers()))
-end
-
-function ridgebasepasteast_h()
-    return (gorongallery() or (lynna_city() and (feather() or ages()) or mermaid()) or
-               (ridgemidpast() and feather() and has("emblem")) or ridgeeasttree() or (ridgebasepresent() and ages()) or
-               (ridgebasepastwest() and (flippers() or jump3())))
-end
-
-function ridgemidpast()
-    return (((ridgebasepresent() and (ages() or (bush_safe() and echoes()))) or gorongallery() or
-               (lynna_city() and (feather() or ages()) and mermaid()) or ridgeeasttree() or
-               (ridgebasepresent() and ages()) or (ridgebasepastwest() and flippers())) and hook1()) or
-               (ridgeupperpresent() and ages()) or (ridgemidpresent() and ages()) or
-               (ridgebasepasteast() and has("emblem") and feather())
-end
-
-function ridgemidpast_h()
-    return (((ridgebasepresent() and (ages() or (bush_safe() and echoes()))) or gorongallery() or
-               (lynna_city() and (feather() or ages()) and mermaid()) or ridgeeasttree() or
-               (ridgebasepresent() and ages()) or (ridgebasepastwest() and flippers())) and hook1()) or
-               (ridgeupperpresent_h() and ages()) or (ridgemidpresent() and ages()) or
-               (ridgebasepasteast_h() and has("emblem") and feather())
-end
-
-function ridgebasepastwest()
-    return (ridgebasepresent() and (ages() or (bush_safe() and echoes()))) or
-               (gorongallery() or (lynna_city() and (feather() or ages()) and mermaid()) or ridgeeasttree() or
-                   (ridgebasepresent() and ages()) and flippers()) or (ridgeupperpresent() and ages()) or
-               (ridgemidpresent() and ages()) or
-               (gorongallery() or (lynna_city() and (feather() or ages()) and mermaid()) or ridgeeasttree() or
-                   (ridgebasepresent() and ages()) and flippers() and has("emblem") and feather())
-end
-
-function ridgebasepastwest_h()
-    return (ridgebasepresent() and (ages() or (bush_safe() and echoes()))) or
-               (gorongallery() or (lynna_city() and (feather() or ages()) and mermaid()) or ridgeeasttree() or
-                   (ridgebasepresent() and ages()) and (flippers() or jump3())) or (ridgeupperpresent_h() and ages()) or
-               (ridgemidpresent() and ages()) or
-               (gorongallery() or (lynna_city() and (feather() or ages()) and mermaid()) or ridgeeasttree() or
-                   (ridgebasepresent() and ages()) and (flippers() or jump3()) and has("emblem") and feather())
-end
-
-function ridgepastoldman()
-    return ridgebasepastwest() and ember()
-end
-
-function d6past_entrance()
-    return has ("d6keypast") and ridgebasepastwest() and (flippers() or (ages() and feather()))
-end
-
-function d6past_entrance_h()
-    return has ("d6keypast") and ridgebasepastwest_h() and (flippers() or (ages() and feather()) or bomb_jump2)
-end
-
-function bombgoronhead()
-    return bombs() and ((ridgebasepastwest() and hook1()) or (ridgeupperpresent() and ages()))
-end
-
-function bombgoronhead_h()
-    return bombs() and ((ridgebasepastwest_h() and hook1()) or (ridgeupperpresent_h() and ages()))
+function d8_entrance_h()
+    return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and (cane() or mermaid() or feather())
 end

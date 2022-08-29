@@ -114,6 +114,15 @@
                                 ]
                             },
                             {
+                                "name": "Down the Stairs",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$maku_tree,$k_normal",
+                                    "$maku_tree,shovel",
+                                    "$lynna_village,shovel"
+                                ]
+                            },
+                            {
                                 "name": "Did you get a key from the Path Chest? (Mark this)",
                                 "hosted_item": "pathkey",
                                 "access_rules": [
@@ -389,7 +398,7 @@
                         ]
                     },
                     {
-                        "name": "Magic Potion",
+                        "name": "Maple's Shop",
                         "access_rules": [],
                         "sections": [
                             {
@@ -526,7 +535,8 @@
                     {
                         "name": "Deku Forest Tree",
                         "access_rules": [
-                            "$forest_tree"
+                            "{$forest_tree}",
+                            "$forest_tree, $use_seeds"
                         ],
                         "sections": [
                             {
@@ -700,7 +710,8 @@
                     {
                         "name": "Crescent Island Tree",
                         "access_rules": [
-                            "$crescenttree,turninseedling"
+                            "{$crescenttree,turninseedling}",
+                            "$crescenttree,turninseedling,$use_seeds"
                         ],
                         "sections": [
                             {
@@ -744,8 +755,8 @@
                         ],
                         "sections": [
                             {
-                                "item_count": 1,
-                                "access_rules": []
+                                "chest_unopened_img": "images/bosses/d3.png",
+                                "chest_opened_img": "images/bosses/d3.png"
                             }
                         ],
                         "map_locations": [
@@ -1141,8 +1152,10 @@
                     {
                         "name": "Symmetry City Tree",
                         "access_rules": [
-                            "$symmetrytree",
-                            "[l_hard],$symmetrytree_h"
+                            "{$symmetrytree}",
+                            "$symmetrytree, $use_seeds",
+                            "{[l_hard],$symmetrytree_h}",
+                            "[l_hard],$symmetrytree_h, $use_seeds"
                         ],
                         "sections": [
                             {
@@ -1200,8 +1213,8 @@
                     {
                         "name": "Patch Tuninut",
                         "access_rules": [
-                            "$wallpatch",
-                            "[l_hard],$wallpatch_h"
+                            "$wallpatch,tuninut",
+                            "[l_hard],$wallpatch_h,tuninut"
                         ],
                         "sections": [
                             {
@@ -1240,7 +1253,8 @@
                     {
                         "name": "Enter Skull Dungeon (D4)",
                         "access_rules": [
-                            "$d4_entrance", "[l_hard],$d4_entrance_h"
+                            "$d4_entrance",
+                            "[l_hard],$d4_entrance_h"
                         ],
                         "sections": [
                             {
@@ -1254,6 +1268,857 @@
                                 "map": "map",
                                 "x": 559,
                                 "y": 50
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Rolling Ridge West",
+                "children": [
+                    {
+                        "name": "Free the Goron Elder",
+                        "access_rules": [
+                            "bombflower, feather, hook1",
+                            "bombflower, ages, hook1"
+                        ],
+                        "sections": [
+                            {
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3724,
+                                "y": 295
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rolling Ridge Entrance",
+                        "access_rules": [
+                            "$west_ridge_present"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Bomb the 2F East Wall",
+                                "access_rules": [
+                                    "bombs"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "1F Terrace chest",
+                                "item_count": 1
+                            },
+                            {
+                                "name": "3F Surface stairs",
+                                "item_count": 1
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 1383,
+                                "y": 295
+                            },
+                            {
+                                "map": "map",
+                                "x": 1351,
+                                "y": 135
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rolling Ridge Tree (West)",
+                        "access_rules": [
+                            "{bombflower, feather, hook1}",
+                            "bombflower, feather, hook1, $use_seeds",
+                            "{currents, feather, hook1}",
+                            "currents, feather, hook1, $use_seeds",
+                            "{$west_ridge_present, bracelet, echoes}",
+                            "$west_ridge_present, bracelet, echoes, $use_seeds",
+                            "{$west_ridge_present, ages}",
+                            "$west_ridge_present, ages, $use_seeds"
+                        ],
+                        "sections": [
+                            {
+                                "chest_unopened_img": "images/items/tree.png",
+                                "chest_opened_img": "images/items/tree_gray.png",
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3683,
+                                "y": 50
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Moblin Keep",
+                        "access_rules": [
+                            "$west_ridge_present",
+                        ],
+                        "sections": [
+                            {
+                                "name": "Lower floor chest",
+                                "access_rules": [
+                                    "feather, flippers"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Defeat the boss",
+                                "access_rules": [
+                                    "$pegasus_satchel,9 bracelet"
+                                ],
+                                "item_count": 1
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 306,
+                                "y": 17
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Enter Crown Dungeon (D5)",
+                        "access_rules": [
+                            // Vanilla way, by beating Moblin Keep
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
+                            // From East Ridge
+                            "$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
+                            "$lynna_village, ages, mermaid, hook1, crownkey"
+                        ],
+                        "sections": [
+                            {
+                                "chest_unopened_img": "images/bosses/d5.png",
+                                "chest_opened_img": "images/bosses/d5.png",
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 1720,
+                                "y": 23
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
+                "name": "Rolling Ridge East (Present)",
+                "children": [
+                    {
+                        "name": "Goron caves (present)",
+                        "sections": [
+                            {
+                                "name": "Goron Dancing (can be done either Present OR Past",
+                                "access_rules": [
+                                    //from Lynna, swimming
+                                    "$lynna_village, feather, mermaid, currents",
+                                    "$lynna_village, ages, mermaid",
+                                    //from the upper cave
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Trade the Brisket with the stairs Goron",
+                                "access_rules": [
+                                    //from Lynna, swimming
+                                    "$lynna_village, feather, mermaid, currents, emblem, brisket",
+                                    "$lynna_village, ages, mermaid, emblem, brisket",
+                                    //from the upper cave
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, emblem, brisket"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Diamonds Chest",
+                                "access_rules": [
+                                    //from Lynna, swimming
+                                    "$lynna_village, feather, mermaid, currents, hook1",
+                                    "$lynna_village, feather, mermaid, currents, emblem, $jump3",
+                                    "$lynna_village, ages, mermaid, hook1",
+                                    //from the upper cave, requires emblem
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1",
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, $jump3"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Big Bang minigame",
+                                "access_rules": [
+                                    //from Lynna, swimming
+                                    "$lynna_village, feather, mermaid, currents, hook1, goronade",
+                                    "$lynna_village, feather, mermaid, currents, emblem, goronade",
+                                    "$lynna_village, ages, mermaid, hook1, goronade",
+                                    //from the upper cave, requires emblem
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, goronade",
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, $jump3, goronade"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Highest floor chest",
+                                "access_rules": [
+                                    //from Lynna, swimming
+                                    "$lynna_village, feather, mermaid, currents, hook1",
+                                    "$lynna_village, feather, mermaid, currents, emblem",
+                                    "$lynna_village, ages, mermaid, hook1",
+                                    //from the upper cave, requires emblem
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1",
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, $jump3"
+                                ],
+                                "item_count": 1
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 2200,
+                                "y": 423
+                            },
+                            {
+                                "map": "map",
+                                "x": 1991,
+                                "y": 87
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Target Carts Minigame",
+                        "access_rules": [
+                            //from Lynna, swimming
+                            "$lynna_village, feather, mermaid, currents, hook1, currents",
+                            "$lynna_village, ages, mermaid, hook1",
+                            //from Moblin cave
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, hook1, currents"
+                        ],
+                        "sections": [
+                            {
+                                "name": "First reward",
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Second reward",
+                                "item_count": 1
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 2135,
+                                "y": 151
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Left of D6 Entrance",
+                        "access_rules": [
+                            "$lynna_village, feather, mermaid, currents",
+                            "$lynna_village, ages, mermaid"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Underwater chest",
+                                "item_count": 1
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 1935,
+                                "y": 395
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Enter Mermaid's Cave [Present] (D6)",
+                        "access_rules": [
+                            //from Lynna, swimming
+                            "d6keypresent, $lynna_village, feather, mermaid, currents",
+                            "d6keypresent, $lynna_village, ages, mermaid",
+                            //from the upper cave
+                            "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather"
+                        ],
+                        "sections": [
+                            {
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 1991,
+                                "y": 439
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Rolling Ridge East (Past)",
+                "children": [
+                    {
+                        "name": "Goron caves (past)",
+                        "sections": [
+                            {
+                                "name": "Dancing with the Letter",
+                                "access_rules": [
+                                    //from Lynna, swimming
+                                    "$lynna_village, feather, mermaid, letter",
+                                    "$lynna_village, ages, mermaid, letter",
+                                    //from the upper cave, requires emblem
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, letter"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Trade the Vase with the stairs Goron",
+                                "access_rules": [
+                                    //from Lynna, swimming
+                                    "$lynna_village, feather, mermaid, emblem, vase",
+                                    "$lynna_village, ages, mermaid, emblem, vase",
+                                    //from the upper cave, requires emblem
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, emblem, vase"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Bush Room Chest",
+                                "access_rules": [
+                                    //from Lynna, swimming
+                                    "$lynna_village, feather, mermaid, hook1",
+                                    "$lynna_village, ages, mermaid, hook1",
+                                    //from the upper cave, requires emblem
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, hook1"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Trade Lava Juice with the bush Goron",
+                                "access_rules": [
+                                    //from Lynna, swimming
+                                    "$lynna_village, feather, mermaid, hook1, lavajuice",
+                                    "$lynna_village, feather, mermaid, emblem, lavajuice",
+                                    "$lynna_village, ages, mermaid, hook1, lavajuice",
+                                    //from the upper cave, requires emblem
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, hook1, lavajuice",
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, ages, lavajuice"
+                                ],
+                                "item_count": 1
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4540,
+                                "y": 423
+                            },
+                            {
+                                "map": "map",
+                                "x": 4331,
+                                "y": 87
+                            }
+                        ]
+                    },
+                    {
+                        "name": "East Ridge base",
+                        "access_rules": [
+                            //from Lynna, swimming
+                            "$lynna_village, feather, mermaid",
+                            "$lynna_village, ages, mermaid",
+                            //from the upper cave, requires emblem
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Bombs Chest",
+                                "access_rules": [
+                                    "bombs"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Diamonds Chest",
+                                "access_rules": [
+                                    "hook1"
+                                ],
+                                "item_count": 1
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4156,
+                                "y": 295
+                            },
+                            {
+                                "map": "map",
+                                "x": 4316,
+                                "y": 199
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Goron Head Cave",
+                        "access_rules": [
+                            //from Lynna, swimming
+                            "$lynna_village, feather, mermaid, hook1, bombs",
+                            "$lynna_village, ages, mermaid, hook1, bombs",
+                            //from the upper cave, requires emblem
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, bombs"
+                        ],
+                        "sections": [
+                            {
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4460,
+                                "y": 87
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shooting gallery",
+                        "access_rules": [
+                            //from Lynna, swimming
+                            "$lynna_village, feather, mermaid, currents, hook1, sword",
+                            "$lynna_village, ages, mermaid, hook1, sword",
+                            //from Moblin cave
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, sword"
+                        ],
+                        "sections": [
+                            {
+                                "name": "100 points",
+                                "item_count": 1
+                            },
+                            {
+                                "name": "200 points\n(get bombs out of logic)",
+                                "access_rules": [
+                                    "[bombs]"
+                                ],
+                                "hosted_item": "bombs"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4475,
+                                "y": 151
+                            }
+                        ]
+                    },
+                    {
+                        "name": "East Rolling Ridge tree",
+                        "color": "#ff7700",
+                        "access_rules": [
+                            //from Lynna, swimming
+                            "{$lynna_village, feather, mermaid, currents, hook1}",
+                            "$lynna_village, feather, mermaid, currents, hook1, $use_seeds",
+                            "{$lynna_village, ages, mermaid, hook1}",
+                            "$lynna_village, ages, mermaid, hook1, $use_seeds",
+                            "{$lynna_village, feather, mermaid, hook1, satchel, galeseeds}",
+                            "$lynna_village, feather, mermaid, hook1, satchel, galeseeds, $use_seeds",
+                            "{$lynna_village, feather, mermaid, emblem, satchel, galeseeds}",
+                            "$lynna_village, feather, mermaid, emblem, satchel, galeseeds, $use_seeds",
+                            //from Moblin cave
+                            "{$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1}",
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, $use_seeds",
+                            "{$west_ridge_present, $pegasus_satchel, bracelet, feather, satchel, galeseeds}",
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, satchel, galeseeds, $use_seeds"
+                        ],
+                        "sections": [
+                            {
+                                "access_rules": [],
+                                "chest_unopened_img": "images/items/tree.png",
+                                "chest_opened_img": "images/items/tree_gray.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4532,
+                                "y": 336
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Enter Mermaid's Cave [Past] (D6)",
+                        "access_rules": [
+                            //from Lynna, swimming
+                            "d6keypast, $lynna_village, feather, mermaid",
+                            "d6keypast, $lynna_village, ages, mermaid",
+                            //from the upper cave, requires emblem?
+                            "d6keypast, $west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, flippers"
+                        ],
+                        "sections": [
+                            {
+                                "chest_unopened_img": "images/bosses/d6.png",
+                                "chest_opened_img": "images/bosses/d6.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4331,
+                                "y": 425
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Zora Village/Zora Seas",
+                "access_rules": [
+                    "mermaid, ages, hook1"
+                ],
+                "children": [
+                    {
+                        "name": "Isolated Chest",
+                        "access_rules": [],
+                        "sections": [
+                            {
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 56,
+                                "y": 1559
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Zora Village Tree (Past & Present)",
+                        "access_rules": [
+                            "{$zoratree}",
+                            "$zoratree, $use_seeds"
+                        ],
+                        "sections": [
+                            {
+                                "chest_unopened_img": "images/items/tree.png",
+                                "chest_opened_img": "images/items/tree_gray.png",
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 256,
+                                "y": 1584
+                            },
+                            {
+                                "map": "map",
+                                "x": 2596,
+                                "y": 1584
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Island Chest in the Sarcophagus",
+                        "access_rules": [
+                            "bombs, lift2"
+                        ],
+                        "sections": [
+                            {
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 56,
+                                "y": 1287
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Zora Palace (Present)",
+                        "sections": [
+                            {
+                                "name": "Entrance chest",
+                                "item_count": 1
+                            },
+                            {
+                                "name": "King Zora gift for curing him in the past",
+                                "access_rules": [
+                                    // Access to Syrup's Shop in Yoll Graveyard to buy a potion
+                                    "$use_seeds, emberseeds, [gravekey], flippers, curezora",
+                                    "$use_seeds, emberseeds, [gravekey], $jump3, curezora"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "King Zora Permission to enter Jabu",
+                                "access_rules": [
+                                    "$use_seeds, emberseeds, [gravekey], flippers, curefairy, curezora",
+                                    "$use_seeds, emberseeds, [gravekey], $jump3, curefairy, curezora"
+                                ],
+                                "hosted_item": "enterjabu",
+                                "item_count": 0
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 241,
+                                "y": 1386
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Zora Palace (Past)",
+                        "sections": [
+                            {
+                                "name": "Cure King Zora in the past\n(use magic potion from Maple's shop)",
+                                "access_rules": [
+                                    // Access to Syrup's Shop in Yoll Graveyard to buy a potion
+                                    "$use_seeds, emberseeds, [gravekey], flippers, potion",
+                                    "$use_seeds, emberseeds, [gravekey], $jump3, potion"
+                                ],
+                                "hosted_item": "curezora"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 2581,
+                                "y": 1386
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cure the cursed Fairy",
+                        "color": "#ff7700",
+                        "sections": [
+                            {
+                                "hosted_item": "curefairy",
+                                "access_rules": [
+                                    "powder"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 2924,
+                                "y": 1335
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fairy's coast",
+                        "sections": [
+                            {
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 247,
+                                "y": 1207
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Library (present)",
+                        "access_rules": [
+                            "librarykey"
+                        ],
+                        "sections": [
+                            {
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 847,
+                                "y": 1308
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Library (past)",
+                        "access_rules": [
+                            "librarykey"
+                        ],
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "{}",
+                                    "book",
+                                    "feather, satchel, pegasusseeds, bombs, book",
+                                    "[l_hard], feather, satchel, pegasusseeds, bombs"
+                                ],
+                                "item_count": 1
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3187,
+                                "y": 1308
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Zora Seas South",
+                        "access_rules": [
+                            "curefairy"
+                        ],
+                        "sections": [
+                            {
+                                "item_count": 1
+                            },
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 887,
+                                "y": 1703
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Under Fisher's Island",
+                        "access_rules": [
+                            "hook2"
+                        ],
+                        "sections": [
+                            {
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 769,
+                                "y": 1630
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Enter Jabu-Jabu's Belly (D7)",
+                        "access_rules": [
+                            "enterjabu"
+                        ],
+                        "sections": [
+                            {
+                                "chest_unopened_img": "images/bosses/d7.png",
+                                "chest_opened_img": "images/bosses/d7.png"
+                            },
+                            {
+                                "name": "Zora Reward after collecting D7 Essence",
+                                "access_rules": "d7"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 56,
+                                "y": 1383
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Sea of Storms/No Return",
+                "access_rules": [],
+                "children": [
+                    {
+                        "name": "Sea of Storms Underwater Cave",
+                        "access_rules": [
+                            "$lynna_village, mermaid, scale"
+                        ],
+                        "sections": [
+                            {
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3551,
+                                "y": 1620
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Pirate Ship Captains Reward",
+                        "access_rules": [
+                            "$lynna_village, mermaid, scale"
+                        ],
+                        "sections": [
+                            {
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3443,
+                                "y": 1581
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sarcophagus Chest",
+                        "access_rules": [
+                            "$d8_entrance, lift2",
+                            "[l_hard], $d8_entrance_h, lift2"
+                        ],
+                        "sections": [
+                            {
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4475,
+                                "y": 835
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Enter Ancient Tomb (D8)",
+                        "access_rules": [
+                            "$d8_entrance",
+                            "[l_hard], $d8_entrance_h"
+                        ],
+                        "sections": [
+                            {
+                                "chest_unopened_img": "images/bosses/d8.png",
+                                "chest_opened_img": "images/bosses/d8.png"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4339,
+                                "y": 662
                             }
                         ]
                     }

@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Overworld",
+        "chest_unopened_img": "images/items/chest.png",
+        "chest_opened_img": "images/items/chest_gray.png",
+        "children": [
+            // D5
+            {
+                "name": "Crown Dungeon (D5)",
+                "access_rules": [
+                    // Vanilla way, by beating Moblin Keep
+                    "$west_ridge_present, satchel, pegasusseeds, bracelet, feather, d5key",
+                    // From East Ridge
+                    "$lynna, feather, mermaidsuit, hook1, bracelet, currents, d5key",
+                    "$lynna, ages, mermaidsuit, hook1, d5key"
+                ],
+                "sections": [
+                    {
+                        "name": "West basement\nblue pegs chest",
+                        "access_rules": [
+                            // Can get every single chest in D5
+                            //"$d5clear",
+                            //"$kill_normal, $hit_far_switch",
+                            //"$kill_normal, bracelet, [$hit_far_switch]",
+                            //"$kill_normal, feather, cane, emberseeds, [$hit_far_switch]",
+                            //"$kill_normal, feather, cane, scentseeds, [$hit_far_switch]",
+                            //"$kill_normal, feather, cane, mysteryseeds, [$hit_far_switch]",
+                            //"$kill_hard, [$kill_normal], $hit_far_switch",
+                            //"$kill_hard, [$kill_normal], feather, cane, emberseeds, [$hit_far_switch]",
+                            //"$kill_hard, [$kill_normal], feather, cane, scentseeds, [$hit_far_switch]",
+                            //"$kill_hard, [$kill_normal], feather, cane, mysteryseeds, [$hit_far_switch]",
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "map": "d5",
+                        "x": 0,
+                        "y": 0
+                    }
+                ]
+            }
+        ]
+    }
+]
