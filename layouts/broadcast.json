@@ -13,7 +13,7 @@
               "rows": [
                   ["sword", "shield1", "lift1", "shooter", "flippers", "cane", "shovel"],
                   ["feather", "hook1", "bombs", "satchel", "boomerang", "harp", "flute"],
-                  ["powder", "gravekey", "tuninut", "crownkey", "d6key", "d6keyold", "eyeball"]
+                  ["gravekey", "tuninut", "crownkey", "d6keypast", "d6keypresent", "powder", "eyeball"]
               ]
           },
           {
