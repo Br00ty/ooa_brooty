@@ -1374,7 +1374,7 @@
                             {
                                 "name": "Defeat the boss",
                                 "access_rules": [
-                                    "$pegasus_satchel,9 bracelet"
+                                    "$pegasus_satchel, bracelet"
                                 ],
                                 "item_count": 1
                             },
@@ -1813,7 +1813,7 @@
                         "sections": [
                             {
                                 "chest_unopened_img": "images/items/tree.png",
-                                "chest_opened_img": "images/items/tree_gray.png",
+                                "chest_opened_img": "images/items/tree_gray.png"
                             }
                         ],
                         "map_locations": [
@@ -1969,7 +1969,7 @@
                                     "[l_hard], feather, satchel, pegasusseeds, bombs"
                                 ],
                                 "item_count": 1
-                            },
+                            }
                         ],
                         "map_locations": [
                             {
@@ -1987,7 +1987,7 @@
                         "sections": [
                             {
                                 "item_count": 1
-                            },
+                            }
                         ],
                         "map_locations": [
                             {
@@ -2016,18 +2016,19 @@
                         ]
                     },
                     {
-                        "name": "Enter Jabu-Jabu's Belly (D7)",
+                        "name": "Jabu-Jabu Area",
                         "access_rules": [
                             "enterjabu"
                         ],
                         "sections": [
                             {
+                                "name": "Enter Jabu-Jabu's Belly (D7)",
                                 "chest_unopened_img": "images/bosses/d7.png",
                                 "chest_opened_img": "images/bosses/d7.png"
                             },
                             {
                                 "name": "Zora Reward after collecting D7 Essence",
-                                "access_rules": "d7"
+                                "access_rules": ["d7"]
                             }
                         ],
                         "map_locations": [
