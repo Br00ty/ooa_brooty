@@ -260,8 +260,8 @@
             {
                 "name": "Wing Dungeon (D2)",
                 "access_rules": [
-                    "bombs",
-                    "currents"
+                    "$deku_forest,bombs",
+                    "$deku_forest,currents"
                 ],
                 "children": [
                     {
@@ -729,7 +729,9 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "bombs"
+                                    "bombs",
+                                    "echoes,d3sk:1,$scent_shooter",
+                                    "echoes,d3sk:1,hook1"
                                 ],
                                 "item_count": 1
                             }
@@ -919,29 +921,6 @@
                                 "map": "d3",
                                 "x": 1815,
                                 "y": 87
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Bridge chest",
-                        "sections": [
-                            {
-                                "access_rules": [
-                                    "d3sk:1, shooter",
-                                    "[l_hard], d3sk:1, $jump3",
-                                    "[l_hard], d3sk:1, boomerang, feather, [shooter]",
-                                    "[l_hard], d3sk:1, bracelet, ring_toss, feather, [shooter]",
-                                    "[l_hard], d3sk:1, boomerang, $pegasus_satchel [shooter]",
-                                    "[l_hard], d3sk:1, bracelet, ring_toss, $pegasus_satchel [shooter]"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "d3",
-                                "x": 1879,
-                                "y": 488
                             }
                         ]
                     },

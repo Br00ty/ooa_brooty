@@ -622,7 +622,8 @@
                     {
                         "name": "Enter Wing Dungeon (D2)",
                         "access_rules": [
-                            "$deku_forest,$mystery"
+                            "$deku_forest,bombs",
+                            "$deku_forest,currents"
                         ],
                         "sections": [
                             {
