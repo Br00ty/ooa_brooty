@@ -10,6 +10,9 @@ function has(item, amount)
 end
 
 -- maku path
+function maku_tree()
+    return rescue_nayru() or (maku_basement() and has("pathkey") and k_normal())
+end
 
 function maku_basement()
     return (rescue_nayru() or (lynna_village() and shovel()))

@@ -18,10 +18,6 @@ function lynna_village()
     return lynna_city() or echoes()
 end
 
-function maku_tree()
-    return rescue_nayru() or (maku_basement() and has("pathkey") and k_normal())
-end
-
 function shore_present()
     return flute() or has("gloves") or (bush() and feather()) or (ages() and bush()) or
                ((bush() or flute() or echoes()) and (lift1() or mermaid()) or
@@ -141,7 +137,7 @@ end
 
 function crescentpresentwest()
     return dimitri_flute() or (lynna_city() and mermaid()) or
-               ((raft() or (lynna_city() and mermaid()) or currents()) and (currents() or (shovel() and echoes())))
+               ((raft() or (lynna_city() and mermaid())) and (currents() or (shovel() and echoes())))
 end
 
 function d3_entrance()

@@ -114,8 +114,8 @@
                                 ]
                             },
                             {
-                                "name": "Down the Stairs",
-                                "item_count": 1,
+                                "name": "Did you get a key from the Path Chest? (Mark this)",
+                                "hosted_item": "pathkey",
                                 "access_rules": [
                                     "$maku_tree,$k_normal",
                                     "$maku_tree,shovel",
@@ -123,12 +123,12 @@
                                 ]
                             },
                             {
-                                "name": "Did you get a key from the Path Chest? (Mark this)",
-                                "hosted_item": "pathkey",
+                                "name": "Down the Stairs",
+                                "item_count": 1,
                                 "access_rules": [
                                     "$maku_tree,$k_normal",
                                     "$maku_tree,shovel",
-                                    "$lynna_village,shovel"
+                                    "$lynna_village,shovel,pathkey"
                                 ]
                             },
                             {
