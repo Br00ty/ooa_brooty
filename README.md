@@ -10,7 +10,7 @@ Download the latest release from the releases section, and then move it into `/p
 
 If a check shows up as `YELLOW` then that means the check is obtainable outside of logic.
 Features include a Dungeon Shuffler Tracker and Full Dungeon Layouts for easy tracking.
-This track DOES support Archipelago Autotracking, if Oracle of Ages were to ever make it to AP, we could easily set this tracker up for autotracking.
+This tracker does have support for Archipelago Autotracking, if Oracle of Ages were to ever make it to AP, we could easily set this tracker up for autotracking.
 
 ## More Info
 
