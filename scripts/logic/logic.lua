@@ -335,6 +335,10 @@ function k_normal_h()
   return (sword() or satchel_weapon_h() or shooter_weapon() or cane() or punch_enemy_h())
 end
 
+function k_normal_far()
+  return shooter_weapon() or (cane() and lift1())
+end
+
 function k_underwater()
   return (sword() or shooter_weapon() or punch_enemy())
 end

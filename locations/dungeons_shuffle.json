@@ -4,13 +4,12 @@
         "chest_unopened_img": "images/items/chest.png",
         "chest_opened_img": "images/items/chest_gray.png",
         "visibility_rules": [
-            "dungeon_er_off"
+            "dungeon_er_on"
         ],
         "children": [
             {
                 "name": "Spirit's Grave (D1)",
                 "access_rules": [
-                    "gravekey"
                 ],
                 "children": [
                     {
@@ -260,8 +259,6 @@
             {
                 "name": "Wing Dungeon (D2)",
                 "access_rules": [
-                    "bombs",
-                    "currents"
                 ],
                 "children": [
                     {
@@ -721,7 +718,6 @@
             {
                 "name": "Moonlit Grotto (D3)",
                 "access_rules": [
-                    "$d3_entrance"
                 ],
                 "children": [
                     {
@@ -1116,8 +1112,6 @@
             {
                 "name": "Skull Dungeon [Radical!!!] (D4)",
                 "access_rules": [
-                    "$d4_entrance",
-                    "$d4_entrance_h"
                 ],
                 "children": [
                     {
@@ -1387,11 +1381,6 @@
             {
                 "name": "Crown Dungeon (D5)",
                 "access_rules": [
-                    // Vanilla way, by beating Moblin Keep
-                    "$west_ridge_present, $pegasus_satchel bracelet, feather, crownkey",
-                    // From East Ridge
-                    "$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
-                    "$lynna_village, ages, mermaid, hook1, crownkey"
                 ],
                 "children": [
                     {
@@ -1628,11 +1617,6 @@
             {
                 "name": "Mermaid's Cave [Past] (D6)",
                 "access_rules": [
-                    //from Lynna, swimming
-                    "d6keypast, $lynna_village, feather, mermaid",
-                    "d6keypast, $lynna_village, ages, mermaid",
-                    //from the upper cave, requires emblem?
-                    "d6keypast, $west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, flippers"
                 ],
                 "children": [
                     {
@@ -1804,11 +1788,6 @@
             {
                 "name": "Mermaid's Cave [Present] (D6)",
                 "access_rules": [
-                    //from Lynna, swimming
-                    "d6keypresent, $lynna_village, feather, mermaid, currents",
-                    "d6keypresent, $lynna_village, ages, mermaid",
-                    //from the upper cave
-                    "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather"
                 ],
                 "children": [
                     {
@@ -1965,7 +1944,6 @@
             {
                 "name": "Jabu-Jabu's Belly (D7)",
                 "access_rules": [
-                    "enterjabu"
                 ],
                 "children": [
                     {
@@ -2282,8 +2260,6 @@
             {
                 "name": "Ancient Tomb (D8)",
                 "access_rules": [
-                    "$d8_entrance",
-                    "[l_hard], $d8_entrance_h"
                 ],
                 "children": [
                     {
