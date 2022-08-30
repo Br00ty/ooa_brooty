@@ -250,3 +250,4 @@ end
 function d8_entrance_h()
     return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and (cane() or mermaid() or feather())
 end
+

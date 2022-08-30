@@ -261,8 +261,18 @@ end
 
 -- action macros
 function crystal()
-  return (sword() or bombs() or lift1() or ember() or expert())
+  return (sword() or bombs() or lift1() or ember_satchel() or expert())
 end
+
+function crystal_switch()
+	return sword() or 
+	hook1() or
+	boomerang() or
+	shooter() or
+	ember_satchel() or
+	mystery_satchel() or
+	scent_satchel()
+end 
 
 function pot()
   return (lift1() or hook1() or sword2())
@@ -358,11 +368,11 @@ function k_pumpkinhead_h()
 end
 
 function k_spikedbeetle()
-  return (gale_shooter() or (shield() and (sword() or satchel_weapon() or shooter_weapon() or cane() or hook1())) or (shovel() and (sword() or satchel_weapon() or shooter_weapon() or cane() or hook1())))
+  return (gale_shooter() or ((shield() or shovel()) and (sword() or satchel_weapon() or shooter_weapon() or cane() or hook1())))
 end
 
 function k_spikedbeetle_h()
-  return (gale_shooter() or gale_satchel() or (shield() and (sword() or satchel_weapon_h() or shooter_weapon() or cane() or hook1())) or (shovel() and (sword() or satchel_weapon_h() or shooter_weapon() or cane() or hook1())))
+  return (gale_shooter() or gale_satchel() or ((shield() or shovel()) and (sword() or satchel_weapon_h() or shooter_weapon() or cane() or hook1())))
 end
 
 function k_swoop()
@@ -395,4 +405,36 @@ end
 
 function k_wizzrobe_h()
   return (sword() or satchel_weapon_h() or shooter_weapon() or punch_enemy_h())
+end
+
+function k_zol()
+	return k_normal() or hook1()
+end
+
+function k_zol_h()
+	return k_normal_h() or hook1()
+end
+
+function k_ghini()
+	return k_normal() or hook1()
+end
+
+function k_ghini_h()
+	return k_normal_h() or hook1()
+end
+
+function k_pumpkinhead()
+	return lift1() and (sword() or scent_shooter() or(use_seeds() and ember()) or has("ring_expert"))
+end
+
+function k_pumpkinhead_h()
+	return k_pumpkinhead() or(lift1() and(bombs() or scent_satchel() or punch_enemy_h()))
+end
+
+function k_beetle()
+  return (gale_shooter() or ((shield() or shovel()) and (sword() or satchel_weapon() or shooter_weapon() or cane() or hook1())))
+end
+
+function k_beetle_h()
+  return (gale_shooter() or gale_satchel() or ((shield() or shovel()) and (sword() or satchel_weapon_h() or shooter_weapon() or cane() or hook1())))
 end

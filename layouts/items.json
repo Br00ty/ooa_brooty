@@ -195,14 +195,148 @@
     "type": "itemgrid",
     "background": "#303841",
     "h_alignment": "center",
-    "margin": "80,5,3,0",
-    "item_margin": "1,1",
+    "margin": "40,5,3,0",
+    "item_margin": "5,1",
     "item_size": 55,
     "rows": [
       [
         "companions",
-        "l_bas"
+        "l_bas",
+        "dungeon_er_off"
       ]
+    ]
+  },
+  "entrance_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "background": "#303841",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "5,0",
+            "item_size": 52,
+            "dock": "left",
+            "rows": [
+              [
+                "d1er",
+                "d2er",
+                "d3er",
+                "d4er"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,-10,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "15,5",
+            "item_size": 32,
+            "rows": [
+              [
+                "question",
+                "question2",
+                "question3",
+                "question4"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "5,-20",
+            "item_size": 52,
+            "dock": "left",
+            "rows": [
+              [
+                "d5er",
+                "d6older",
+                "d7er",
+                "d8er"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,-10,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "15,25",
+            "item_size": 32,
+            "rows": [
+              [
+                "question5",
+                "question6",
+                "question7",
+                "question8"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "5,-40",
+            "item_size": 52,
+            "dock": "left",
+            "rows": [
+              [
+                "",
+                "d6newer",
+                "",
+                ""
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,60,0,-8",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "15,-25",
+            "item_size": 32,
+            "rows": [
+              [
+                "",
+                "question6new",
+                "",
+                ""
+              ]
+            ]
+          }
+        ]
+      }
     ]
   },
   "item_grid": {

@@ -620,7 +620,7 @@
                         ]
                     },
                     {
-                        "name": "Enter Wing Dungeon (D3)",
+                        "name": "Enter Wing Dungeon (D2)",
                         "access_rules": [
                             "$deku_forest,$mystery"
                         ],
@@ -1303,7 +1303,7 @@
                         ],
                         "sections": [
                             {
-                                "name": "Bomb the 2F East Wall",
+                                "name": "Goron's Hiding Place (Bombwall)",
                                 "access_rules": [
                                     "bombs"
                                 ],

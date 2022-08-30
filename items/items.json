@@ -657,6 +657,25 @@
     "loop": true,
     "codes": "trick"
   },
+  // Dungeon Entrance Rando Setting
+  {
+    "name": "Dungeon Entrance Rando?",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "dungeon_er_off",
+        "inherit_codes": false,
+        "img": "images/items/dungeon_er_off.png"
+      },
+      {
+        "codes": "dungeon_er_on",
+        "inherit_codes": false,
+        "img": "images/items/dungeon_er_on.png"
+      }
+    ]
+  },
   // GO MODE MAKU SEED
   {
     "name": "Maku Seed",
@@ -719,5 +738,601 @@
     "loop": true,
     "img": "images/items/jabu.png",
     "codes": "enterjabu"
+  },
+  // Dungeon Entrances
+  {
+    "name": "D1 Entrance",
+    "type": "toggle",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/dungeons/d1_entrance.png",
+    "codes": "d1er"
+  },
+  {
+    "name": "D2 Entrance",
+    "type": "toggle",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/dungeons/d2_entrance.png",
+    "codes": "d2er"
+  },
+  {
+    "name": "D3 Entrance",
+    "type": "toggle",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/dungeons/d3_entrance.png",
+    "codes": "d3er"
+  },
+  {
+    "name": "D4 Entrance",
+    "type": "toggle",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/dungeons/d4_entrance.png",
+    "codes": "d4er"
+  },
+  {
+    "name": "D5 Entrance",
+    "type": "toggle",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/dungeons/d5_entrance.png",
+    "codes": "d5er"
+  },
+  {
+    "name": "D6 PAST Entrance",
+    "type": "toggle",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/dungeons/d6_past_entrance.png",
+    "codes": "d6older"
+  },
+  {
+    "name": "D6 PRESENT Entrance",
+    "type": "toggle",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/dungeons/d6_present_entrance.png",
+    "codes": "d6newer"
+  },
+  {
+    "name": "D7 Entrance",
+    "type": "toggle",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/dungeons/d7_entrance.png",
+    "codes": "d7er"
+  },
+  {
+    "name": "D8 Entrance",
+    "type": "toggle",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/dungeons/d8_entrance.png",
+    "codes": "d8er"
+  },
+  // Dungeon Texts (lots of duplicates here to make it work lol)
+  {
+    "name": "Dungeon Labels 1",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "question",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/questionlabel.png"
+      },
+      {
+        "codes": "d1label",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d1label.png"
+      },
+      {
+        "codes": "d2label",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d2label.png"
+      },
+      {
+        "codes": "d3label",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d3label.png"
+      },
+      {
+        "codes": "d4label",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d4label.png"
+      },
+      {
+        "codes": "d5label",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d5label.png"
+      },
+      {
+        "codes": "d6_past_label",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6label.png"
+      },
+      {
+        "codes": "d6_present_label",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6labelnew.png"
+      },
+      {
+        "codes": "d7label",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d7label.png"
+      },
+      {
+        "codes": "d8label",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d8label.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Labels 2",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "question2",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/questionlabel2.png"
+      },
+      {
+        "codes": "d1label2",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d1label2.png"
+      },
+      {
+        "codes": "d2label2",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d2label2.png"
+      },
+      {
+        "codes": "d3label2",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d3label2.png"
+      },
+      {
+        "codes": "d4label2",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d4label2.png"
+      },
+      {
+        "codes": "d5label2",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d5label2.png"
+      },
+      {
+        "codes": "d6_past_label2",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6label2.png"
+      },
+      {
+        "codes": "d6_present_label2",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6labelnew2.png"
+      },
+      {
+        "codes": "d7label2",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d7label2.png"
+      },
+      {
+        "codes": "d8label2",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d8label2.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Labels 3",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "question3",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/questionlabel3.png"
+      },
+      {
+        "codes": "d1label3",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d1label3.png"
+      },
+      {
+        "codes": "d2label3",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d2label3.png"
+      },
+      {
+        "codes": "d3label3",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d3label3.png"
+      },
+      {
+        "codes": "d4label3",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d4label3.png"
+      },
+      {
+        "codes": "d5label3",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d5label3.png"
+      },
+      {
+        "codes": "d6_past_label3",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6label3.png"
+      },
+      {
+        "codes": "d6_present_label3",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6labelnew3.png"
+      },
+      {
+        "codes": "d7label3",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d7label3.png"
+      },
+      {
+        "codes": "d8label3",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d8label3.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Labels 4",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "question4",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/questionlabel4.png"
+      },
+      {
+        "codes": "d1label4",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d1label4.png"
+      },
+      {
+        "codes": "d2label4",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d2label4.png"
+      },
+      {
+        "codes": "d3label4",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d3label4.png"
+      },
+      {
+        "codes": "d4label4",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d4label4.png"
+      },
+      {
+        "codes": "d5label4",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d5label4.png"
+      },
+      {
+        "codes": "d6_past_label4",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6label4.png"
+      },
+      {
+        "codes": "d6_present_label4",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6labelnew4.png"
+      },
+      {
+        "codes": "d7label4",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d7label4.png"
+      },
+      {
+        "codes": "d8label4",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d8label4.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Labels 5",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "question5",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/questionlabel5.png"
+      },
+      {
+        "codes": "d1label5",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d1label5.png"
+      },
+      {
+        "codes": "d2label5",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d2label5.png"
+      },
+      {
+        "codes": "d3label5",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d3label5.png"
+      },
+      {
+        "codes": "d4label5",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d4label5.png"
+      },
+      {
+        "codes": "d5label5",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d5label5.png"
+      },
+      {
+        "codes": "d6_past_label5",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6label5.png"
+      },
+      {
+        "codes": "d6_present_label5",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6labelnew5.png"
+      },
+      {
+        "codes": "d7label5",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d7label5.png"
+      },
+      {
+        "codes": "d8label5",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d8label5.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Labels 6 Past",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "question6",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/questionlabel6.png"
+      },
+      {
+        "codes": "d1label6",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d1label6.png"
+      },
+      {
+        "codes": "d2label6",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d2label6.png"
+      },
+      {
+        "codes": "d3label6",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d3label6.png"
+      },
+      {
+        "codes": "d4label6",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d4label6.png"
+      },
+      {
+        "codes": "d5label6",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d5label6.png"
+      },
+      {
+        "codes": "d6_past_label6",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6label6.png"
+      },
+      {
+        "codes": "d6_present_label6",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6labelnew6.png"
+      },
+      {
+        "codes": "d7label6",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d7label6.png"
+      },
+      {
+        "codes": "d8label6",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d8label6.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Labels 6 Present",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "question6new",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/questionlabel6new.png"
+      },
+      {
+        "codes": "d1label6new",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d1label6new.png"
+      },
+      {
+        "codes": "d2label6new",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d2label6new.png"
+      },
+      {
+        "codes": "d3label6new",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d3label6new.png"
+      },
+      {
+        "codes": "d4label6new",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d4label6new.png"
+      },
+      {
+        "codes": "d5label6new",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d5label6new.png"
+      },
+      {
+        "codes": "d6_past_label6new",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6label6new.png"
+      },
+      {
+        "codes": "d6_present_label6new",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6labelnew6new.png"
+      },
+      {
+        "codes": "d7label6new",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d7label6new.png"
+      },
+      {
+        "codes": "d8label6new",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d8label6new.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Labels 7",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "question7",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/questionlabel7.png"
+      },
+      {
+        "codes": "d1label7",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d1label7.png"
+      },
+      {
+        "codes": "d2label7",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d2label7.png"
+      },
+      {
+        "codes": "d3label7",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d3label7.png"
+      },
+      {
+        "codes": "d4label7",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d4label7.png"
+      },
+      {
+        "codes": "d5label7",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d5label7.png"
+      },
+      {
+        "codes": "d6_past_label7",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6label7.png"
+      },
+      {
+        "codes": "d6_present_label7",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6labelnew7.png"
+      },
+      {
+        "codes": "d7label7",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d7label7.png"
+      },
+      {
+        "codes": "d8label7",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d8label7.png"
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Labels 8",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "question8",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/questionlabel8.png"
+      },
+      {
+        "codes": "d1label8",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d1label8.png"
+      },
+      {
+        "codes": "d2label8",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d2label8.png"
+      },
+      {
+        "codes": "d3label8",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d3label8.png"
+      },
+      {
+        "codes": "d4label8",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d4label8.png"
+      },
+      {
+        "codes": "d5label8",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d5label8.png"
+      },
+      {
+        "codes": "d6_past_label8",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6label8.png"
+      },
+      {
+        "codes": "d6_present_label8",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d6labelnew8.png"
+      },
+      {
+        "codes": "d7label8",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d7label8.png"
+      },
+      {
+        "codes": "d8label8",
+        "inherit_codes": false,
+        "img": "images/dungeons/labels/d8label8.png"
+      }
+    ]
   }
 ]
