@@ -3,8 +3,8 @@
     "type": "itemgrid",
     "h_alignment": "center",
     "margin": "3,5,3,0",
-    "item_margin": "1,1",
-    "item_size": 36,
+    "item_margin": "1,2",
+    "item_size": 38,
     "rows": [
       [
         "sword",
@@ -29,9 +29,9 @@
   "items2": {
     "type": "itemgrid",
     "h_alignment": "center",
-    "margin": "3,5,3,0",
-    "item_margin": "0,-1",
-    "item_size": 29,
+    "margin": "2,5,3,0",
+    "item_margin": "0,2",
+    "item_size": 31,
     "rows": [
       [
         "emberseeds",
@@ -50,8 +50,8 @@
     "type": "itemgrid",
     "h_alignment": "center",
     "margin": "3,5,3,0",
-    "item_margin": "1,1",
-    "item_size": 36,
+    "item_margin": "1,2",
+    "item_size": 38,
     "rows": [
       [
         "cheval",
@@ -89,11 +89,11 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "0,0,-0,0",
+        "margin": "-3,-2,-2,0",
         "content": [
           {
             "type": "itemgrid",
-            "item_margin": "0,0",
+            "item_margin": "3,0",
             "item_size": 43,
             "dock": "left",
             "rows": [
@@ -108,13 +108,13 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "13,-7,-2,0",
+        "margin": "11,-7,-2,0",
         "content": [
           {
             "type": "itemgrid",
             "dock": "left",
             "item_margin": "-6,-3",
-            "item_size": 18,
+            "item_size": 19,
             "rows": [
               [
                 "d1sk",
@@ -135,11 +135,11 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "0,-5,-2,0",
+        "margin": "-3,-2,-2,0",
         "content": [
           {
             "type": "itemgrid",
-            "item_margin": "0,0",
+            "item_margin": "3,0",
             "item_size": 43,
             "dock": "left",
             "rows": [
@@ -154,13 +154,13 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "13,-7,-2,0",
+        "margin": "11,-7,-2,0",
         "content": [
           {
             "type": "itemgrid",
             "dock": "left",
             "item_margin": "-6,-3",
-            "item_size": 18,
+            "item_size": 19,
             "rows": [
               [
                 "d3sk",
@@ -181,11 +181,11 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "0,-5,-2,0",
+        "margin": "-3,-2,-2,0",
         "content": [
           {
             "type": "itemgrid",
-            "item_margin": "0,0",
+            "item_margin": "3,0",
             "item_size": 43,
             "dock": "left",
             "rows": [
@@ -200,13 +200,13 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "13,-7,-2,0",
+        "margin": "11,-7,-2,0",
         "content": [
           {
             "type": "itemgrid",
             "dock": "left",
             "item_margin": "-6,-3",
-            "item_size": 18,
+            "item_size": 19,
             "rows": [
               [
                 "d5sk",
@@ -228,11 +228,11 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "0,-5,-2,0",
+        "margin": "-3,-2,-2,0",
         "content": [
           {
             "type": "itemgrid",
-            "item_margin": "0,0",
+            "item_margin": "3,0",
             "item_size": 43,
             "dock": "left",
             "rows": [
@@ -247,13 +247,13 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "13,-7,-2,0",
+        "margin": "11,-7,-2,0",
         "content": [
           {
             "type": "itemgrid",
             "dock": "left",
             "item_margin": "-6,-3",
-            "item_size": 18,
+            "item_size": 19,
             "rows": [
               [
                 "d7sk",
