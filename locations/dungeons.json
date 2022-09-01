@@ -142,7 +142,7 @@
                                     "[l_hard], d1sk:1, [d1sk:2], $k_zol_h"
                                 ],
                                 "item_count": 1
-                            },
+                            }
                         ],
                         "map_locations": [
                             {
@@ -310,7 +310,7 @@
                             {
                                 "access_rules": [
                                     "d2sk:4, $k_normal",
-                                    "d2sk:1, [d2sk:4], $kl_normal",
+                                    "d2sk:1, [d2sk:4], $k_normal",
                                     "[l_hard], d2sk:4, $k_normal_h",
                                     "[l_hard], d2sk:1, [d2sk:4], $k_normal_h"
                                 ],
@@ -1107,7 +1107,7 @@
                                     "$k_normal, feather",
                                     "$k_normal, hook1",
                                     "[l_hard], $k_normal_h, [$k_normal], feather",
-                                    "[l_hard], $kill_hard, [$k_normal], hook1",
+                                    "[l_hard], $k_normal_h, [$k_normal], hook1",
                                     "[l_hard], $push_enemy, feather",
                                     "[l_hard], $push_enemy, hook1"
                                 ],
@@ -1367,7 +1367,7 @@
                 "name": "Crown Dungeon (D5)",
                 "access_rules": [
                     // Vanilla way, by beating Moblin Keep
-                    "$west_ridge_present, $pegasus_satchel bracelet, feather, crownkey",
+                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
                     // From East Ridge
                     "$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
                     "$lynna_village, ages, mermaid, hook1, crownkey"
@@ -1870,7 +1870,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6present_beamos",
+                                    "$d6present_beamos"
                                 ],
                                 "item_count": 1
                             }
@@ -2058,25 +2058,6 @@
                         ]
                     },
                     {
-                        "name": "Rightwing Moldorm Chest",
-                        "sections": [
-                            {
-                                "access_rules": [
-                                    "$d7_stairway,$k_moldorm,mermaid",
-                                    "$d7_stairway,$k_moldorm,$floodd7"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "d7",
-                                "x": 1320,
-                                "y": 1145
-                            }
-                        ]
-                    },
-                    {
                         "name": "Boxed Chest",
                         "sections": [
                             {
@@ -2162,7 +2143,7 @@
                             {
                                 "map": "d7",
                                 "x": 600,
-                                "y": 401
+                                "y": 40
                             }
                         ]
                     },
@@ -2189,7 +2170,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$floodd7,d7sk:7"
+                                    "hook2,d7sk:7"
                                 ],
                                 "item_count": 1
                             }
@@ -2207,7 +2188,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$draind7,hook1,d7sk:7"
+                                    "$draind7,hook1,[d7sk:7],d7sk:1"
                                 ],
                                 "item_count": 1
                             }

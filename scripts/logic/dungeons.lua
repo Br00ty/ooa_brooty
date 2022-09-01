@@ -5,7 +5,7 @@ function has(item, amount)
     if not amount then
       return count > 0
     else
-      return count == amount
+      return count >= amount
     end
 end
 
@@ -202,11 +202,11 @@ function floodd7()
 end
 
 function d7_hallway()
-    return floodd7() and has("d7sk",5)
+    return hook2() and has("d7sk",5)
 end
 
 function d7_miniboss()
-    return d7_stairway() and flippers() and feather() and (sword() or boomerang() or scent_shooter()) and has ("d7sk",7)
+    return d7_stairway() and flippers() and feather() and (sword() or boomerang() or scent_shooter()) and has("d7sk",7)
 end
 
 -- d8

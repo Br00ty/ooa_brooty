@@ -9,11 +9,17 @@
   "author": "Brooty",
   "variants": {
     "standard": {
-      "display_name": "Map Tracker",
+      "display_name": "Map Tracker (Vertical)",
       "flags": [
         "ap" //enables AP autotracking interface - remove if not needed
       ]
     },
+    "var_horizontal": {
+      "display_name": "Map Tracker (Horizontal)",
+      "flags": [
+        "ap" //enables AP autotracking interface - remove if not needed
+      ]
+     },
     "var_itemsonly": {
      "display_name": "Items Only",
      "flags": [

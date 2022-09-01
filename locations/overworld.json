@@ -1337,8 +1337,8 @@
                         "access_rules": [
                             "{bombflower, feather, hook1}",
                             "bombflower, feather, hook1, $use_seeds",
-                            "{currents, feather, hook1}",
-                            "currents, feather, hook1, $use_seeds",
+                            "{currents, feather, hook1, bracelet}",
+                            "currents, feather, hook1, $use_seeds, bracelet",
                             "{$west_ridge_present, bracelet, echoes}",
                             "$west_ridge_present, bracelet, echoes, $use_seeds",
                             "{$west_ridge_present, ages}",
@@ -1490,8 +1490,8 @@
                             },
                             {
                                 "map": "map",
-                                "x": 1991,
-                                "y": 87
+                                "x": 1976,
+                                "y": 200
                             }
                         ]
                     },
@@ -1627,9 +1627,10 @@
                             },
                             {
                                 "map": "map",
-                                "x": 4331,
-                                "y": 87
+                                "x": 4316,
+                                "y": 199
                             }
+
                         ]
                     },
                     {
@@ -1665,8 +1666,8 @@
                             },
                             {
                                 "map": "map",
-                                "x": 4316,
-                                "y": 199
+                                "x": 4331,
+                                "y": 87
                             }
                         ]
                     },
@@ -1697,7 +1698,7 @@
                         "name": "Shooting gallery",
                         "access_rules": [
                             //from Lynna, swimming
-                            "$lynna_village, feather, mermaid, currents, hook1, sword",
+                            "$lynna_village, feather, mermaid, currents, hook1, sword, bracelet",
                             "$lynna_village, ages, mermaid, hook1, sword",
                             //from Moblin cave
                             "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, sword"
@@ -1729,7 +1730,7 @@
                         "access_rules": [
                             //from Lynna, swimming
                             "{$lynna_village, feather, mermaid, currents, hook1}",
-                            "$lynna_village, feather, mermaid, currents, hook1, $use_seeds",
+                            "$lynna_village, feather, mermaid, currents, hook1, $use_seeds, bracelet",
                             "{$lynna_village, ages, mermaid, hook1}",
                             "$lynna_village, ages, mermaid, hook1, $use_seeds",
                             "{$lynna_village, feather, mermaid, hook1, satchel, galeseeds}",

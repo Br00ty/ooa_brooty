@@ -8,15 +8,15 @@
       "content": [
         {
           "type": "dock",
-          "dock": "left",
-          "orientation": "vertical",
+          "dock": "bottom",
+          "orientation": "horizontal",
           "v_alignment": "stretch",
           "margin": "0,0,3,0",
           "content": [
             {
               "type": "group",
               "header": "Items",
-              "dock": "top",
+              "dock": "left",
               "content": {
                 "type": "layout",
                 "key": "item_grid"
@@ -24,22 +24,30 @@
             },
             {
               "type": "group",
-              "header": "Settings",
-              "dock": "bottom",
+              "dock": "left",
               "content": {
                 "type": "layout",
-                "v_alignment": "stretch",
-                "key": "settings_tab"
+                "key": "instrument_grid"
               }
             },
             {
               "type": "group",
               "header": "Entrance Rando Tracker",
-              "dock": "bottom",
+              "dock": "left",
               "content": {
                 "type": "layout",
                 "v_alignment": "stretch",
                 "key": "entrance_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Settings",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "v_alignment": "stretch",
+                "key": "settings_tab"
               }
             },
             {
