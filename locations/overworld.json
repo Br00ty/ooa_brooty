@@ -310,7 +310,8 @@
                                 "name": "Rescue Nayru",
                                 "item_count": 1,
                                 "access_rules": [
-                                    "$rescue_nayru"
+                                    "$rescue_nayru",
+                                    "[l_hard],$rescue_nayru_h"
                                 ]
                             }
                         ],
@@ -696,6 +697,7 @@
                         ],
                         "sections": [
                             {
+                                "name": "Hungry Hungry Tokays!",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -1421,7 +1423,7 @@
                         "name": "Goron caves (present)",
                         "sections": [
                             {
-                                "name": "Goron Dancing (can be done either Present OR Past",
+                                "name": "Goron Dancing",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, currents",
@@ -1573,7 +1575,7 @@
                         "name": "Goron caves (past)",
                         "sections": [
                             {
-                                "name": "Dancing with the Letter",
+                                "name": "Goron Dancing with the Letter",
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, letter",
@@ -1630,7 +1632,6 @@
                                 "x": 4316,
                                 "y": 199
                             }
-
                         ]
                     },
                     {
@@ -2019,18 +2020,20 @@
                     },
                     {
                         "name": "Jabu-Jabu Area",
-                        "access_rules": [
-                            "enterjabu"
-                        ],
                         "sections": [
                             {
                                 "name": "Enter Jabu-Jabu's Belly (D7)",
+                                "access_rules": [
+                                    "enterjabu"
+                                ],
                                 "chest_unopened_img": "images/bosses/d7.png",
                                 "chest_opened_img": "images/bosses/d7.png"
                             },
                             {
                                 "name": "Zora Reward after collecting D7 Essence",
-                                "access_rules": ["d7"]
+                                "access_rules": [
+                                    "d7"
+                                ]
                             }
                         ],
                         "map_locations": [

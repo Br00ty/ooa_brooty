@@ -44,6 +44,10 @@ function rescue_nayru()
     return palace_chest() and mystery() and hook1() and (sword() or punch_enemy())
 end
 
+function rescue_nayru_h()
+    return palace_chest_h() and mystery() and hook1() and (sword() or punch_enemy())
+end
+
 function maku_seed()
     return has("d1") and has("d2") and has("d3") and has("d4") and has("d5") and has("d6") and has("d7") and has("d8")
 end
@@ -240,10 +244,10 @@ end
 
 -- d8 area
 function d8_entrance()
-    return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and (mermaid() or feather())
+    return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and cane() and mermaid() and feather()
 end
 
 function d8_entrance_h()
-    return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and (cane() or mermaid() or feather())
+    return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and mermaid() and feather()
 end
 
