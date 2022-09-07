@@ -1397,7 +1397,8 @@
                             "$west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
                             // From East Ridge
                             "$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
-                            "$lynna_village, ages, mermaid, hook1, crownkey"
+                            "$lynna_village, ages, mermaid, hook1, crownkey",
+                            "$lynna_village, ages, mermaid, $jump3, crownkey"
                         ],
                         "sections": [
                             {
