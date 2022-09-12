@@ -735,7 +735,7 @@
                     {
                         "name": "Turn in Seedling to Tokay",
                         "access_rules": [
-                            "$crescenttree,seedling"
+                            "$crescenttree"
                         ],
                         "sections": [
                             {
@@ -1035,7 +1035,7 @@
                                 "visibility_rules": [
                                     "nuun_dimitri"
                                 ],
-                                "hosted_item": "carpenter1",
+                                "hosted_item": "carpenter2",
                                 "access_rules": []
                             }
                         ],
@@ -1059,7 +1059,7 @@
                                 "visibility_rules": [
                                     "nuun_dimitri"
                                 ],
-                                "hosted_item": "carpenter1",
+                                "hosted_item": "carpenter3",
                                 "access_rules": []
                             }
                         ],
@@ -1337,14 +1337,14 @@
                     {
                         "name": "Rolling Ridge Tree (West)",
                         "access_rules": [
-                            "{bombflower, feather, hook1}",
-                            "bombflower, feather, hook1, $use_seeds",
-                            "{currents, feather, hook1, bracelet}",
-                            "currents, feather, hook1, $use_seeds, bracelet",
-                            "{$west_ridge_present, bracelet, echoes}",
-                            "$west_ridge_present, bracelet, echoes, $use_seeds",
-                            "{$west_ridge_present, ages}",
-                            "$west_ridge_present, ages, $use_seeds"
+                            "{bombflower, feather, hook1, $seed_tree}",
+                            "bombflower, feather, hook1, $use_seeds, $seed_tree",
+                            "{currents, feather, hook1, bracelet, $seed_tree}",
+                            "currents, feather, hook1, $use_seeds, bracelet, $seed_tree",
+                            "{$west_ridge_present, bracelet, echoes, $seed_tree}",
+                            "$west_ridge_present, bracelet, echoes, $use_seeds, $seed_tree",
+                            "{$west_ridge_present, ages, $seed_tree}",
+                            "$west_ridge_present, ages, $use_seeds, $seed_tree"
                         ],
                         "sections": [
                             {
@@ -1732,18 +1732,18 @@
                         "access_rules": [
                             //from Lynna, swimming
                             "{$lynna_village, feather, mermaid, currents, hook1}",
-                            "$lynna_village, feather, mermaid, currents, hook1, $use_seeds, bracelet",
+                            "$lynna_village, feather, mermaid, currents, hook1, $use_seeds, bracelet, $seed_tree",
                             "{$lynna_village, ages, mermaid, hook1}",
-                            "$lynna_village, ages, mermaid, hook1, $use_seeds",
+                            "$lynna_village, ages, mermaid, hook1, $use_seeds, $seed_tree",
                             "{$lynna_village, feather, mermaid, hook1, satchel, galeseeds}",
-                            "$lynna_village, feather, mermaid, hook1, satchel, galeseeds, $use_seeds",
+                            "$lynna_village, feather, mermaid, hook1, satchel, galeseeds, $use_seeds, $seed_tree",
                             "{$lynna_village, feather, mermaid, emblem, satchel, galeseeds}",
-                            "$lynna_village, feather, mermaid, emblem, satchel, galeseeds, $use_seeds",
+                            "$lynna_village, feather, mermaid, emblem, satchel, galeseeds, $use_seeds, $seed_tree",
                             //from Moblin cave
                             "{$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1}",
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, $use_seeds",
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, $use_seeds, $seed_tree",
                             "{$west_ridge_present, $pegasus_satchel, bracelet, feather, satchel, galeseeds}",
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, satchel, galeseeds, $use_seeds"
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, satchel, galeseeds, $use_seeds, $seed_tree"
                         ],
                         "sections": [
                             {

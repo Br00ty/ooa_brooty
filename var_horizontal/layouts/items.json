@@ -2,7 +2,7 @@
   "items": {
     "type": "itemgrid",
     "h_alignment": "center",
-    "margin": "3,5,3,0",
+    "margin": "1,5,3,0",
     "item_margin": "1,2",
     "item_size": 38,
     "rows": [
@@ -29,7 +29,7 @@
   "items2": {
     "type": "itemgrid",
     "h_alignment": "center",
-    "margin": "2,5,3,0",
+    "margin": "1,5,3,0",
     "item_margin": "0,2",
     "item_size": 31,
     "rows": [

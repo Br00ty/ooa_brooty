@@ -125,12 +125,12 @@ function tokaygame()
 end
 
 function crescenttree()
-    return crescentpast() and scent() and (sword() or punch_object()) and seed_item() and
+    return crescentpast() and has("seedling") and (sword() or punch_object()) and seed_item() and
                (ages() or (lift1() and echoes()))
 end
 
 function crescenttree_h()
-    return crescentpast() and scent() and (sword() or punch_object()) and seed_item() and
+    return crescentpast() and has("seedling") and (sword() or punch_object()) and seed_item() and
                (ages() or (lift1() and (echoes() or (gale_satchel() and mermaid()))))
 end
 

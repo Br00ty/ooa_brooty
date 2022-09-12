@@ -75,8 +75,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$k_zol, $crystal",
-                                    "[l_hard], $k_zol_h, $crystal"
+                                    "$k_zol, $crystal, emberseeds",
+                                    "[l_hard], $k_zol_h, $crystal, emberseeds"
                                 ],
                                 "item_count": 1
                             }
@@ -157,9 +157,9 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d1sk:3, $k_zol, $bush, $k_giantghini",
-                                    "[l_hard], d1sk:3, $k_zol_h, $bush, $k_giantghini_h, [$k_giantghini]",
-                                    "$pot"
+                                    "d1sk:3, $k_zol, $bush, $k_giantghini, emberseeds",
+                                    "[l_hard], d1sk:3, $k_zol_h, $bush, $k_giantghini_h, [$k_giantghini], emberseeds",
+                                    "$pot, emberseeds"
                                 ],
                                 "item_count": 1
                             }

@@ -1,43 +1,124 @@
 ﻿{
-  "tracker_broadcast": {
-      "type": "array",
-      "background": "#FF000000",
-      "orientation": "vertical",
-      "margin": "1,1",
-      "content": [
-          {
-              "type": "itemgrid",
-              "h_alignment": "center",
-              "item_margin": "1,1",
-              "item_size": 36,
-              "rows": [
-                  ["sword", "shield1", "lift1", "shooter", "flippers", "cane", "shovel"],
-                  ["feather", "hook1", "bombs", "satchel", "boomerang", "harp", "flute"],
-                  ["gravekey", "tuninut", "crownkey", "d6keypast", "d6keypresent", "powder", "eyeball"]
-              ]
-          },
-          {
-              "type": "itemgrid",
-              "h_alignment": "center",
-              "v_alignment": "center",
-              "margin": "15,0,0,0",
-              "item_margin": "5,0",
-              "item_size": 45,
-              "rows": [
-                  ["d1",  "d2", "d3", "d4"]
-              ]
-          },
-          {
-            "type": "itemgrid",
-            "h_alignment": "center",
-            "v_alignment": "center",
-            "margin": "40,0,0,0",
-            "item_margin": "5,0",
-            "item_size": 45,
-            "rows": [
-                ["d5", "d6", "d7", "d8"]
-            ]
-        }
-      ]
-  }
+    "tracker_broadcast": {
+        "type": "array",
+        "background": "#FF000000",
+        "orientation": "vertical",
+        "margin": "1,1",
+        "content": [
+            {
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "margin": "2,0,0,0",
+                "item_margin": "1,1",
+                "item_size": 36,
+                "rows": [
+                    [
+                        "sword",
+                        "shield1",
+                        "lift1",
+                        "shooter",
+                        "flippers",
+                        "cane",
+                        "shovel"
+                    ],
+                    [
+                        "feather",
+                        "hook1",
+                        "bombs",
+                        "satchel",
+                        "boomerang",
+                        "harp",
+                        "flute"
+                    ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "margin": "4,5,3,0",
+                "item_margin": "0,-1",
+                "item_size": 29,
+                "rows": [
+                    [
+                        "emberseeds",
+                        "mysteryseeds",
+                        "scentseeds",
+                        "pegasusseeds",
+                        "galeseeds",
+                        "ring_fist",
+                        "ring_expert",
+                        "ring_energy",
+                        "ring_toss"
+                    ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "item_margin": "1,1",
+                "item_size": 36,
+                "rows": [
+                    [
+                        "gloves",
+                        "cheval",
+                        "chart",
+                        "seedling",
+                        "librarykey",
+                        "book",
+                        "scale"
+                    ],
+                    [
+                        "bombflower",
+                        "emblem",
+                        "brisket",
+                        "vase",
+                        "lavajuice",
+                        "goronade",
+                        "letter"
+                    ],
+                    [
+                        "gravekey",
+                        "tuninut",
+                        "crownkey",
+                        "d6keypast",
+                        "d6keypresent",
+                        "powder",
+                        "eyeball"
+                    ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "margin": "15,0,0,0",
+                "item_margin": "5,0",
+                "item_size": 45,
+                "rows": [
+                    [
+                        "d1",
+                        "d2",
+                        "d3",
+                        "d4"
+                    ]
+                ]
+            },
+            {
+                "type": "itemgrid",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "margin": "40,0,0,0",
+                "item_margin": "5,0",
+                "item_size": 45,
+                "rows": [
+                    [
+                        "d5",
+                        "d6",
+                        "d7",
+                        "d8"
+                    ]
+                ]
+            }
+        ]
+    }
 }

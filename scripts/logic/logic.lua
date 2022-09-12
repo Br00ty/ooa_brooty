@@ -199,6 +199,10 @@ function use_seeds()
   return (satchel() or shooter())
 end
 
+function seed_tree()
+  return (sword() or fist() or expert())
+end
+
 -- Get the number of seeds the player has
 function seed_number()
 	local n = 0
