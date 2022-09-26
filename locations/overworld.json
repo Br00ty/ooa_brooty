@@ -101,7 +101,34 @@
                         ]
                     },
                     {
-                        "name": "Maku Tree",
+                        "name": "Maku Tree (Present)",
+                        "access_rules": [],
+                        "sections": [
+                            {
+                                "name": "Save Waifu",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$maku_tree"
+                                ]
+                            },
+                            {
+                                "name": "Get Maku Seed for Go Mode",
+                                "hosted_item": "makuseed",
+                                "access_rules": [
+                                    "$maku_seed"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 1360,
+                                "y": 453
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Maku Tree (Past)",
                         "access_rules": [],
                         "sections": [
                             {
@@ -130,27 +157,13 @@
                                     "$maku_tree,shovel",
                                     "$lynna_village,shovel,pathkey"
                                 ]
-                            },
-                            {
-                                "name": "Save Waifu",
-                                "item_count": 1,
-                                "access_rules": [
-                                    "$maku_tree"
-                                ]
-                            },
-                            {
-                                "name": "Get Maku Seed for Go Mode",
-                                "hosted_item": "makuseed",
-                                "access_rules": [
-                                    "$maku_seed"
-                                ]
                             }
                         ],
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 1360,
-                                "y": 453
+                                "x": 3700,
+                                "y": 457
                             }
                         ]
                     },
@@ -536,7 +549,7 @@
                     {
                         "name": "Deku Forest Tree",
                         "access_rules": [
-                            "{$forest_tree}",
+                            "{$deku_forest}",
                             "$forest_tree, $use_seeds"
                         ],
                         "sections": [
