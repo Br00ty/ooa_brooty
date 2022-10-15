@@ -135,8 +135,8 @@
                                 "name": "Maku Path Chest",
                                 "item_count": 1,
                                 "access_rules": [
-                                    "$maku_tree,$k_normal",
-                                    "$maku_tree,shovel",
+                                    "$maku_tree,$k_normal,pathkey",
+                                    "$maku_tree,shovel,pathkey",
                                     "$lynna_village,shovel"
                                 ]
                             },
@@ -2027,7 +2027,7 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 769,
+                                "x": 3202,
                                 "y": 1630
                             }
                         ]
