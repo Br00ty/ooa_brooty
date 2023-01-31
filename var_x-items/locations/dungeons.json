@@ -1,0 +1,2578 @@
+[
+    {
+        "name": "Dungeons",
+        "chest_unopened_img": "images/items/chest.png",
+        "chest_opened_img": "images/items/chest_gray.png",
+        "visibility_rules": [
+            "dungeon_er_off"
+        ],
+        "children": [
+            {
+                "name": "Spirit's Grave (D1)",
+                "access_rules": [
+                    "gravekey"
+                ],
+                "children": [
+                    {
+                        "name": "Terrace chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$k_zol",
+                                    "[l_hard],$k_zol"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 760,
+                                "y": 1080
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ghini drop",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$k_zol",
+                                    "[l_hard],$k_zol"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 1016,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Crossroads chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$k_zol",
+                                    "[l_hard],$k_zol"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 776,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Secret room chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$k_zol, $crystal, emberseeds",
+                                    "[l_hard], $k_zol_h, $crystal, emberseeds"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 632,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Wide room chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d1sk:2, $k_zol",
+                                    "d1sk:1, [d1sk:2], $k_zol",
+                                    "[l_hard], d1sk:2, $k_zol_h",
+                                    "[l_hard], d1sk:1, [d1sk:2], $k_zol_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 920,
+                                "y": 569
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Double button chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d1sk:2, $k_zol",
+                                    "d1sk:1, [d1sk:2], $k_zol",
+                                    "[l_hard], d1sk:2, $k_zol_h",
+                                    "[l_hard], d1sk:1, [d1sk:2], $k_zol_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 840,
+                                "y": 377
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Moving platform chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d1sk:2, $k_zol",
+                                    "d1sk:1, [d1sk:2], $k_zol",
+                                    "[l_hard], d1sk:2, $k_zol_h",
+                                    "[l_hard], d1sk:1, [d1sk:2], $k_zol_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 648,
+                                "y": 441
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Underground item",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d1sk:3, $k_zol, $bush, $k_giantghini, emberseeds",
+                                    "[l_hard], d1sk:3, $k_zol_h, $bush, $k_giantghini_h, [$k_giantghini], emberseeds",
+                                    "$pot, emberseeds"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 88,
+                                "y": 1352
+                            },
+                            {
+                                "map": "d1",
+                                "x": 184,
+                                "y": 744
+                            }
+                        ]
+                    },
+                    {
+                        "name": "West side item",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$pot"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 56,
+                                "y": 1001
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Pot item",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$pot"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 344,
+                                "y": 1080
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Pumpkin Head reward",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d1bk, d1sk:2, $k_zol, $bush, $k_pumpkinhead",
+                                    "d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, $k_pumpkinhead",
+                                    "[l_hard], d1bk, d1sk:2, $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]",
+                                    "[l_hard], d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 600,
+                                "y": 259
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eternal Spirit",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d1bk, d1sk:2, $k_zol, $bush, $k_pumpkinhead",
+                                    "d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, $k_pumpkinhead",
+                                    "[l_hard], d1bk, d1sk:2, $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]",
+                                    "[l_hard], d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]"
+                                ],
+                                "hosted_item": "d1"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 600,
+                                "y": 36
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Wing Dungeon (D2)",
+                "access_rules": [
+                    "$deku_forest,bombs",
+                    "$deku_forest,currents"
+                ],
+                "children": [
+                    {
+                        "name": "Bomb wall chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$k_beetle, bombs",
+                                    "[l_hard], $k_beetle_h, bombs"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 840,
+                                "y": 488
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Moblin drop",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$k_beetle, $k_normal",
+                                    "[l_hard], $k_beetle_h, $k_normal",
+                                    "[l_hard], $k_beetle, $k_normal_h",
+                                    "[l_hard], $k_beetle_h, $k_normal_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 119,
+                                "y": 263
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rope chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d2sk:4, $k_normal",
+                                    "d2sk:1, [d2sk:4], $k_normal",
+                                    "[l_hard], d2sk:4, $k_normal_h",
+                                    "[l_hard], d2sk:1, [d2sk:4], $k_normal_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1176,
+                                "y": 552
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rope bomb wall chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d2sk:4, $k_normal, bombs",
+                                    "d2sk:1, [d2sk:4], $k_normal, bombs",
+                                    "[l_hard], d2sk:4, $k_normal_h, bombs",
+                                    "[l_hard], d2sk:1, [d2sk:4], $k_normal_h, bombs"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1320,
+                                "y": 968
+                            }
+                        ]
+                    },
+                    {
+                        "name": "After thwomp",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    // keyless, with feather
+                                    "$k_beetle, $k_swoop, feather",
+                                    "[l_hard], $k_beetle_h, $k_swoop, feather",
+                                    "[l_hard], $k_beetle, $k_swoop_h, feather",
+                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather",
+                                    // vanilla route
+                                    "d2sk:2, $k_beetle, $k_swoop",
+                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop",
+                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop_h",
+                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 311,
+                                "y": 1832
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Thwomp shelf",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    // keyless, with feather
+                                    "$k_beetle, $k_swoop, feather",
+                                    "$k_beetle_h, $k_swoop, feather",
+                                    "[l_hard], $k_beetle, $k_swoop_h, feather",
+                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather",
+                                    // without feather, hard mode stuff with 2 keys
+                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop, cane, bombs",
+                                    "d2sk:2, $k_beetle, $k_swoop, cane, $pegasus_satchel",
+                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop, cane, bombs",
+                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop, cane, $pegasus_satchel",
+                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop_h, cane, bombs",
+                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop_h, cane, $pegasus_satchel",
+                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop_h, cane, bombs",
+                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop_h, cane, $pegasus_satchel"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 40,
+                                "y": 1720
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Basement minecart bombwall chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    // keyless, with feather
+                                    "$k_beetle, $k_swoop, feather, bombs, $lever_minecart",
+                                    "[l_hard], $k_beetle_h, $k_swoop, feather, bombs, $lever_minecart",
+                                    "[l_hard], $k_beetle, $k_swoop_h, feather, bombs, $lever_minecart",
+                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather, bombs, $lever_minecart"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1319,
+                                "y": 1384
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Color tiles drop",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    // keyless, with feather
+                                    "$k_beetle, $k_swoop, feather",
+                                    "[l_hard], $k_beetle_h, $k_swoop, feather",
+                                    "[l_hard], $k_beetle, $k_swoop_h, feather",
+                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 807,
+                                "y": 1367
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Moblin chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d2sk:3, $k_beetle, $k_swoop, feather",
+                                    "d2sk:1, [d2sk:3], $k_beetle, $k_swoop, feather",
+                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, feather",
+                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, feather",
+                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, feather"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1113,
+                                "y": 440
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Statue puzzle drop",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    // normal, 1 key min 3 key logic
+                                    "d2sk:3, $k_beetle, $k_swoop, cane, feather",
+                                    "d2sk:1, [d2sk:3], $k_beetle, $k_swoop, cane, feather",
+                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, cane, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, cane, feather",
+                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, cane, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, cane, feather",
+                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, cane, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, cane, feather",
+                                    "d2sk:3, $k_beetle, $k_swoop, bracelet, feather",
+                                    "d2sk:1, [d2sk:3], $k_beetle, $k_swoop, bracelet, feather",
+                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, bracelet, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, bracelet, feather",
+                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, bracelet, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, bracelet, feather",
+                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, bracelet, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, bracelet, feather",
+                                    // moblin push strat, hard mode
+                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1319,
+                                "y": 439
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Color room",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    // normal, 2 key min 5 key logic
+                                    "d2sk:5, $k_beetle, $k_swoop, cane, feather",
+                                    "d2sk:2, [d2sk:5], $k_beetle, $k_swoop, cane, feather",
+                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, cane, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, cane, feather",
+                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, cane, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, cane, feather",
+                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, cane, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, cane, feather",
+                                    "d2sk:5, $k_beetle, $k_swoop, bracelet, feather",
+                                    "d2sk:2, [d2sk:5], $k_beetle, $k_swoop, bracelet, feather",
+                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, bracelet, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, bracelet, feather",
+                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, bracelet, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, bracelet, feather",
+                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, bracelet, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, bracelet, feather",
+                                    // moblin push strat, hard mode
+                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
+                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1576,
+                                "y": 264
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Head Thwomp",
+                        "sections": [
+                            {
+                                "name": "Boss Reward",
+                                "access_rules": [
+                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, bombs, cane, feather",
+                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], bracelet, feather",
+                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Get Bombs from Head Thwomp",
+                                "access_rules": [
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, cane, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather"
+                                ],
+                                "hosted_item": "bombs"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 647,
+                                "y": 1175
+                            },
+                            {
+                                "map": "d2",
+                                "x": 1496,
+                                "y": 102
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ancient Wood",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, cane, bombs, feather",
+                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
+                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], bracelet, feather",
+                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
+                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
+                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
+                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather"
+                                ],
+                                "hosted_item": "d2"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1800,
+                                "y": 31
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Moonlit Grotto (D3)",
+                "access_rules": [
+                    "$d3_entrance"
+                ],
+                "children": [
+                    {
+                        "name": "Pols Voice chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "bombs",
+                                    "echoes,d3sk:1,$scent_shooter",
+                                    "echoes,d3sk:1,hook1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 376,
+                                "y": 968
+                            }
+                        ]
+                    },
+                    {
+                        "name": "East statues drop",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "bombs, [$k_moldorm]",
+                                    "bombs, bracelet"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1143,
+                                "y": 615
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Armos chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d3sk:1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1592,
+                                "y": 984
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Six blocks drop",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d3sk:1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 183,
+                                "y": 984
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Four Armos drop",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d3sk:1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1047,
+                                "y": 439
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bush room chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d3sk:3, [$k_normal]",
+                                    "d3sk:2, [d3sk:3], [$k_normal]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 600,
+                                "y": 392
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Mimic room chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d3sk:4, [$k_normal]",
+                                    "d3sk:3, [d3sk:4], [$k_normal]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 392,
+                                "y": 88
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Fallen spinner chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d3sk:1, shooter",
+                                    "d3sk:1, boomerang",
+                                    "[l_hard], d3sk:1, hook1, [shooter]",
+                                    "[l_hard], d3sk:1, hook1, [boomerang]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 840,
+                                "y": 615
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Torch chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d3sk:1, shooter, emberseeds",
+                                    "[l_hard], d3sk:1, shooter, mysteryseeds, [emberseeds]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 2120,
+                                "y": 776
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Moldorm drop",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    // vanilla, through Subterror
+                                    "d3sk:1, shooter, $k_subterror, [$k_moldorm]",
+                                    "d3sk:1, boomerang, $k_subterror, [$k_moldorm]",
+                                    "[l_hard], d3sk:1, hook1, [shooter], $k_subterror, [$k_moldorm]",
+                                    "[l_hard], d3sk:1, hook1, [boomerang], $k_subterror, [$k_moldorm]",
+                                    // through bridge, 2 keys min 4 by logic
+                                    "d3sk:4, shooter",
+                                    "d3sk:2, [d3sk:4], shooter",
+                                    "[l_hard], d3sk:4, boomerang, feather, [shooter], [$jump3]",
+                                    "[l_hard], d3sk:2, [d3sk:4], boomerang, feather, [shooter], [$jump3]",
+                                    "[l_hard], d3sk:4, bracelet, ring_toss, feather, [shooter], [$jump3]",
+                                    "[l_hard], d3sk:2, [d3sk:4], bracelet, ring_toss, feather, [shooter], [$jump3]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1815,
+                                "y": 87
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bridge chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d3sk:1, shooter",
+                                    "[l_hard], d3sk:1, $jump3",
+                                    "[l_hard], d3sk:1, boomerang, feather, [shooter]",
+                                    "[l_hard], d3sk:1, bracelet, ring_toss, feather, [shooter]",
+                                    "[l_hard], d3sk:1, boomerang, $pegasus_satchel [shooter]",
+                                    "[l_hard], d3sk:1, bracelet, ring_toss, $pegasus_satchel [shooter]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1879,
+                                "y": 488
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Right side chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d3sk:1, $k_subterror, shooter",
+                                    "[l_hard], d3sk:1, $k_subterror, sword, [shooter]"
+                                    // ???
+                                    //"d3sk:1, shovel, [$k_subterror], shooter",
+                                    //"d3sk:1, shovel, [$k_subterror], sword, [shooter]",
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 2296,
+                                "y": 392
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shadow Hag Reward",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    // jumping from Subterror
+                                    // with Shooter
+                                    "d3bk, d3sk:1, $ember_shooter, $k_subterror, $jump3",
+                                    "[l_hard], d3bk, d3sk:1, $ember_shooter, $k_subterror, feather, [$jump3]",
+                                    "d3bk, d3sk:1, $scent_shooter, $k_subterror, $jump3",
+                                    "[l_hard], d3bk, d3sk:1, $scent_shooter, $k_subterror, feather, [$jump3]",
+                                    // satchel + boomerang
+                                    "d3bk, d3sk:1, $ember_satchel, $jump3, boomerang, $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], $jump3, boomerang, $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, [$jump3], boomerang, $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, [$jump3], boomerang, $k_subterror",
+                                    // satchel + sword (hard mode)
+                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, sword1, hook1, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, sword1, hook1, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:4, $ember_satchel, feather, sword1, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:4, $scent_satchel, [emberseeds], feather, sword1, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $ember_satchel, feather, sword1, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $scent_satchel, [emberseeds], feather, sword1, bracelet, [boomerang], $k_subterror",
+                                    // satchel + bomb jump to hit the switch (hard mode)
+                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, $jump3, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], $jump3, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, bombs, hook1, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, bombs, hook1, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:4, $ember_satchel, feather, bombs, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:4, $scent_satchel, [emberseeds], feather, bombs, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $ember_satchel, feather, bombs, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $scent_satchel, [emberseeds], feather, bombs, bracelet, [boomerang], $k_subterror",
+                                    // from the bridge area (much simpler)
+                                    "d3bk, d3sk:4, shooter",
+                                    "d3bk, d3sk:2, [d3sk:4], shooter",
+                                    "[l_hard], d3bk, d3sk:4, boomerang, feather, [shooter]",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], boomerang, feather, [shooter]",
+                                    "[l_hard], d3bk, d3sk:4, boomerang, $pegasus_satchel, [shooter]",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], boomerang, $pegasus_satchel, [shooter]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1558,
+                                "y": 85
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Echoing Howl",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    // jumping from Subterror
+                                    // with Shooter
+                                    "d3bk, d3sk:1, $ember_shooter, $k_subterror, $jump3",
+                                    "[l_hard], d3bk, d3sk:1, $ember_shooter, $k_subterror, feather, [$jump3]",
+                                    "d3bk, d3sk:1, $scent_shooter, $k_subterror, $jump3",
+                                    "[l_hard], d3bk, d3sk:1, $scent_shooter, $k_subterror, feather, [$jump3]",
+                                    // satchel + boomerang
+                                    "d3bk, d3sk:1, $ember_satchel, $jump3, boomerang, $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], $jump3, boomerang, $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, [$jump3], boomerang, $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, [$jump3], boomerang, $k_subterror",
+                                    // satchel + sword (hard mode)
+                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, sword1, hook1, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, sword1, hook1, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:4, $ember_satchel, feather, sword1, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:4, $scent_satchel, [emberseeds], feather, sword1, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $ember_satchel, feather, sword1, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $scent_satchel, [emberseeds], feather, sword1, bracelet, [boomerang], $k_subterror",
+                                    // satchel + bomb jump to hit the switch (hard mode)
+                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, $jump3, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], $jump3, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $ember_satchel, feather, bombs, hook1, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:1, $scent_satchel, [emberseeds], feather, bombs, hook1, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:4, $ember_satchel, feather, bombs, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:4, $scent_satchel, [emberseeds], feather, bombs, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $ember_satchel, feather, bombs, bracelet, [boomerang], $k_subterror",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], $scent_satchel, [emberseeds], feather, bombs, bracelet, [boomerang], $k_subterror",
+                                    // from the bridge area (much simpler)
+                                    "d3bk, d3sk:4, shooter",
+                                    "d3bk, d3sk:2, [d3sk:4], shooter",
+                                    "[l_hard], d3bk, d3sk:4, boomerang, feather, [shooter]",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], boomerang, feather, [shooter]",
+                                    "[l_hard], d3bk, d3sk:4, boomerang, $pegasus_satchel, [shooter]",
+                                    "[l_hard], d3bk, d3sk:2, [d3sk:4], boomerang, $pegasus_satchel, [shooter]"
+                                ],
+                                "hosted_item": "d3"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1319,
+                                "y": 32
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Get scent seeds in D3's bridge rooms",
+                        "sections": [
+                            {
+                                "name": "Respawnable bushes",
+                                "access_rules": [
+                                    "d3sk:1, $use_seeds, [scentseeds]"
+                                ],
+                                "hosted_item": "scentseeds"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1711,
+                                "y": 375
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Skull Dungeon [Radical!!!] (D4)",
+                "access_rules": [
+                    "$d4_entrance",
+                    "$d4_entrance_h"
+                ],
+                "children": [
+                    {
+                        "name": "Zol chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$k_normal, feather",
+                                    "$k_normal, hook1",
+                                    "[l_hard], $k_normal_h, [$k_normal], feather",
+                                    "[l_hard], $k_normal_h, [$k_normal], hook1",
+                                    "[l_hard], $push_enemy, feather",
+                                    "[l_hard], $push_enemy, hook1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 264,
+                                "y": 952
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cube chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$k_normal, feather",
+                                    "$push_enemy, feather"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 312,
+                                "y": 1192
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Minecart chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d4sk:1, feather, $lever"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 1319,
+                                "y": 968
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Moldorm switch chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d4sk:1, feather, shooter",
+                                    "[l_hard], d4sk:1, feather, boomerang, [shooter]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 1239,
+                                "y": 1160
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Keese switch chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d4sk:2, feather, $lever, bracelet, $k_normal, shooter",
+                                    "[l_hard], d4sk:2, feather, $lever, bracelet, $k_normal_h, [$k_normal], shooter",
+                                    "[l_hard], d4sk:2, feather, $lever, bracelet, $k_normal, boomerang, [shooter]",
+                                    "[l_hard], d4sk:2, feather, $lever, bracelet, $k_normal_h, [$k_normal], boomerang, [shooter]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 1032,
+                                "y": 88
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Color tiles drop",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, sword1",
+                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, emberseeds",
+                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, scentseeds",
+                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, galeseeds",
+                                    "[l_hard], d4sk:3, feather, $lever, bracelet, $k_normal, boomerang, satchel, scentseeds, [shooter]",
+                                    "[l_hard], d4sk:3, feather, $lever, bracelet, $k_normal, boomerang, ring_peace, bombs, [shooter]"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 343,
+                                "y": 440
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Small floor puzzle reward",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, bombs",
+                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, [sword1], bombs",
+                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, [sword1], bombs",
+                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, [hook1], bombs",
+                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, [hook1], bombs",
+                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, [$punch], bombs",
+                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, [$punch], bombs",
+                                    // Boomerang sequence breaks
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, satchel, scentseeds, bombs",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, ring_peace, bombs",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], [sword1], bombs",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], [sword1], bombs",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], [hook1], bombs",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], [hook1], bombs",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], [$punch], bombs",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], [$punch], bombs"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 808,
+                                "y": 808
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Big floor puzzle reward",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1",
+                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1",
+                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1",
+                                    // Boomerang sequence breaks
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, satchel, scentseeds, hook1",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, ring_peace, bombs, hook1",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], hook1",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [scentseeds], hook1",
+                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], hook1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 600,
+                                "y": 1720
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lava Pot Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d4sk:5, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1",
+                                    "d4sk:5, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1",
+                                    "d4sk:5, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1",
+                                    // Boomerang sequence breaks
+                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, satchel, scentseeds",
+                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, ring_peace, bombs",
+                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], hook1",
+                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [scentseeds], hook1",
+                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], hook1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 152,
+                                "y": 408
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eyesoar Reward",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, sword1",
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, ring_expert",
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, sword1",
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, ring_expert",
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, sword1",
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, ring_expert",
+                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [emberseeds], hook1, boomerang",
+                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, satchel, scentseeds, hook1, boomerang",
+                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, ring_peace, bombs, hook1, boomerang",
+                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [galeseeds], hook1, boomerang"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 360,
+                                "y": 1527
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Burning Flame",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, sword1",
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, ring_expert",
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, sword1",
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, ring_expert",
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, sword1",
+                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, ring_expert",
+                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [emberseeds], hook1, boomerang",
+                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, satchel, scentseeds, hook1, boomerang",
+                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, ring_peace, bombs, hook1, boomerang",
+                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [galeseeds], hook1, boomerang"
+                                ],
+                                "hosted_item": "d4"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 360,
+                                "y": 1297
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Crown Dungeon (D5)",
+                "access_rules": [
+                    // Vanilla way, by beating Moblin Keep
+                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
+                    // From East Ridge
+                    "$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
+                    "$lynna_village, ages, mermaid, hook1, crownkey",
+                    "$lynna_village, ages, mermaid, $jump3, crownkey"
+                ],
+                "children": [
+                    {
+                        "name": "Like-Like Chest",
+                        "sections": [
+                            {
+                                "name": "(west blue pegs stairs)",
+                                "access_rules": [
+                                    "$d5_likelike",
+                                    "[l_hard],$d5_likelike_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1800,
+                                "y": 613
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eyes Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_eyes",
+                                    "[l_hard],$d5_eyes_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 360,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Dark Room",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_darkroom",
+                                    "[l_hard],$d5_darkroom_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 2040,
+                                "y": 793
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Two-Statue Puzzle",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_2statue",
+                                    "[l_hard],$d5_2statue_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 3000,
+                                "y": 425
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Blue Peg Chest before Boss",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_switchA",
+                                    "[l_hard],$d5_switchA_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1320,
+                                "y": 905
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Diamonds Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_crossroads,hook1",
+                                    "[l_hard],$d5_crossroads_h,hook1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1624,
+                                "y": 489
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Three-Statue Puzzle",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_switchA,cane,d5sk:5",
+                                    "[l_hard],$d5_switchA_h,cane,d5sk:5"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 840,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Six-Statue Puzzle",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_switchA,$ember_shooter,feather,d5sk:5",
+                                    "[l_hard],$d5_switchA_h,$ember_shooter,feather,d5sk:5"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 2216,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Red Peg Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_redpeg",
+                                    "[l_hard],$d5_redpeg_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 2312,
+                                "y": 25
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Owl Puzzle",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_redpeg",
+                                    "[l_hard],$d5_redpeg_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1992,
+                                "y": 265
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Smog Reward",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_switchA,d5bk,cane,sword",
+                                    "[l_hard],$d5_switchA_h,d5bk,cane,sword"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1560,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sacred Soil",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d5_switchA,d5bk,cane,sword",
+                                    "[l_hard],$d5_switchA_h,d5bk,cane,sword"
+                                ],
+                                "hosted_item": "d5"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1560,
+                                "y": 738
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mermaid's Cave [Past] (D6)",
+                "access_rules": [
+                    //from Lynna, swimming
+                    "d6keypast, $lynna_village, feather, mermaid",
+                    "d6keypast, $lynna_village, ages, mermaid",
+                    //from the upper cave, requires emblem?
+                    "d6keypast, $west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, flippers"
+                ],
+                "children": [
+                    {
+                        "name": "Color Room",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6past_colorroom",
+                                    "[l_hard],$d6past_colorroom_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 296,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Wizzrobe Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$k_wizzrobe,bombs",
+                                    "[l_hard],$k_wizzrobe_h,bombs"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 840,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Flooded Pool Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "emberseeds,bombs,flippers"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 760,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Stalfos Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6past_stalfos"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 808,
+                                "y": 440
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rope Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6_openwall,mermaid"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 3049,
+                                "y": 617
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Underwater Spear Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6past_spinner,mermaid"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 1801,
+                                "y": 217
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Underwater Diamond Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6past_spinner,mermaid,hook1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 2329,
+                                "y": 89
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Octogon Reward",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6past_boss"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 120,
+                                "y": 88
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lonely Peak",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6past_boss"
+                                ],
+                                "hosted_item": "d6"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 360,
+                                "y": 35
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mermaid's Cave [Present] (D6)",
+                "access_rules": [
+                    //from Lynna, swimming
+                    "d6keypresent, $lynna_village, feather, mermaid, currents",
+                    "d6keypresent, $lynna_village, ages, mermaid",
+                    //from the upper cave
+                    "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather"
+                ],
+                "children": [
+                    {
+                        "name": "Diamond Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "hook1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 296,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rope Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6present_roperoom,$scent_satchel",
+                                    "[l_hard],$d6present_roperoom_h,$scent_satchel"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 776,
+                                "y": 617
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cube Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6present_cube",
+                                    "[l_hard],$d6present_cube_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 360,
+                                "y": 985
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Spinner Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6present_spinner",
+                                    "[l_hard],$d6present_spinner_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 88,
+                                "y": 217
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Beamos Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6present_beamos"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 1496,
+                                "y": 729
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rope RNG Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6present_rng",
+                                    "[l_hard],$d6present_rng_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 1560,
+                                "y": 553
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Channel Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6present_channel"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 1416,
+                                "y": 937
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Vire Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d6present_vire",
+                                    "[l_hard],$d6present_vire_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 840,
+                                "y": 25
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Jabu-Jabu's Belly (D7)",
+                "access_rules": [
+                    "enterjabu"
+                ],
+                "children": [
+                    {
+                        "name": "Spike Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d7_spike"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 280,
+                                "y": 1305
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Crab Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d7_crab",
+                                    "[l_hard], $d7_crab_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2280,
+                                "y": 677
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Diamond Puzzle",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d7_diamondpuzzle"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2055,
+                                "y": 868
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Flower Room",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d7_flower"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 1832,
+                                "y": 324
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Stairway Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d7_stairway"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2296,
+                                "y": 277
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rightwing Moldorm Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d7_stairway,$k_moldorm,mermaid",
+                                    "$d7_stairway,$k_moldorm,$floodd7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 1320,
+                                "y": 1145
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Boxed Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$draind7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2040,
+                                "y": 517
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cane & Diamond Puzzle",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$draind7,hook2,cane"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2056,
+                                "y": 645
+                            }
+                        ]
+                    },
+                    {
+                        "name": "3F Terrace Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$floodd7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 920,
+                                "y": 633
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Left Wing",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$floodd7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 104,
+                                "y": 1145
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Hallway Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d7_hallway"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 600,
+                                "y": 40
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Miniboss Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d7_miniboss"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2440,
+                                "y": 277
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Post-Hallway Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "hook2,d7sk:7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 1080,
+                                "y": 89
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Pot Island Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$draind7,hook1,[d7sk:7],d7sk:1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 1944,
+                                "y": 309
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Plasmarine Reward",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "mermaid,d7bk,$floodd7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 840,
+                                "y": 1146
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rolling Sea",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "mermaid,d7bk,$floodd7"
+                                ],
+                                "hosted_item": "d7"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 584,
+                                "y": 1091
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ancient Tomb (D8)",
+                "access_rules": [
+                    "$d8_entrance",
+                    "[l_hard], $d8_entrance_h"
+                ],
+                "children": [
+                    {
+                        "name": "First Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_first",
+                                    "[l_hard], $d8_first_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 696,
+                                "y": 1225
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ghini Chest",
+                        "sections": [
+                            {
+                                "name": "(kill ghinis and take stairs)",
+                                "access_rules": [
+                                    "$d8_ghini",
+                                    "[l_hard], $d8_ghini_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 1864,
+                                "y": 480
+                            }
+                        ]
+                    },
+                    {
+                        "name": "B1F NW Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_ghini",
+                                    "[l_hard], $d8_ghini_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 344,
+                                "y": 409
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Blue Peg Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_bluepeg",
+                                    "[l_hard], $d8_bluepeg_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 648,
+                                "y": 937
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Blade Trap Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_bluepeg",
+                                    "[l_hard], $d8_bluepeg_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 456,
+                                "y": 937
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sarcophagus Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_bluepeg,lift2",
+                                    "[l_hard], $d8_bluepeg_h,lift2"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 440,
+                                "y": 777
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Stalfos Drop",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_bluepeg",
+                                    "[l_hard], $d8_bluepeg_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 599,
+                                "y": 472
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Maze Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_maze",
+                                    "[l_hard], $d8_maze_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 1544,
+                                "y": 128
+                            }
+                        ]
+                    },
+                    {
+                        "name": "NW Slate",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_maze",
+                                    "[l_hard], $d8_maze_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 1800,
+                                "y": 144
+                            }
+                        ]
+                    },
+                    {
+                        "name": "NE Slate",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_neslate",
+                                    "[l_hard], $d8_neslate_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 2760,
+                                "y": 144
+                            }
+                        ]
+                    },
+                    {
+                        "name": "B3F Chest",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_maze,lift2",
+                                    "[l_hard], $d8_maze_h,lift2"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 520,
+                                "y": 201
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Tile Room",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_maze,lift2,feather",
+                                    "[l_hard], $d8_maze_h,lift2,feather"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 2520,
+                                "y": 848
+                            }
+                        ]
+                    },
+                    {
+                        "name": "SE Slate",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_maze,lift2,feather",
+                                    "[l_hard], $d8_maze_h,lift2,feather"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 2760,
+                                "y": 848
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Floor Puzzle",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_bluepeg, d8sk:5",
+                                    "[l_hard], $d8_bluepeg_h,d8sk:5"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 1080,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "SW Slate",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_maze, d8sk:5, lift1",
+                                    "[l_hard], $d8_maze_h,d8sk:5, lift1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 1768,
+                                "y": 1025
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ramrock Reward",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_maze,lift2,feather,d8bk,d8slate:4",
+                                    "[l_hard], $d8_maze_h,lift2,feather,d8bk,d8slate:4"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 840,
+                                "y": 108
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Falling Star",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d8_maze,lift2,feather,d8bk,d8slate:4",
+                                    "[l_hard], $d8_maze_h,lift2,feather,d8bk,d8slate:4"
+                                ],
+                                "hosted_item": "d8"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 600,
+                                "y": 35
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

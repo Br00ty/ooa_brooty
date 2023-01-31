@@ -67,9 +67,8 @@ function raft()
 end
 
 -- yoll graveyard
-
 function graveyard()
-    return (ember() and use_seeds())
+    return ember() and use_seeds()
 end
 
 function syrup()
@@ -95,7 +94,7 @@ function deku_forest()
 end
 
 function forest_tree()
-    return deku_forest() and seed_tree() and
+    return deku_forest() and (seed_tree()) and
                (ember() or ages() or hook1() or gale_satchel() or feather())
 end
 
@@ -126,12 +125,12 @@ function tokaygame()
 end
 
 function crescenttree()
-    return crescentpast() and has("seedling") and seed_tree() and seed_item() and
+    return crescentpast() and has("seedling") and (seed_tree()) and seed_item() and
                (ages() or (lift1() and echoes()))
 end
 
 function crescenttree_h()
-    return crescentpast() and has("seedling") and seed_tree() and seed_item() and
+    return crescentpast() and has("seedling") and (seed_tree()) and seed_item() and
                (ages() or (lift1() and (echoes() or (gale_satchel() and mermaid()))))
 end
 

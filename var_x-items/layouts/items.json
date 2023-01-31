@@ -1,0 +1,472 @@
+{
+  "items": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "margin": "1,5,3,0",
+    "item_margin": "-1,4",
+    "item_size": 33,
+    "rows": [
+      [
+        "sword",
+        "foolsore",
+        "shield1",
+        "lift1",
+        "shooter",
+        "flippers",
+        "cane",
+        "rodofseasons",
+        "shovel"
+      ],
+      [
+        "feather",
+        "hook1",
+        "magnet",
+        "slingshot",
+        "bombs",
+        "satchel",
+        "boomerang",
+        "harp",
+        "flute"
+      ]
+    ]
+  },
+  "items2": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "margin": "1,5,3,0",
+    "item_margin": "0,2",
+    "item_size": 31,
+    "rows": [
+      [
+        "emberseeds",
+        "mysteryseeds",
+        "scentseeds",
+        "pegasusseeds",
+        "galeseeds",
+        "ring_fist",
+        "ring_expert",
+        "ring_energy",
+        "ring_toss"
+      ]
+    ]
+  },
+  "items3": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "margin": "3,5,3,0",
+    "item_margin": "1,2",
+    "item_size": 38,
+    "rows": [
+      [
+        "gloves",
+        "cheval",
+        "chart",
+        "seedling",
+        "librarykey",
+        "book",
+        "scale"
+      ],
+      [
+        "bombflower",
+        "emblem",
+        "brisket",
+        "vase",
+        "lavajuice",
+        "goronade",
+        "letter"
+      ],
+      [
+        "gravekey",
+        "tuninut",
+        "crownkey",
+        "d6keypast",
+        "d6keypresent",
+        "powder",
+        "eyeball"
+      ]
+    ]
+  },
+  "instruments": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "-3,-2,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "3,0",
+            "item_size": 43,
+            "dock": "left",
+            "rows": [
+              [
+                "d1",
+                "d2"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "11,-7,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "-6,-3",
+            "item_size": 19,
+            "rows": [
+              [
+                "d1sk",
+                "",
+                "d1bk",
+                "",
+                "",
+                "",
+                "",
+                "d2sk",
+                "",
+                "d2bk"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "-3,-2,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "3,0",
+            "item_size": 43,
+            "dock": "left",
+            "rows": [
+              [
+                "d3",
+                "d4"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "11,-7,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "-6,-3",
+            "item_size": 19,
+            "rows": [
+              [
+                "d3sk",
+                "",
+                "d3bk",
+                "",
+                "",
+                "",
+                "",
+                "d4sk",
+                "",
+                "d4bk"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "-3,-2,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "3,0",
+            "item_size": 43,
+            "dock": "left",
+            "rows": [
+              [
+                "d5",
+                "d6"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "11,-7,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "-6,-3",
+            "item_size": 19,
+            "rows": [
+              [
+                "d5sk",
+                "",
+                "d5bk",
+                "",
+                "",
+                "",
+                "d6_1sk",
+                "",
+                "d6_2sk",
+                "",
+                "d6bk"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "-3,-2,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "3,0",
+            "item_size": 43,
+            "dock": "left",
+            "rows": [
+              [
+                "d7",
+                "d8"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "11,-7,-2,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "-6,-3",
+            "item_size": 19,
+            "rows": [
+              [
+                "d7sk",
+                "",
+                "d7bk",
+                "",
+                "",
+                "",
+                "d8sk",
+                "",
+                "d8slate",
+                "",
+                "d8bk"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "settings_tab": {
+    "type": "itemgrid",
+    "background": "#303841",
+    "orientation": "vertical",
+    "h_alignment": "center",
+    "margin": "0,5,3,0",
+    "item_margin": "5,15",
+    "item_size": 55,
+    "rows": [
+      [
+        "companions"
+      ],
+      [
+        "l_bas"
+      ],
+      [
+        "dungeon_er_off"
+      ]
+    ]
+  },
+  "entrance_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "background": "#303841",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "5,0",
+            "item_size": 52,
+            "dock": "left",
+            "rows": [
+              [
+                "d1er",
+                "d2er",
+                "d3er",
+                "d4er"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,-10,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "15,5",
+            "item_size": 32,
+            "rows": [
+              [
+                "question",
+                "question2",
+                "question3",
+                "question4"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "5,-20",
+            "item_size": 52,
+            "dock": "left",
+            "rows": [
+              [
+                "d5er",
+                "d6older",
+                "d7er",
+                "d8er"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,-10,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "15,25",
+            "item_size": 32,
+            "rows": [
+              [
+                "question5",
+                "question6",
+                "question7",
+                "question8"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0,0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "5,-40",
+            "item_size": 52,
+            "dock": "left",
+            "rows": [
+              [
+                "",
+                "d6newer",
+                "",
+                ""
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,60,0,-8",
+        "content": [
+          {
+            "type": "itemgrid",
+            "dock": "left",
+            "item_margin": "15,-25",
+            "item_size": 32,
+            "rows": [
+              [
+                "",
+                "question6new",
+                "",
+                ""
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "key": "items"
+      },
+      {
+        "type": "layout",
+        "key": "items2"
+      },
+      {
+        "type": "layout",
+        "key": "items3"
+      }
+    ]
+  },
+  "instrument_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "key": "instruments"
+      }
+    ]
+  },
+  "settings_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "layout",
+        "key": "settings_tab"
+      }
+    ]
+  }
+}
