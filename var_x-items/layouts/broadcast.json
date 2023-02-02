@@ -3,7 +3,7 @@
         "type": "array",
         "background": "#212121",
         "orientation": "vertical",
-        "margin": "1,1",
+        "margin": "1,10",
         "content": [
             {
                 "type": "itemgrid",
@@ -111,7 +111,7 @@
                 "type": "itemgrid",
                 "h_alignment": "center",
                 "v_alignment": "center",
-                "margin": "25,0,0,0",
+                "margin": "25,2,0,0",
                 "item_margin": "-1,0",
                 "item_size": 20,
                 "rows": [
@@ -134,7 +134,7 @@
                 "type": "itemgrid",
                 "h_alignment": "center",
                 "v_alignment": "center",
-                "margin": "40,0,0,0",
+                "margin": "40,2,0,0",
                 "item_margin": "5,0",
                 "item_size": 45,
                 "rows": [
@@ -150,7 +150,7 @@
                 "type": "itemgrid",
                 "h_alignment": "center",
                 "v_alignment": "center",
-                "margin": "50,0,0,0",
+                "margin": "50,2,0,0",
                 "item_margin": "-2,0",
                 "item_size": 20,
                 "rows": [

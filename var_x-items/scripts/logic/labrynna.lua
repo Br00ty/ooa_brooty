@@ -53,12 +53,12 @@ function maku_seed()
 end
 
 function balloon_guy()
-    return feather() and (sword() or boomerang()) and
+    return feather() and (sword() or boomerang() or foolsore() or rodofseasons()) and
                (currents() or has("gloves") or ricky_flute() or (shore_present() and any_shooter()))
 end
 
 function balloon_guy_h()
-    return feather() and (sword() or boomerang()) and (currents() or has("gloves") or ricky_flute() or
+    return feather() and (sword() or boomerang() or foolsore() or rodofseasons()) and (currents() or has("gloves") or ricky_flute() or
                (shore_present() and (any_shooter() or (boomerang() and (pegasus_satchel() or bombs())))))
 end
 

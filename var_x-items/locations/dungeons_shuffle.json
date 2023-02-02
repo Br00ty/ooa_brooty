@@ -722,9 +722,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "bombs",
-                                    "echoes,d3sk:1,$scent_shooter",
-                                    "echoes,d3sk:1,hook1"
+                                    "$d3_pols_voice"
                                 ],
                                 "item_count": 1
                             }
@@ -742,8 +740,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "bombs, [$k_moldorm]",
-                                    "bombs, bracelet"
+                                    "$d3_statue_drop"
                                 ],
                                 "item_count": 1
                             }
@@ -761,7 +758,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d3sk:1"
+                                    "$d3_conveyor_belt_room"
                                 ],
                                 "item_count": 1
                             }
@@ -779,7 +776,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d3sk:1"
+                                    "$d3_six_blocK_drop"
                                 ],
                                 "item_count": 1
                             }
@@ -797,7 +794,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d3sk:1"
+                                    "$d3_armos_drop"
                                 ],
                                 "item_count": 1
                             }
@@ -816,7 +813,8 @@
                             {
                                 "access_rules": [
                                     "d3sk:3, [$k_normal]",
-                                    "d3sk:2, [d3sk:3], [$k_normal]"
+                                    "d3sk:2, [d3sk:3], [$k_normal]",
+                                    "$d3_bush_beetle_room"
                                 ],
                                 "item_count": 1
                             }
@@ -835,7 +833,8 @@
                             {
                                 "access_rules": [
                                     "d3sk:4, [$k_normal]",
-                                    "d3sk:3, [d3sk:4], [$k_normal]"
+                                    "d3sk:3, [d3sk:4], [$k_normal]",
+                                    "$d3_mimic_room"
                                 ],
                                 "item_count": 1
                             }
@@ -853,8 +852,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d3sk:1, shooter",
-                                    "d3sk:1, boomerang",
+                                    "$d3_B1F_spinner",
                                     "[l_hard], d3sk:1, hook1, [shooter]",
                                     "[l_hard], d3sk:1, hook1, [boomerang]"
                                 ],
@@ -874,7 +872,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d3sk:1, shooter, emberseeds",
+                                    "$d3_torch_chest",
                                     "[l_hard], d3sk:1, shooter, mysteryseeds, [emberseeds]"
                                 ],
                                 "item_count": 1
@@ -894,13 +892,10 @@
                             {
                                 "access_rules": [
                                     // vanilla, through Subterror
-                                    "d3sk:1, shooter, $k_subterror, [$k_moldorm]",
-                                    "d3sk:1, boomerang, $k_subterror, [$k_moldorm]",
+                                    "$d3_moldorm_drop",
                                     "[l_hard], d3sk:1, hook1, [shooter], $k_subterror, [$k_moldorm]",
                                     "[l_hard], d3sk:1, hook1, [boomerang], $k_subterror, [$k_moldorm]",
                                     // through bridge, 2 keys min 4 by logic
-                                    "d3sk:4, shooter",
-                                    "d3sk:2, [d3sk:4], shooter",
                                     "[l_hard], d3sk:4, boomerang, feather, [shooter], [$jump3]",
                                     "[l_hard], d3sk:2, [d3sk:4], boomerang, feather, [shooter], [$jump3]",
                                     "[l_hard], d3sk:4, bracelet, ring_toss, feather, [shooter], [$jump3]",
@@ -922,7 +917,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d3sk:1, shooter",
+                                    "$d3_bridge_chest",
                                     "[l_hard], d3sk:1, $jump3",
                                     "[l_hard], d3sk:1, boomerang, feather, [shooter]",
                                     "[l_hard], d3sk:1, bracelet, ring_toss, feather, [shooter]",
@@ -945,7 +940,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d3sk:1, $k_subterror, shooter",
+                                    "$d3_B1F_east",
                                     "[l_hard], d3sk:1, $k_subterror, sword, [shooter]"
                                     // ???
                                     //"d3sk:1, shovel, [$k_subterror], shooter",

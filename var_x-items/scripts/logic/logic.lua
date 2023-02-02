@@ -209,6 +209,14 @@ function any_slingshot()
   return (slingshot() and (pegasus() or ember() or mystery() or scent() or gale()))
 end
 
+function any_hyper_slingshot()
+  return (slingshot2() and (pegasus() or ember() or mystery() or scent() or gale()))
+end
+
+function seed_range()
+  return (slingshot() or shooter()) and (pegasus() or ember() or mystery() or scent() or gale())
+end
+
 function pegasus_satchel()
   return (pegasus() and satchel())
 end
@@ -373,11 +381,11 @@ end
 
 -- kill macros
 function k_normal()
-  return (sword() or satchel_weapon() or shooter_weapon() or cane() or punch_enemy() or foolsore() or slingshot_weapon())
+  return (sword() or satchel_weapon() or shooter_weapon() or cane() or punch_enemy() or foolsore() or slingshot_weapon() or rodofseasons())
 end
 
 function k_normal_h()
-  return (sword() or satchel_weapon_h() or shooter_weapon() or cane() or punch_enemy_h() or foolsore() or slingshot_weapon())
+  return (sword() or satchel_weapon_h() or shooter_weapon() or cane() or punch_enemy_h() or foolsore() or slingshot_weapon() or rodofseasons())
 end
 
 function k_normal_far()
@@ -465,11 +473,11 @@ function k_ghini_h()
 end
 
 function k_pumpkinhead()
-	return lift1() and (sword() or ember() or scent_shooter() or punch_enemy() or foolsore() or (slingshot() and scent()))
+	return lift1() and (sword() or ember() or scent_shooter() or punch_enemy() or foolsore() or (slingshot() and scent()) or rodofseasons())
 end
 
 function k_pumpkinhead_h()
-	return k_pumpkinhead() or (lift1() and (bombs() or scent_satchel() or punch_enemy_h() or foolsore()))
+	return k_pumpkinhead() or (lift1() and (bombs() or scent_satchel() or punch_enemy_h() or foolsore() or rodofseasons()))
 end
 
 function k_beetle()
@@ -478,4 +486,12 @@ end
 
 function k_beetle_h()
   return (gale_shooter() or gale_satchel() or ((shield() or shovel()) and (sword() or satchel_weapon_h() or shooter_weapon() or cane() or hook1() or foolsore() or slingshot_weapon())))
+end
+
+function k_pols_voice()
+	return echoes() or flute() or bombs() or (gale() and (shooter() or slingshot()))
+end
+
+function k_pols_voice_h()
+	return k_pols_voice() or gale_satchel()
 end

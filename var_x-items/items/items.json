@@ -763,12 +763,20 @@
     "codes": "d1er"
   },
   {
-    "name": "D2 Entrance",
+    "name": "D2 Present Entrance",
     "type": "toggle",
     "loop": true,
     "allow_disabled": false,
     "img": "images/dungeons/d2_entrance.png",
     "codes": "d2er"
+  },
+  {
+    "name": "D2 Past Entrance",
+    "type": "toggle",
+    "loop": true,
+    "allow_disabled": false,
+    "img": "images/dungeons/d2_past_entrance.png",
+    "codes": "d2paster"
   },
   {
     "name": "D3 Entrance",
@@ -828,524 +836,569 @@
   },
   // Dungeon Texts (lots of duplicates here to make it work lol)
   {
-    "name": "Dungeon Labels 1",
+    "name": "D1 Dungeon Entrances",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "codes": "question",
+        "codes": "questionmark1",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/questionlabel.png"
+        "img": "images/dungeons/questionlabel.png"
       },
       {
-        "codes": "d1label",
+        "codes": "spiritsgrave1",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d1label.png"
+        "img": "images/dungeons/d1_entrance.png"
       },
       {
-        "codes": "d2label",
+        "codes": "wingdungeonpast1",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d2label.png"
+        "img": "images/dungeons/d2_past_entrance.png"
       },
       {
-        "codes": "d3label",
+        "codes": "wingdungeonpresent1",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d3label.png"
+        "img": "images/dungeons/d2_entrance.png"
       },
       {
-        "codes": "d4label",
+        "codes": "moonlitgrotto1",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d4label.png"
+        "img": "images/dungeons/d3_entrance.png"
       },
       {
-        "codes": "d5label",
+        "codes": "skulldungeon1",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d5label.png"
+        "img": "images/dungeons/d4_entrance.png"
       },
       {
-        "codes": "d6_past_label",
+        "codes": "crowndungeon1",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6label.png"
+        "img": "images/dungeons/d5_entrance.png"
       },
       {
-        "codes": "d6_present_label",
+        "codes": "mermaidscavepast1",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6labelnew.png"
+        "img": "images/dungeons/d6_past_entrance.png"
       },
       {
-        "codes": "d7label",
+        "codes": "mermaidscavepresent1",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d7label.png"
+        "img": "images/dungeons/d6_present_entrance.png"
       },
       {
-        "codes": "d8label",
+        "codes": "jabujabusbelly1",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d8label.png"
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
       }
     ]
   },
   {
-    "name": "Dungeon Labels 2",
+    "name": "D2 Dungeon Entrances",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "codes": "question2",
+        "codes": "questionmark2",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/questionlabel2.png"
+        "img": "images/dungeons/questionlabel.png"
       },
       {
-        "codes": "d1label2",
+        "codes": "spiritsgrave2",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d1label2.png"
+        "img": "images/dungeons/d1_entrance.png"
       },
       {
-        "codes": "d2label2",
+        "codes": "wingdungeonpast2",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d2label2.png"
+        "img": "images/dungeons/d2_past_entrance.png"
       },
       {
-        "codes": "d3label2",
+        "codes": "wingdungeonpresent2",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d3label2.png"
+        "img": "images/dungeons/d2_entrance.png"
       },
       {
-        "codes": "d4label2",
+        "codes": "moonlitgrotto2",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d4label2.png"
+        "img": "images/dungeons/d3_entrance.png"
       },
       {
-        "codes": "d5label2",
+        "codes": "skulldungeon2",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d5label2.png"
+        "img": "images/dungeons/d4_entrance.png"
       },
       {
-        "codes": "d6_past_label2",
+        "codes": "crowndungeon2",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6label2.png"
+        "img": "images/dungeons/d5_entrance.png"
       },
       {
-        "codes": "d6_present_label2",
+        "codes": "mermaidscavepast2",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6labelnew2.png"
+        "img": "images/dungeons/d6_past_entrance.png"
       },
       {
-        "codes": "d7label2",
+        "codes": "mermaidscavepresent2",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d7label2.png"
+        "img": "images/dungeons/d6_present_entrance.png"
       },
       {
-        "codes": "d8label2",
+        "codes": "jabujabusbelly2",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d8label2.png"
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
       }
     ]
   },
   {
-    "name": "Dungeon Labels 3",
+    "name": "D3 Dungeon Entrances",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "codes": "question3",
+        "codes": "questionmark3",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/questionlabel3.png"
+        "img": "images/dungeons/questionlabel.png"
       },
       {
-        "codes": "d1label3",
+        "codes": "spiritsgrave3",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d1label3.png"
+        "img": "images/dungeons/d1_entrance.png"
       },
       {
-        "codes": "d2label3",
+        "codes": "wingdungeonpast3",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d2label3.png"
+        "img": "images/dungeons/d2_past_entrance.png"
       },
       {
-        "codes": "d3label3",
+        "codes": "wingdungeonpresent3",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d3label3.png"
+        "img": "images/dungeons/d2_entrance.png"
       },
       {
-        "codes": "d4label3",
+        "codes": "moonlitgrotto3",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d4label3.png"
+        "img": "images/dungeons/d3_entrance.png"
       },
       {
-        "codes": "d5label3",
+        "codes": "skulldungeon3",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d5label3.png"
+        "img": "images/dungeons/d4_entrance.png"
       },
       {
-        "codes": "d6_past_label3",
+        "codes": "crowndungeon3",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6label3.png"
+        "img": "images/dungeons/d5_entrance.png"
       },
       {
-        "codes": "d6_present_label3",
+        "codes": "mermaidscavepast3",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6labelnew3.png"
+        "img": "images/dungeons/d6_past_entrance.png"
       },
       {
-        "codes": "d7label3",
+        "codes": "mermaidscavepresent3",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d7label3.png"
+        "img": "images/dungeons/d6_present_entrance.png"
       },
       {
-        "codes": "d8label3",
+        "codes": "jabujabusbelly3",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d8label3.png"
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
       }
     ]
   },
   {
-    "name": "Dungeon Labels 4",
+    "name": "D4 Dungeon Entrances",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "codes": "question4",
+        "codes": "questionmark4",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/questionlabel4.png"
+        "img": "images/dungeons/questionlabel.png"
       },
       {
-        "codes": "d1label4",
+        "codes": "spiritsgrave4",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d1label4.png"
+        "img": "images/dungeons/d1_entrance.png"
       },
       {
-        "codes": "d2label4",
+        "codes": "wingdungeonpast4",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d2label4.png"
+        "img": "images/dungeons/d2_past_entrance.png"
       },
       {
-        "codes": "d3label4",
+        "codes": "wingdungeonpresent4",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d3label4.png"
+        "img": "images/dungeons/d2_entrance.png"
       },
       {
-        "codes": "d4label4",
+        "codes": "moonlitgrotto4",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d4label4.png"
+        "img": "images/dungeons/d3_entrance.png"
       },
       {
-        "codes": "d5label4",
+        "codes": "skulldungeon4",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d5label4.png"
+        "img": "images/dungeons/d4_entrance.png"
       },
       {
-        "codes": "d6_past_label4",
+        "codes": "crowndungeon4",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6label4.png"
+        "img": "images/dungeons/d5_entrance.png"
       },
       {
-        "codes": "d6_present_label4",
+        "codes": "mermaidscavepast4",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6labelnew4.png"
+        "img": "images/dungeons/d6_past_entrance.png"
       },
       {
-        "codes": "d7label4",
+        "codes": "mermaidscavepresent4",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d7label4.png"
+        "img": "images/dungeons/d6_present_entrance.png"
       },
       {
-        "codes": "d8label4",
+        "codes": "jabujabusbelly4",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d8label4.png"
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
       }
     ]
   },
   {
-    "name": "Dungeon Labels 5",
+    "name": "D5 Dungeon Entrances",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "codes": "question5",
+        "codes": "questionmark5",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/questionlabel5.png"
+        "img": "images/dungeons/questionlabel.png"
       },
       {
-        "codes": "d1label5",
+        "codes": "spiritsgrave5",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d1label5.png"
+        "img": "images/dungeons/d1_entrance.png"
       },
       {
-        "codes": "d2label5",
+        "codes": "wingdungeonpast5",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d2label5.png"
+        "img": "images/dungeons/d2_past_entrance.png"
       },
       {
-        "codes": "d3label5",
+        "codes": "wingdungeonpresent5",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d3label5.png"
+        "img": "images/dungeons/d2_entrance.png"
       },
       {
-        "codes": "d4label5",
+        "codes": "moonlitgrotto5",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d4label5.png"
+        "img": "images/dungeons/d3_entrance.png"
       },
       {
-        "codes": "d5label5",
+        "codes": "skulldungeon5",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d5label5.png"
+        "img": "images/dungeons/d4_entrance.png"
       },
       {
-        "codes": "d6_past_label5",
+        "codes": "crowndungeon5",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6label5.png"
+        "img": "images/dungeons/d5_entrance.png"
       },
       {
-        "codes": "d6_present_label5",
+        "codes": "mermaidscavepast5",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6labelnew5.png"
+        "img": "images/dungeons/d6_past_entrance.png"
       },
       {
-        "codes": "d7label5",
+        "codes": "mermaidscavepresent5",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d7label5.png"
+        "img": "images/dungeons/d6_present_entrance.png"
       },
       {
-        "codes": "d8label5",
+        "codes": "jabujabusbelly5",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d8label5.png"
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
       }
     ]
   },
   {
-    "name": "Dungeon Labels 6 Past",
+    "name": "D6 Past Dungeon Entrances",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "codes": "question6",
+        "codes": "questionmark6p",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/questionlabel6.png"
+        "img": "images/dungeons/questionlabel.png"
       },
       {
-        "codes": "d1label6",
+        "codes": "spiritsgrave6p",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d1label6.png"
+        "img": "images/dungeons/d1_entrance.png"
       },
       {
-        "codes": "d2label6",
+        "codes": "wingdungeonpast6p",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d2label6.png"
+        "img": "images/dungeons/d2_past_entrance.png"
       },
       {
-        "codes": "d3label6",
+        "codes": "wingdungeonpresent6p",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d3label6.png"
+        "img": "images/dungeons/d2_entrance.png"
       },
       {
-        "codes": "d4label6",
+        "codes": "moonlitgrotto6p",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d4label6.png"
+        "img": "images/dungeons/d3_entrance.png"
       },
       {
-        "codes": "d5label6",
+        "codes": "skulldungeon6p",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d5label6.png"
+        "img": "images/dungeons/d4_entrance.png"
       },
       {
-        "codes": "d6_past_label6",
+        "codes": "crowndungeon6p",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6label6.png"
+        "img": "images/dungeons/d5_entrance.png"
       },
       {
-        "codes": "d6_present_label6",
+        "codes": "mermaidscavepast6p",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6labelnew6.png"
+        "img": "images/dungeons/d6_past_entrance.png"
       },
       {
-        "codes": "d7label6",
+        "codes": "mermaidscavepresent6p",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d7label6.png"
+        "img": "images/dungeons/d6_present_entrance.png"
       },
       {
-        "codes": "d8label6",
+        "codes": "jabujabusbelly6p",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d8label6.png"
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
       }
     ]
   },
   {
-    "name": "Dungeon Labels 6 Present",
+    "name": "D6 Present Dungeon Entrances",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "codes": "question6new",
+        "codes": "questionmark6",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/questionlabel6new.png"
+        "img": "images/dungeons/questionlabel.png"
       },
       {
-        "codes": "d1label6new",
+        "codes": "spiritsgrave6",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d1label6new.png"
+        "img": "images/dungeons/d1_entrance.png"
       },
       {
-        "codes": "d2label6new",
+        "codes": "wingdungeonpast6",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d2label6new.png"
+        "img": "images/dungeons/d2_past_entrance.png"
       },
       {
-        "codes": "d3label6new",
+        "codes": "wingdungeonpresent6",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d3label6new.png"
+        "img": "images/dungeons/d2_entrance.png"
       },
       {
-        "codes": "d4label6new",
+        "codes": "moonlitgrotto6",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d4label6new.png"
+        "img": "images/dungeons/d3_entrance.png"
       },
       {
-        "codes": "d5label6new",
+        "codes": "skulldungeon6",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d5label6new.png"
+        "img": "images/dungeons/d4_entrance.png"
       },
       {
-        "codes": "d6_past_label6new",
+        "codes": "crowndungeon6",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6label6new.png"
+        "img": "images/dungeons/d5_entrance.png"
       },
       {
-        "codes": "d6_present_label6new",
+        "codes": "mermaidscavepast6",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6labelnew6new.png"
+        "img": "images/dungeons/d6_past_entrance.png"
       },
       {
-        "codes": "d7label6new",
+        "codes": "mermaidscavepresent6",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d7label6new.png"
+        "img": "images/dungeons/d6_present_entrance.png"
       },
       {
-        "codes": "d8label6new",
+        "codes": "jabujabusbelly6",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d8label6new.png"
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
       }
     ]
   },
   {
-    "name": "Dungeon Labels 7",
+    "name": "D7 Dungeon Entrances",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "codes": "question7",
+        "codes": "questionmark7",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/questionlabel7.png"
+        "img": "images/dungeons/questionlabel.png"
       },
       {
-        "codes": "d1label7",
+        "codes": "spiritsgrave7",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d1label7.png"
+        "img": "images/dungeons/d1_entrance.png"
       },
       {
-        "codes": "d2label7",
+        "codes": "wingdungeonpast7",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d2label7.png"
+        "img": "images/dungeons/d2_past_entrance.png"
       },
       {
-        "codes": "d3label7",
+        "codes": "wingdungeonpresent7",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d3label7.png"
+        "img": "images/dungeons/d2_entrance.png"
       },
       {
-        "codes": "d4label7",
+        "codes": "moonlitgrotto7",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d4label7.png"
+        "img": "images/dungeons/d3_entrance.png"
       },
       {
-        "codes": "d5label7",
+        "codes": "skulldungeon7",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d5label7.png"
+        "img": "images/dungeons/d4_entrance.png"
       },
       {
-        "codes": "d6_past_label7",
+        "codes": "crowndungeon7",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6label7.png"
+        "img": "images/dungeons/d5_entrance.png"
       },
       {
-        "codes": "d6_present_label7",
+        "codes": "mermaidscavepast7",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6labelnew7.png"
+        "img": "images/dungeons/d6_past_entrance.png"
       },
       {
-        "codes": "d7label7",
+        "codes": "mermaidscavepresent7",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d7label7.png"
+        "img": "images/dungeons/d6_present_entrance.png"
       },
       {
-        "codes": "d8label7",
+        "codes": "jabujabusbelly7",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d8label7.png"
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
       }
     ]
   },
   {
-    "name": "Dungeon Labels 8",
+    "name": "D8 Dungeon Entrances",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
-        "codes": "question8",
+        "codes": "questionmark8",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/questionlabel8.png"
+        "img": "images/dungeons/questionlabel.png"
       },
       {
-        "codes": "d1label8",
+        "codes": "spiritsgrave8",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d1label8.png"
+        "img": "images/dungeons/d1_entrance.png"
       },
       {
-        "codes": "d2label8",
+        "codes": "wingdungeonpast8",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d2label8.png"
+        "img": "images/dungeons/d2_past_entrance.png"
       },
       {
-        "codes": "d3label8",
+        "codes": "wingdungeonpresent8",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d3label8.png"
+        "img": "images/dungeons/d2_entrance.png"
       },
       {
-        "codes": "d4label8",
+        "codes": "moonlitgrotto8",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d4label8.png"
+        "img": "images/dungeons/d3_entrance.png"
       },
       {
-        "codes": "d5label8",
+        "codes": "skulldungeon8",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d5label8.png"
+        "img": "images/dungeons/d4_entrance.png"
       },
       {
-        "codes": "d6_past_label8",
+        "codes": "crowndungeon8",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6label8.png"
+        "img": "images/dungeons/d5_entrance.png"
       },
       {
-        "codes": "d6_present_label8",
+        "codes": "mermaidscavepast8",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d6labelnew8.png"
+        "img": "images/dungeons/d6_past_entrance.png"
       },
       {
-        "codes": "d7label8",
+        "codes": "mermaidscavepresent8",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d7label8.png"
+        "img": "images/dungeons/d6_present_entrance.png"
       },
       {
-        "codes": "d8label8",
+        "codes": "jabujabusbelly8",
         "inherit_codes": false,
-        "img": "images/dungeons/labels/d8label8.png"
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
       }
     ]
   },

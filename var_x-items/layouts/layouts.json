@@ -24,20 +24,11 @@
             },
             {
               "type": "group",
+              "header": "Dungeons/Entrance Tracker",
               "dock": "left",
               "content": {
                 "type": "layout",
                 "key": "instrument_grid"
-              }
-            },
-            {
-              "type": "group",
-              "header": "Entrance Rando Tracker",
-              "dock": "left",
-              "content": {
-                "type": "layout",
-                "v_alignment": "stretch",
-                "key": "entrance_grid"
               }
             },
             {
