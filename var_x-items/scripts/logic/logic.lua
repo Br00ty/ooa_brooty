@@ -95,19 +95,19 @@ function ages()
 end
 
 function bomb_jump2() --hard logic
-  return (feather() and (bombs() or pegasus_satchel()))
+  return jump3() or (feather() and bombs())
 end
 
 function jump3()
-  return (feather() and pegasus_satchel())
+  return (feather() and pegasus_satchel()) or cape()
 end
 
 function bomb_jump3() --hard logic
-  return (feather() and pegasus_satchel() and bombs())
+  return cape() or (jump3() and bombs())
 end
 
 function farm()
-  return (lift1() or sword() or cane() or boomerang() or flute() or shovel() or hook1())
+  return (lift1() or sword() or cane() or boomerang() or flute() or shovel() or hook1() or foolsore())
 end
 
 function essences()
@@ -241,8 +241,20 @@ function use_seeds()
   return (satchel() or shooter() or slingshot())
 end
 
+function shoot_seeds()
+  return shooter() or slingshot()
+end
+
 function seed_tree()
-  return (sword() or fist() or expert() or foolsore() or rodofseasons())
+  return (sword() or punch_object() or foolsore() or rodofseasons())
+end
+
+function shooter_weapon()
+  return (shooter() and (ember() or scent() or gale()))
+end
+
+function slingshot_weapon()
+  return (slingshot() and (ember() or scent() or gale()))
 end
 
 -- Get the number of seeds the player has
@@ -307,7 +319,7 @@ end
 
 -- action macros
 function crystal()
-  return (sword() or bombs() or lift1() or ember_satchel() or expert() or foolsore())
+  return (sword() or bombs() or lift1() or ember_satchel() or expert())
 end
 
 function crystal_switch()
@@ -328,27 +340,27 @@ function pot()
 end
 
 function push_enemy()
-  return (shield() or (shovel() and (boomerang() or pegasus())))
+  return (shield() or rodofseasons() or (shovel() and (boomerang() or (pegasus() and shoot_seeds()))))
 end
 
 function lever()
-  return (sword() or ember() or scent() or mystery() or any_shooter() or hook1() or boomerang() or punch_object() or foolsore())
+  return (sword() or (shoot_seeds() and (ember() or scent() or mystery())) or hook1() or boomerang() or punch_object() or foolsore() or rodofseasons())
 end
 
 function lever_minecart()
-  return (sword() or ember() or scent() or mystery() or any_shooter() or boomerang() or punch_object() or foolsore())
+  return (sword() or (shoot_seeds() and (ember() or scent() or mystery())) or  boomerang() or punch_object() or foolsore() or rodofseasons())
 end
 
 function lever_minecartabove()
-  return (sword() or any_shooter() or boomerang())
+  return (sword() or rodofseasons() or (shoot_seeds() and (ember() or scent() or mystery())) or boomerang())
 end
 
 function switch()
-  return (sword() or bombs() or punch_object() or ember() or scent() or mystery() or any_shooter() or hook1() or boomerang() or foolsore() or rodofseasons() or any_slingshot())
+  return (sword() or bombs() or punch_object() or (shoot_seeds() and (ember() or scent() or mystery())) or hook1() or boomerang() or foolsore() or rodofseasons())
 end
 
 function switch_far()
-  return (bombs() or any_shooter() or hook1() or boomerang() or (sword() and energy()) or any_slingshot())
+  return (bombs() or (shoot_seeds() and (ember() or scent() or mystery())) or hook1() or boomerang() or (sword() and energy()))
 end
 
 function bush_safe()
@@ -356,7 +368,7 @@ function bush_safe()
 end
 
 function bush()
-  return (sword() or hook1() or lift1() or (gale_satchel() and bush_safe()))
+  return (sword() or hook1() or lift1() or (gale_satchel() and bush_safe()) or magicboom())
 end
 
 function destroy_bush_flute()
@@ -371,17 +383,9 @@ function satchel_weapon_h()
   return (satchel_weapon() or (satchel() and (scent() or gale())))
 end
 
-function shooter_weapon()
-  return (shooter() and (ember() or scent() or gale()))
-end
-
-function slingshot_weapon()
-  return (slingshot() and (ember() or scent() or gale()))
-end
-
 -- kill macros
 function k_normal()
-  return (sword() or satchel_weapon() or shooter_weapon() or cane() or punch_enemy() or foolsore() or slingshot_weapon() or rodofseasons())
+  return (sword() or satchel_weapon() or shooter_weapon() or cane() or punch_enemy() or foolsore() or slingshot_weapon())
 end
 
 function k_normal_h()
@@ -390,6 +394,10 @@ end
 
 function k_normal_far()
   return (shooter_weapon() or (cane() and lift1()) or slingshot_weapon())
+end
+
+function k_stalfos()
+  return (k_normal() or rodofseasons())
 end
 
 function k_underwater()
@@ -409,15 +417,15 @@ function k_switchhook_h()
 end
 
 function k_giantghini()
-  return (sword() or scent_shooter() or punch_enemy() or foolsore() or (slingshot() and scent()))
+  return (sword() or rodofseasons() or scent_shooter() or punch_enemy() or foolsore() or (slingshot() and scent()))
 end
 
 function k_giantghini_h()
-  return (sword() or scent_shooter() or punch_enemy() or scent_satchel() or foolsore or (slingshot() and scent()))
+  return (sword() or rodofseasons() or scent_shooter() or punch_enemy() or scent_satchel() or foolsore or (slingshot() and scent()))
 end
 
 function k_spikedbeetle()
-  return (gale_shooter() or ((shield() or shovel()) and (sword() or satchel_weapon() or shooter_weapon() or cane() or hook1() or foolsore() or slingshot_weapon())))
+  return (gale_shooter() or ((shield() or shovel()) and (sword() or satchel_weapon() or shooter_weapon() or slingshot_weapon() or cane() or hook1() or foolsore())))
 end
 
 function k_spikedbeetle_h()
@@ -425,7 +433,7 @@ function k_spikedbeetle_h()
 end
 
 function k_swoop()
-  return (sword() or scent_shooter() or hook1() or punch_enemy() or foolsore() or (slingshot() and scent()))
+  return (sword() or scent_shooter() or hook1() or punch_enemy() or foolsore() or (slingshot() and scent()) or foolsore())
 end
 
 function k_swoop_h()
@@ -441,7 +449,7 @@ function k_moldorm_h()
 end
 
 function k_subterror()
-  return (shovel() and (sword() or hook1() or scent() or punch_enemy() or foolsore))
+  return (shovel() and (sword() or hook1() or scent() or punch_enemy() or foolsore()))
 end
 
 function k_subterror_h()
@@ -473,7 +481,7 @@ function k_ghini_h()
 end
 
 function k_pumpkinhead()
-	return lift1() and (sword() or ember() or scent_shooter() or punch_enemy() or foolsore() or (slingshot() and scent()) or rodofseasons())
+	return lift1() and (sword() or ember() or scent_shooter() or punch_enemy() or foolsore() or (slingshot() and scent()) or rodofseasons() or hook1())
 end
 
 function k_pumpkinhead_h()
@@ -494,4 +502,12 @@ end
 
 function k_pols_voice_h()
 	return k_pols_voice() or gale_satchel()
+end
+
+function k_armos_warrior()
+	return sword() or foolsore() or hook1() or scent_shooter() or (slingshot() and scent()) or punch_enemy()
+end
+
+function k_octogon()
+	return sword() or foolsore() or ember_shooter() or (slingshot() and ember()) or scent_shooter or (slingshot() and scent()) or punch_enemy()
 end
