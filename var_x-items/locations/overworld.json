@@ -365,7 +365,7 @@
                         "access_rules": [
                             "$graveyard,$k_switchhook",
                             "[l_hard]$graveyard,$bomb_jump3",
-                            "[l_hard],$graveyard,$k_switchook_h"
+                            "[l_hard],$graveyard,$k_switchhook_h"
                         ],
                         "sections": [
                             {

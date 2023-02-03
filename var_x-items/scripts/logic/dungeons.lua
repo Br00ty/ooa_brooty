@@ -68,9 +68,9 @@ function d3_armos_drop()
 end
 
 function d3_six_blocK_drop()
-    return d3_W_crystal() and
-               (bombs() or switch() or (scent() and (shooter() or slingshot())) or (cane() and lift1())) and
-               (bombs() or any_shooter() or any_hyper_slingshot() or magicboom())
+    return
+        d3_W_crystal() and (bombs() or switch() or (scent() and (shooter() or slingshot())) or (cane() and lift1())) and
+            (bombs() or any_shooter() or any_hyper_slingshot() or magicboom())
 end
 
 function d3_conveyor_belt_room()
@@ -78,7 +78,9 @@ function d3_conveyor_belt_room()
 end
 
 function d3_break_crystal_switch()
-    return sword() or switch() or boomerang() or ember_satchel() or scent_satchel() or mystery_satchel() or seed_range() or punch_object() or foolsore()
+    return
+        sword() or switch() or boomerang() or ember_satchel() or scent_satchel() or mystery_satchel() or seed_range() or
+            punch_object() or foolsore()
 end
 
 function d3_B1F_spinner()
@@ -98,7 +100,7 @@ function d3_traverse2()
 end
 
 function d3_bridge_chest()
-    return has("d3sk", 1) and (d3_traverse1() or (d3_post_subterror() and has("d3sk",4)) and jump3()) 
+    return has("d3sk", 1) and (d3_traverse1() or (d3_post_subterror() and has("d3sk", 4)) and jump3())
 end
 
 function d3_B1F_east()
@@ -108,7 +110,7 @@ function d3_B1F_east()
 end
 
 function d3_post_subterror()
-    return d3_boss_door() or (d3_B1F_spinner() and k_subterror()) or (d3_traverse1() and has("d3sk",4) and jump3())
+    return d3_boss_door() or (d3_B1F_spinner() and k_subterror()) or (d3_traverse1() and has("d3sk", 4) and jump3())
 end
 
 function d3_boss_door()
@@ -117,7 +119,7 @@ function d3_boss_door()
 end
 
 function d3_moldorm_drop()
-    return k_moldorm() and d3_post_subterror
+    return k_moldorm() and d3_post_subterror()
 end
 
 function d3_boss()
@@ -125,11 +127,11 @@ function d3_boss()
 end
 
 function d3_bush_beetle_room()
-    return k_switchhook() and has("d3sk",3)
+    return k_switchhook() and has("d3sk", 3)
 end
 
 function d3_mimic_room()
-    return d3_bush_beetle_room() and k_normal() and has("d3sk",4)
+    return d3_bush_beetle_room() and k_normal() and has("d3sk", 4)
 end
 
 -- d4
@@ -167,8 +169,9 @@ function d5_eyes()
 end
 
 function d5_eyes_h()
-    return d5_switchA_h() and (any_shooter() or
-               (pegasus_satchel() and feather() and mystery() and (switch_far() or (lift1() and toss()) or cane())))
+    return d5_switchA_h() and
+               (any_shooter() or
+                   (pegasus_satchel() and feather() and mystery() and (switch_far() or (lift1() and toss()) or cane())))
 end
 
 function d5_2statue()

@@ -21,11 +21,11 @@ end
 function shore_present()
     return flute() or has("gloves") or (bush() and feather()) or (ages() and bush()) or
                ((bush() or flute() or echoes()) and (lift1() or mermaid()) or
-                   (currents() and (feather() or flippers() or raft())))
+                   (currents() and (feather() or flippers() or raft() or magicboom())))
 end
 
 function shore_present_h()
-    return shore_present() or (currents() and shooter())
+    return shore_present() or (currents() and (shooter() or slingshot2()))
 end
 
 function raft()
@@ -109,7 +109,7 @@ end
 
 -- crescent island
 function crescentpast()
-    return has("raft") or (lynna_city() and mermaid()) or (crescentpresentwest() and currents())
+    return has("raft") or (lynna_city() and mermaid()) or (crescentpresentwest() and echoes())
 end
 
 function tokaycrystalcave()
