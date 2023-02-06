@@ -33,7 +33,7 @@ function raft()
 end
 
 function palace_chest()
-    return lynna_village() and (ages() or (bush_safe() and mermaid()))
+    return lynna_village() and (ages() or (bush() and mermaid()))
 end
 
 function palace_chest_h()
@@ -41,11 +41,11 @@ function palace_chest_h()
 end
 
 function rescue_nayru()
-    return palace_chest() and mystery() and hook1() and (sword() or punch_enemy())
+    return palace_chest() and mystery() and hook1() and (sword() or punch_enemy() or foolsore())
 end
 
 function rescue_nayru_h()
-    return palace_chest_h() and mystery() and hook1() and (sword() or punch_enemy())
+    return palace_chest_h() and mystery() and hook1() and (sword() or punch_enemy() or foolsore())
 end
 
 function maku_seed()
@@ -62,9 +62,6 @@ function balloon_guy_h()
                (shore_present() and (any_shooter() or (boomerang() and (pegasus_satchel() or bombs())))))
 end
 
-function raft()
-    return lynna_village() and has("cheval") and has("chart")
-end
 
 -- yoll graveyard
 function graveyard()
@@ -171,7 +168,7 @@ function nuuncave()
 end
 
 function symmetrypresent()
-    return nuun() and (currents() or flute())
+    return nuun() and (currents() or flute() or (has("nuun_moosh") and cape() and bush() and pegasus_satchel()))
 end
 
 function symmetrytree()
@@ -183,19 +180,19 @@ function symmetrytree_h()
 end
 
 function symmetrypast()
-    return symmetrypresent() and (ages() or (bush_safe() and echoes()))
+    return symmetrypresent() and (ages() or (bush() and echoes()))
 end
 
 function restorationwall()
-    return ages() or (symmetrypast() and currents() and lift1() and flippers())
+    return ages() or (symmetrypast() and currents() and lift1() and (flippers() or (cape() and (pegasus_satchel() or (bombs() and has("l_hard"))))))
 end
 
 function wallpatch()
-    return restorationwall() and sword()
+    return restorationwall() and (sword() or foolsore() or rodofseasons())
 end
 
 function wallpatch_h()
-    return restorationwall() and (sword() or shield() or boomerand() or hook1() or scen() or shovel())
+    return restorationwall() and (sword() or foolsore() or rodofseasons() or shield() or boomerang() or hook1() or scent() or shovel())
 end
 
 function d4_entrance()
@@ -244,10 +241,10 @@ end
 
 -- d8 area
 function d8_entrance()
-    return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and cane() and mermaid() and feather()
+    return crescentpast() and has("eyeball") and pot() and bombs() and mermaid() and feather() and (k_normal() or magicboom() or rodofseasons())
 end
 
 function d8_entrance_h()
-    return crescentpast() and has("eyeball") and k_normal() and pot() and bombs() and mermaid() and feather()
+    return crescentpast() and has("eyeball") and pot() and bombs() and mermaid() and feather() and (k_normal() or magicboom() or rodofseasons() or cane())
 end
 

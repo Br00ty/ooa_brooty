@@ -364,11 +364,11 @@ function switch_far()
 end
 
 function bush_safe()
-  return (sword() or hook1() or lift1() or bombs() or ember() or gale_shooter() or (slingshot() and gale()))
+  return (sword() or hook1() or lift1() or bombs() or ember() or magicboom() or gale_shooter() or (slingshot() and gale()))
 end
 
 function bush()
-  return (sword() or hook1() or lift1() or (gale_satchel() and bush_safe()) or magicboom())
+  return (sword() or hook1() or lift1() or magicboom() or ember() or bombs() or (gale() and (shooter() or slingshot())))
 end
 
 function destroy_bush_flute()
