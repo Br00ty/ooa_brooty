@@ -310,7 +310,7 @@ function punch_object()
 end
 
 function punch_enemy()
-  return (has ("ring_expert"))
+  return (has ("ring_expert") or (has("l_hard") and has("ring_fist")))
 end
 
 function punch_enemy_h()

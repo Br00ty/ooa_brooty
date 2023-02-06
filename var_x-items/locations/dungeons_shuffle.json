@@ -1081,7 +1081,7 @@
                 ]
             },
             {
-                "name": "Skull Dungeon [Radical!!!] (D4)",
+                "name": "Skull Dungeon (D4)",
                 "access_rules": [],
                 "children": [
                     {
@@ -1089,12 +1089,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$k_normal, feather",
-                                    "$k_normal, hook1",
-                                    "[l_hard], $k_normal_h, [$k_normal], feather",
-                                    "[l_hard], $k_normal_h, [$k_normal], hook1",
-                                    "[l_hard], $push_enemy, feather",
-                                    "[l_hard], $push_enemy, hook1"
+                                    "$d4_first_chest"
                                 ],
                                 "item_count": 1
                             }
@@ -1112,8 +1107,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$k_normal, feather",
-                                    "$push_enemy, feather"
+                                    "$d4_cube_chest"
                                 ],
                                 "item_count": 1
                             }
@@ -1131,7 +1125,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d4sk:1, feather, $lever"
+                                    "$d4_minecart_chest"
                                 ],
                                 "item_count": 1
                             }
@@ -1149,8 +1143,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d4sk:1, feather, shooter",
-                                    "[l_hard], d4sk:1, feather, boomerang, [shooter]"
+                                    "$d4_first_crystal_switch",
+                                    "[l_hard], $d4_first_crystal_switch_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1168,10 +1162,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d4sk:2, feather, $lever, bracelet, $k_normal, shooter",
-                                    "[l_hard], d4sk:2, feather, $lever, bracelet, $k_normal_h, [$k_normal], shooter",
-                                    "[l_hard], d4sk:2, feather, $lever, bracelet, $k_normal, boomerang, [shooter]",
-                                    "[l_hard], d4sk:2, feather, $lever, bracelet, $k_normal_h, [$k_normal], boomerang, [shooter]"
+                                    "$d4_second_crystal_switch",
+                                    "[l_hard],$d4_second_crystal_switch_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1185,16 +1177,11 @@
                         ]
                     },
                     {
-                        "name": "Color tiles drop",
+                        "name": "Color tile drop",
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, sword1",
-                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, emberseeds",
-                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, scentseeds",
-                                    "d4sk:3, feather, $lever, bracelet, [$k_normal], shooter, galeseeds",
-                                    "[l_hard], d4sk:3, feather, $lever, bracelet, $k_normal, boomerang, satchel, scentseeds, [shooter]",
-                                    "[l_hard], d4sk:3, feather, $lever, bracelet, $k_normal, boomerang, ring_peace, bombs, [shooter]"
+                                    "$d4_color_tile_drop"
                                 ],
                                 "item_count": 1
                             }
@@ -1212,22 +1199,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, [sword1], bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, [sword1], bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, [hook1], bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, [hook1], bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, [$punch], bombs",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, [$punch], bombs",
-                                    // Boomerang sequence breaks
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, satchel, scentseeds, bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, ring_peace, bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], [sword1], bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], [sword1], bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], [hook1], bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], [hook1], bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], [$punch], bombs",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], [$punch], bombs"
+                                    "$d4_small_floor_puzzle"
                                 ],
                                 "item_count": 1
                             }
@@ -1241,19 +1213,12 @@
                         ]
                     },
                     {
-                        "name": "Big floor puzzle reward",
+                        "name": "Large floor puzzle reward",
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1",
-                                    "d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1",
-                                    // Boomerang sequence breaks
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, satchel, scentseeds, hook1",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, ring_peace, bombs, hook1",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], hook1",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [scentseeds], hook1",
-                                    "[l_hard], d4sk:4, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], hook1"
+                                    "$d4_large_floor_puzzle",
+                                    "[l_hard], $d4_large_floor_puzzle_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1271,15 +1236,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d4sk:5, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1",
-                                    "d4sk:5, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1",
-                                    "d4sk:5, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1",
-                                    // Boomerang sequence breaks
-                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, satchel, scentseeds",
-                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, ring_peace, bombs",
-                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [emberseeds], hook1",
-                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [scentseeds], hook1",
-                                    "[l_hard], d4sk:5, [$k_normal], feather, $lever, boomerang, [shooter], bracelet, [galeseeds], hook1"
+                                    "$d4_lava_pot_chest",
+                                    "[l_hard], $d4_lava_pot_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1297,16 +1255,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, ring_expert",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, ring_expert",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, ring_expert",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [emberseeds], hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, satchel, scentseeds, hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, ring_peace, bombs, hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [galeseeds], hook1, boomerang"
+                                    "$d4_boss",
+                                    "[l_hard], $d4_boss_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1324,16 +1274,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, emberseeds, hook1, ring_expert",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, scentseeds, hook1, ring_expert",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, sword1",
-                                    "d4bk, d4sk:4, [$k_normal], feather, $lever, shooter, bracelet, galeseeds, hook1, ring_expert",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [emberseeds], hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, satchel, scentseeds, hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, ring_peace, bombs, hook1, boomerang",
-                                    "[l_hard], d4bk, d4sk:4, [$k_normal], feather, $lever, [shooter], bracelet, [galeseeds], hook1, boomerang"
+                                    "$d4_boss",
+                                    "[l_hard], $d4_boss_h"
                                 ],
                                 "hosted_item": "d4"
                             }
@@ -1855,8 +1797,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6present_rng",
-                                    "[l_hard],$d6present_rng_h"
+                                    "$d6present_rng"
                                 ],
                                 "item_count": 1
                             }

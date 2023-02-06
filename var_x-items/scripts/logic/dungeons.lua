@@ -135,8 +135,68 @@ function d3_mimic_room()
 end
 
 -- d4
+function d4_first_chest()
+    return (k_stalfos() or push_enemy()) and (feather() or hook1())
+end
+
+function d4_cube_chest()
+    return d4_first_chest() and feather()
+end
+
 function d4_minecartA()
-    return feather() and has("d4sk", 1)
+    return feather() and (has("d4sk",2))
+end
+
+function d4_first_crystal_switch()
+    return d4_minecartA() and (shooter() or magicboom())
+end
+
+function d4_minecart_chest()
+    return d4_minecartA() and lever()
+end
+
+function d4_minecartB()
+    return d4_minecartA() and lever_minecart() and lift1() and k_stalfos() and has("d4sk",3)
+end
+
+function d4_second_crystal_switch()
+    return d4_minecartB() and (shooter() or magicboom() or (cape() and switch()))
+end
+
+function d4_minecartC()
+    return d4_minecartB() and has("d4sk",4)
+end
+
+function d4_color_tile_drop()
+    return d4_minecartC() and (sword() or foolsore() or rodofseasons() or seed_range())
+end
+
+function d4_minecartD()
+    return d4_color_tile_drop() and has("d4sk",5)
+end
+
+function d4_pre_miniboss()
+    return d4_minecartD() or (d4_post_miniboss() and k_armos_warrior())
+end
+
+function d4_post_miniboss()
+    return (cape() and pegasus_satchel()) or (d4_minecartD() and k_armos_warrior)
+end
+
+function d4_small_floor_puzzle()
+    return d4_post_miniboss() and bombs()
+end
+
+function d4_large_floor_puzzle()
+    return d4_pre_miniboss() and feather() and hook1()
+end
+
+function d4_boss()
+    return d4_large_floor_puzzle() and has("d4bk") and hook1() and (sword() or foolsore() or boomerang() or punch_enemy())
+end
+
+function d4_lava_pot_chest()
+    return d4_large_floor_puzzle() and lift1() and hook1() and has("d4sk",5)
 end
 
 -- d5
@@ -267,10 +327,6 @@ function d6present_rng()
     return d6present_beamos() and lift1() and (sword() or cane() or hook1() or punch_enemy()) and has("d6_2sk", 3)
 end
 
-function d6present_rng_h()
-    return d6present_beamos() and lift1() and (sword() or cane() or hook1() or punch_enemy_h()) and has("d6_2sk", 3)
-end
-
 function d6present_channel()
     return d6_openwall() and hook1() and has("d6_2sk", 3)
 end
@@ -374,12 +430,12 @@ function d1clear_h()
 end
 
 function d2clear()
-    return has("feather") and has("bombs") and (has("bracelet") or has("cane")) and hit_lever() and k_normal() and
+    return has("feather") and has("bombs") and (has("bracelet") or has("cane")) and lever() and k_normal() and
                k_beetle() and k_swoop()
 end
 function d2clear_h()
     return has("feather") and has("bombs") and (has("bracelet") or has("cane") or (has("shield1") and has("hook1"))) and
-               hit_lever() and k_normal_h() and kill_beetle_hard() and kill_swoop_h()
+               lever() and k_normal_h() and kill_beetle_hard() and kill_swoop_h()
 end
 
 function d3clear()
