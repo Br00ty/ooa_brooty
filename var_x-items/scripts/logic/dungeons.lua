@@ -179,7 +179,7 @@ end
 
 function d3_B1F_east()
     return d3_B1F_spinner() and k_subterror() and
-               (d3_W_crystal() or has("d3sk", 4) or d3_traverse1() or (d3_traverse2() and jump3())) and
+               (d3_W_crystal() or (has("d3sk", 4) and d3_traverse1() and (d3_traverse2() or jump3()))) and
                (magicboom() or any_shooter())
 end
 
@@ -278,59 +278,44 @@ function d5_switchA()
     return k_normal() and switch()
 end
 
-function d5_switchA_h()
-    return k_normal() and switch()
-end
-
 function d5_darkroom()
-    return d5_switchA() and switch() and (cane() or hook1())
-end
-
-function d5_darkroom_h()
-    return d5_switchA_h() and switch() and (cane() or hook1() or k_normal() or push_enemy())
+    return d5_switchA() and switch() and ((cape() and pegasus_satchel()) or cane() or hook1())
 end
 
 function d5_likelike()
     return d5_switchA() and switch_far()
 end
 
-function d5_likelike_h()
-    return d5_switchA_h() and (switch_far() or lift1() or (feather() and cane() and (ember() or scent() or mystery())))
-end
-
 function d5_eyes()
-    return d5_switchA() and any_shooter()
-end
-
-function d5_eyes_h()
-    return d5_switchA_h() and
-               (any_shooter() or
-                   (pegasus_satchel() and feather() and mystery() and (switch_far() or (lift1() and toss()) or cane())))
+    return d5_switchA() and (any_shooter() or any_hyper_slingshot())
 end
 
 function d5_2statue()
-    return d5_switchA() and pot() and cane() and feather() and (any_shooter() or boomerang())
+    return d5_switchA() and pot() and cane() and feather() and (any_shooter() or any_hyper_slingshot() or boomerang())
 end
 
-function d5_2statue_h()
-    return d5_switchA_h() and pot() and cane() and feather() and
-               (any_shooter() or boomerang() or sword() or (bomb_jump2() and (ember() or scent() or mystery())))
+function d5_boss()
+    return d5_switchA() and has("d5bk") and cane() and (sword() or foolsore())
 end
 
 function d5_crossroads()
-    return d5_switchA() and feather() and lift1() and has("d5sk", 2) and cane()
+    return k_normal() and feather() and lift1() and has("d5sk",2) and (cane() or (pegasus_satchel() and cape()))
 end
 
-function d5_crossroads_h()
-    return d5_switchA_h() and feather() and lift1() and has("d5sk", 2) and (cane() or jump3() or (sword() and hook1()))
+function d5_3statue()
+    return d5_switchA() and cane() and has("d5sk",5)
+end
+
+function d5_6statue()
+    return d5_switchA() and ember_shooter() and feather() and has("d5sk",5)
 end
 
 function d5_redpeg()
     return d5_crossroads() and switch_far() and has("d5sk", 5)
 end
 
-function d5_redpeg_h()
-    return d5_crossroads_h() and switch_far() and has("d5sk", 5)
+function d5_owl_puzzle()
+    return d5_redpeg() and cane()
 end
 
 -- d6 past
