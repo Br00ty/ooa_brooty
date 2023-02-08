@@ -388,10 +388,6 @@ function k_normal()
   return (sword() or satchel_weapon() or shooter_weapon() or cane() or punch_enemy() or foolsore() or slingshot_weapon())
 end
 
-function k_normal_h()
-  return (sword() or satchel_weapon_h() or shooter_weapon() or cane() or punch_enemy_h() or foolsore() or slingshot_weapon() or rodofseasons())
-end
-
 function k_normal_far()
   return (shooter_weapon() or (cane() and lift1()) or slingshot_weapon())
 end
@@ -412,32 +408,28 @@ function k_switchhook()
   return (k_normal() or hook1())
 end
 
-function k_switchhook_h()
-  return (k_normal_h() or hook1())
-end
-
 function k_giantghini()
-  return (sword() or rodofseasons() or scent_shooter() or punch_enemy() or foolsore() or (slingshot() and scent()))
+  return (sword() or rodofseasons() or (scent() and shoot_seeds()) or punch_enemy() or foolsore())
 end
 
 function k_giantghini_h()
-  return (sword() or rodofseasons() or scent_shooter() or punch_enemy() or scent_satchel() or foolsore or (slingshot() and scent()))
+  return k_giantghini() or scent_satchel()
 end
 
 function k_spikedbeetle()
-  return (gale_shooter() or ((shield() or shovel()) and (sword() or satchel_weapon() or shooter_weapon() or slingshot_weapon() or cane() or hook1() or foolsore())))
+  return ((gale() and shoot_seeds()) or ((shield() or shovel()) and (sword() or foolsore() or satchel_weapon() or shooter_weapon() or slingshot_weapon() or cane() or hook1())))
 end
 
 function k_spikedbeetle_h()
-  return (gale_shooter() or gale_satchel() or ((shield() or shovel()) and (sword() or satchel_weapon_h() or shooter_weapon() or cane() or hook1() or foolsore() or slingshot_weapon())))
+  return k_spikedbeetle() or gale_satchel()
 end
 
 function k_swoop()
-  return (sword() or scent_shooter() or hook1() or punch_enemy() or foolsore() or (slingshot() and scent()) or foolsore())
+  return sword() or foolsore() or (scent() and shoot_seeds()) or hook1() or punch_enemy()
 end
 
 function k_swoop_h()
-  return (sword() or scent_shooter() or hook1() or punch_enemy_h() or scent_satchel() or foolsore() or (slingshot() and scent()))
+  return k_swoop() or scent_satchel() or punch_enemy_h()
 end
 
 function k_moldorm()
@@ -469,7 +461,7 @@ function k_zol()
 end
 
 function k_zol_h()
-	return k_normal_h() or hook1()
+	return k_normal() or hook1()
 end
 
 function k_ghini()
@@ -477,7 +469,7 @@ function k_ghini()
 end
 
 function k_ghini_h()
-	return k_normal_h() or hook1()
+	return k_normal() or hook1()
 end
 
 function k_pumpkinhead()

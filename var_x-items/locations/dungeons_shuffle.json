@@ -16,8 +16,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$k_zol",
-                                    "[l_hard],$k_zol"
+                                    "$d1_east_terrace"
                                 ],
                                 "item_count": 1
                             }
@@ -35,8 +34,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$k_zol",
-                                    "[l_hard],$k_zol"
+                                    "$d1_east_terrace"
                                 ],
                                 "item_count": 1
                             }
@@ -54,8 +52,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$k_zol",
-                                    "[l_hard],$k_zol"
+                                    "$d1_east_terrace"
                                 ],
                                 "item_count": 1
                             }
@@ -73,8 +70,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$k_zol, $crystal, emberseeds",
-                                    "[l_hard], $k_zol_h, $crystal, emberseeds"
+                                    "$d1_crystal_room"
                                 ],
                                 "item_count": 1
                             }
@@ -92,10 +88,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d1sk:2, $k_zol",
-                                    "d1sk:1, [d1sk:2], $k_zol",
-                                    "[l_hard], d1sk:2, $k_zol_h",
-                                    "[l_hard], d1sk:1, [d1sk:2], $k_zol_h"
+                                    "$d1_wide_room"
                                 ],
                                 "item_count": 1
                             }
@@ -113,10 +106,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d1sk:2, $k_zol",
-                                    "d1sk:1, [d1sk:2], $k_zol",
-                                    "[l_hard], d1sk:2, $k_zol_h",
-                                    "[l_hard], d1sk:1, [d1sk:2], $k_zol_h"
+                                    "$d1_wide_room"
                                 ],
                                 "item_count": 1
                             }
@@ -130,14 +120,11 @@
                         ]
                     },
                     {
-                        "name": "Moving platform chest",
+                        "name": "One button chest",
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d1sk:2, $k_zol",
-                                    "d1sk:1, [d1sk:2], $k_zol",
-                                    "[l_hard], d1sk:2, $k_zol_h",
-                                    "[l_hard], d1sk:1, [d1sk:2], $k_zol_h"
+                                    "$d1_wide_room"
                                 ],
                                 "item_count": 1
                             }
@@ -147,49 +134,6 @@
                                 "map": "d1",
                                 "x": 648,
                                 "y": 441
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Underground item",
-                        "sections": [
-                            {
-                                "access_rules": [
-                                    "d1sk:3, $k_zol, $bush, $k_giantghini, emberseeds",
-                                    "[l_hard], d1sk:3, $k_zol_h, $bush, $k_giantghini_h, [$k_giantghini], emberseeds",
-                                    "$pot, emberseeds"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "d1",
-                                "x": 88,
-                                "y": 1352
-                            },
-                            {
-                                "map": "d1",
-                                "x": 184,
-                                "y": 744
-                            }
-                        ]
-                    },
-                    {
-                        "name": "West side item",
-                        "sections": [
-                            {
-                                "access_rules": [
-                                    "$pot"
-                                ],
-                                "item_count": 1
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "d1",
-                                "x": 56,
-                                "y": 1001
                             }
                         ]
                     },
@@ -212,14 +156,54 @@
                         ]
                     },
                     {
+                        "name": "West terrace",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$pot"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 56,
+                                "y": 1001
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Underground item",
+                        "sections": [
+                            {
+                                "access_rules": [
+                                    "$d1_basement",
+                                    "$d1_basement_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 88,
+                                "y": 1352
+                            },
+                            {
+                                "map": "d1",
+                                "x": 184,
+                                "y": 744
+                            }
+                        ]
+                    },
+                    {
                         "name": "Pumpkin Head reward",
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d1bk, d1sk:2, $k_zol, $bush, $k_pumpkinhead",
-                                    "d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, $k_pumpkinhead",
-                                    "[l_hard], d1bk, d1sk:2, $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]",
-                                    "[l_hard], d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]"
+                                    "$d1_boss",
+                                    "$d1_boss_h"
                                 ],
                                 "item_count": 1
                             }
@@ -237,10 +221,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d1bk, d1sk:2, $k_zol, $bush, $k_pumpkinhead",
-                                    "d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, $k_pumpkinhead",
-                                    "[l_hard], d1bk, d1sk:2, $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]",
-                                    "[l_hard], d1bk, d1sk:1, [d1sk:2], $k_zol, $bush, d1bk, $k_pumpkinhead_h, [$k_pumpkinhead]"
+                                    "$d1_boss",
+                                    "$d1_boss_h"
                                 ],
                                 "hosted_item": "d1"
                             }
@@ -260,12 +242,12 @@
                 "access_rules": [],
                 "children": [
                     {
-                        "name": "Bomb wall chest",
+                        "name": "Bombed terrace",
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$k_beetle, bombs",
-                                    "[l_hard], $k_beetle_h, bombs"
+                                    "$d2_bombed_terrace",
+                                    "[l_hard],$d2_bombed_terrace_h"
                                 ],
                                 "item_count": 1
                             }
@@ -283,10 +265,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$k_beetle, $k_normal",
-                                    "[l_hard], $k_beetle_h, $k_normal",
-                                    "[l_hard], $k_beetle, $k_normal_h",
-                                    "[l_hard], $k_beetle_h, $k_normal_h"
+                                    "$d2_moblin_drop",
+                                    "[l_hard],$d2_moblin_drop_h"
                                 ],
                                 "item_count": 1
                             }
@@ -304,10 +284,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d2sk:4, $k_normal",
-                                    "d2sk:1, [d2sk:4], $k_normal",
-                                    "[l_hard], d2sk:4, $k_normal_h",
-                                    "[l_hard], d2sk:1, [d2sk:4], $k_normal_h"
+                                    "$d2_rope_room"
                                 ],
                                 "item_count": 1
                             }
@@ -321,14 +298,11 @@
                         ]
                     },
                     {
-                        "name": "Rope bomb wall chest",
+                        "name": "Ladder chest behind bombwall",
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d2sk:4, $k_normal, bombs",
-                                    "d2sk:1, [d2sk:4], $k_normal, bombs",
-                                    "[l_hard], d2sk:4, $k_normal_h, bombs",
-                                    "[l_hard], d2sk:1, [d2sk:4], $k_normal_h, bombs"
+                                    "$d2_ladder_chest"
                                 ],
                                 "item_count": 1
                             }
@@ -342,20 +316,12 @@
                         ]
                     },
                     {
-                        "name": "After thwomp",
+                        "name": "Thwomp tunnel",
                         "sections": [
                             {
                                 "access_rules": [
-                                    // keyless, with feather
-                                    "$k_beetle, $k_swoop, feather",
-                                    "[l_hard], $k_beetle_h, $k_swoop, feather",
-                                    "[l_hard], $k_beetle, $k_swoop_h, feather",
-                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather",
-                                    // vanilla route
-                                    "d2sk:2, $k_beetle, $k_swoop",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop",
-                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop_h",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop_h"
+                                    "$d2_basement",
+                                    "[l_hard],$d2_basement_h"
                                 ],
                                 "item_count": 1
                             }
@@ -373,20 +339,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    // keyless, with feather
-                                    "$k_beetle, $k_swoop, feather",
-                                    "$k_beetle_h, $k_swoop, feather",
-                                    "[l_hard], $k_beetle, $k_swoop_h, feather",
-                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather",
-                                    // without feather, hard mode stuff with 2 keys
-                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop, cane, bombs",
-                                    "d2sk:2, $k_beetle, $k_swoop, cane, $pegasus_satchel",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop, cane, bombs",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop, cane, $pegasus_satchel",
-                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop_h, cane, bombs",
-                                    "[l_hard], d2sk:2, $k_beetle, $k_swoop_h, cane, $pegasus_satchel",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop_h, cane, bombs",
-                                    "[l_hard], d2sk:2, $k_beetle_h, $k_swoop_h, cane, $pegasus_satchel"
+                                    "$d2_thwomp_shelf",
+                                    "[l_hard],$d2_thwomp_shelf_h"
                                 ],
                                 "item_count": 1
                             }
@@ -400,15 +354,12 @@
                         ]
                     },
                     {
-                        "name": "Basement minecart bombwall chest",
+                        "name": "Basement chest (behind bombwall)",
                         "sections": [
                             {
                                 "access_rules": [
-                                    // keyless, with feather
-                                    "$k_beetle, $k_swoop, feather, bombs, $lever_minecart",
-                                    "[l_hard], $k_beetle_h, $k_swoop, feather, bombs, $lever_minecart",
-                                    "[l_hard], $k_beetle, $k_swoop_h, feather, bombs, $lever_minecart",
-                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather, bombs, $lever_minecart"
+                                    "$d2_basement_chest",
+                                    "[l_hard],$d2_basement_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -422,15 +373,12 @@
                         ]
                     },
                     {
-                        "name": "Color tiles drop",
+                        "name": "Basement drop (color tiles)",
                         "sections": [
                             {
                                 "access_rules": [
-                                    // keyless, with feather
-                                    "$k_beetle, $k_swoop, feather",
-                                    "[l_hard], $k_beetle_h, $k_swoop, feather",
-                                    "[l_hard], $k_beetle, $k_swoop_h, feather",
-                                    "[l_hard], $k_beetle_h, $k_swoop_h, feather"
+                                    "$d2_basement_drop",
+                                    "[l_hard],$d2_basement_drop_h"
                                 ],
                                 "item_count": 1
                             }
@@ -444,18 +392,12 @@
                         ]
                     },
                     {
-                        "name": "Moblin chest",
+                        "name": "Moblin platform",
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d2sk:3, $k_beetle, $k_swoop, feather",
-                                    "d2sk:1, [d2sk:3], $k_beetle, $k_swoop, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, feather"
+                                    "$d2_moblin_platform",
+                                    "[l_hard],$d2_moblin_platform_h"
                                 ],
                                 "item_count": 1
                             }
@@ -473,40 +415,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    // normal, 1 key min 3 key logic
-                                    "d2sk:3, $k_beetle, $k_swoop, cane, feather",
-                                    "d2sk:1, [d2sk:3], $k_beetle, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, cane, feather",
-                                    "d2sk:3, $k_beetle, $k_swoop, bracelet, feather",
-                                    "d2sk:1, [d2sk:3], $k_beetle, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, bracelet, feather",
-                                    // moblin push strat, hard mode
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:3, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:1, [d2sk:3], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather"
+                                    "$d2_statue_puzzle",
+                                    "[l_hard],$d2_statue_puzzle_h"
                                 ]
                             }
                         ],
@@ -523,40 +433,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    // normal, 2 key min 5 key logic
-                                    "d2sk:5, $k_beetle, $k_swoop, cane, feather",
-                                    "d2sk:2, [d2sk:5], $k_beetle, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, cane, feather",
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, cane, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, cane, feather",
-                                    "d2sk:5, $k_beetle, $k_swoop, bracelet, feather",
-                                    "d2sk:2, [d2sk:5], $k_beetle, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, bracelet, feather",
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, bracelet, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, bracelet, feather",
-                                    // moblin push strat, hard mode
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:5, $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather",
-                                    "[l_hard], d2sk:2, [d2sk:5], $k_beetle_h, $k_swoop_h, hook1, $push_enemy, feather"
+                                    "$d2_color_room",
+                                    "[l_hard],$d2_color_room_h"
                                 ],
                                 "item_count": 1
                             }
@@ -575,76 +453,15 @@
                             {
                                 "name": "Boss Reward",
                                 "access_rules": [
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, bombs, cane, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather"
+                                    "$d2_boss",
+                                    "[l_hard],$d2_boss_h"
                                 ],
                                 "item_count": 1
                             },
                             {
                                 "name": "Get Bombs from Head Thwomp",
                                 "access_rules": [
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather"
+                                    "[l_hard],$d2_early_bombs"
                                 ],
                                 "hosted_item": "bombs"
                             }
@@ -667,38 +484,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, cane, bombs, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], cane, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], bracelet, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [bracelet], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:5, $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop, [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle, $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:5, $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather",
-                                    "[l_hard], d2bk, d2sk:2, [d2sk:5], $k_beetle_h, [$k_beetle], $k_swoop_h, [$k_swoop], [bombs], [cane], hook1, $push_enemy, feather"
+                                    "$d2_boss",
+                                    "[l_hard],$d2_boss"
                                 ],
                                 "hosted_item": "d2"
                             }

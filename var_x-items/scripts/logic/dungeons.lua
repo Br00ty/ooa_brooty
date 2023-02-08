@@ -19,8 +19,82 @@ function maku_basement()
 end
 
 -- d1
+function d1_east_terrace()
+    return k_switchhook()
+end
+
+function d1_crystal_room()
+    return d1_east_terrace() and ember() and crystal()
+end
+
+function d1_wide_room()
+    return d1_east_terrace() and has("d1sk",2)
+end
+
+function d1_boss()
+    return d1_wide_room() and bush() and has("d1bk") and k_pumpkinhead()
+end
+
+function d1_u_room()
+    return pot() or (d1_wide_room() and bush() and k_giantghini() and has("d1sk",3))
+end
+
+function d1_basement()
+    return d1_u_room() and ember()
+end
 
 -- d2
+function d2_bombed_terrace()
+    return k_spikedbeetle() and bombs()
+end
+
+function d2_moblin_drop()
+    return k_spikedbeetle() and k_normal()
+end
+
+function d2_enter_swoop()
+    return (k_spikedbeetle() and feather()) or has("d2sk",2)
+end
+
+function d2_basement()
+    return d2_enter_swoop() and k_swoop()
+end
+
+function d2_thwomp_shelf()
+    return d2_basement() and feather()
+end
+
+function d2_basement_drop()
+    return d2_basement() and feather()
+end
+
+function d2_basement_chest()
+    return d2_basement() and feather() and bombs() and lever_minecartabove() and k_normal()
+end
+
+function d2_moblin_platform()
+    return d2_basement() and feather() and has("d2sk",3)
+end
+
+function d2_statue_puzzle()
+    return d2_moblin_platform() and (lift1() or cane())
+end
+
+function d2_rope_room()
+    return k_switchhook() and has("d2sk",4)
+end
+
+function d2_ladder_chest()
+    return bombs() and k_switchhook() and has("d2sk",4)
+end
+
+function d2_color_room()
+    return d2_statue_puzzle() and has("d2sk",5)
+end
+
+function d2_boss()
+    return d2_color_room() and has("d2bk") and bombs()
+end
 
 -- d3
 function d3_pols_voice()
@@ -205,7 +279,7 @@ function d5_switchA()
 end
 
 function d5_switchA_h()
-    return k_normal_h() and switch()
+    return k_normal() and switch()
 end
 
 function d5_darkroom()
@@ -213,7 +287,7 @@ function d5_darkroom()
 end
 
 function d5_darkroom_h()
-    return d5_switchA_h() and switch() and (cane() or hook1() or k_normal_h() or push_enemy())
+    return d5_switchA_h() and switch() and (cane() or hook1() or k_normal() or push_enemy())
 end
 
 function d5_likelike()
@@ -349,7 +423,7 @@ function d7_crab()
 end
 
 function d7_crab_h()
-    return k_underwater_h() or (draind7() and k_normal_h())
+    return k_underwater_h() or (draind7() and k_normal())
 end
 
 function d7_diamondpuzzle()
@@ -386,7 +460,7 @@ function d8_first()
 end
 
 function d8_first_h()
-    return bombs() and k_normal_h()
+    return bombs() and k_normal()
 end
 
 function d8_ghini()
@@ -435,7 +509,7 @@ function d2clear()
 end
 function d2clear_h()
     return has("feather") and has("bombs") and (has("bracelet") or has("cane") or (has("shield1") and has("hook1"))) and
-               lever() and k_normal_h() and kill_beetle_hard() and kill_swoop_h()
+               lever() and k_normal() and kill_beetle_hard() and kill_swoop_h()
 end
 
 function d3clear()
