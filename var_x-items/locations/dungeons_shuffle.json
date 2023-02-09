@@ -1266,7 +1266,7 @@
                             {
                                 "access_rules": [
                                     "$k_wizzrobe,bombs",
-                                    "[l_hard],$k_wizzrobe_h,bombs"
+                                    "[l_hard],$k_wizzrobe,bombs"
                                 ],
                                 "item_count": 1
                             }
@@ -1284,7 +1284,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "emberseeds,bombs,flippers"
+                                    "$d6past_pool_chest"
                                 ],
                                 "item_count": 1
                             }
@@ -1302,7 +1302,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6past_stalfos"
+                                    "$d6past_stalfos",
+                                    "[l_hard],$d6past_stalfos_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1320,7 +1321,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6_openwall,mermaid"
+                                    "$d6past_rope_chest",
+                                    "[l_hard],$d6past_rope_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1434,8 +1436,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6present_roperoom,$scent_satchel",
-                                    "[l_hard],$d6present_roperoom_h,$scent_satchel"
+                                    "$d6present_rope_chest",
+                                    "[l_hard],$d6present_rope_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1453,8 +1455,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6present_cube",
-                                    "[l_hard],$d6present_cube_h"
+                                    "$d6present_cube_chest",
+                                    "[l_hard],$d6present_cube_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1472,8 +1474,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6present_spinner",
-                                    "[l_hard],$d6present_spinner_h"
+                                    "$d6present_spinner_chest",
+                                    "[l_hard],$d6present_spinner_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1491,7 +1493,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6present_beamos"
+                                    "$d6present_beamos_chest",
+                                    "[l_hard],$d6present_beamos_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1509,7 +1512,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6present_rng"
+                                    "$d6present_rng_chest",
+                                    "[l_hard],$d6present_rng_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1527,7 +1531,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6present_channel"
+                                    "$d6present_channel_chest",
+                                    "[l_hard],$d6present_channel_chest_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1545,8 +1550,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d6present_vire",
-                                    "[l_hard],$d6present_vire_h"
+                                    "$d6present_vire_chest",
+                                    "[l_hard],$d6present_vire_chest_h"
                                 ],
                                 "item_count": 1
                             }

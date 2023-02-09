@@ -204,3 +204,75 @@ function d5_owl_puzzle_h()
     return d5_redpeg_h()
 end
 
+-- d6 past
+function d6past_colorroom_h()
+    return (feather() or mystery()) and k_switchhook()
+end
+
+function d6_openwall_h()
+    return bombs() and ember() and (shooter() or slingshot2() or (cape() and (slingshot() or satchel())))
+end
+
+function d6past_stalfos_h()
+    return ember() and (k_normal_far() or scent_satchel() or feather() or has("l_hard"))
+end
+
+function d6past_rope_chest_h()
+    return d6_openwall_h() and mermaid() and (k_underwater() or hook1())
+end
+
+-- d6 present
+function d6present_orb_room_h()
+    return d6present_orb_room() or feather()
+end
+
+function d6present_hit_orb_h()
+    return d6present_orb_room_h() and
+               (any_shooter() or boomerang() or any_hyper_slingshot() or (feather() and (sword() or slingshot())) or
+                   (feather() and bombs() and (foolsore() or rodofseasons())) or
+                   (jump3() and
+                       (hook1() or ember_satchel() or scent_satchel() or mystery_satchel() or foolsore() or
+                           rodofseasons())))
+end
+
+function d6present_rope_room_h()
+    return d6present_orb_room_h() and
+               (jump3() or (d6present_hit_orb() and (any_shooter() or any_slingshot() or boomerang() or bombs() or
+                   (feather() and
+                       (sword() or foolsore() or rodofseasons() or ember_satchel() or scent_satchel() or
+                           mystery_satchel())))))
+end
+
+function d6present_rope_chest_h()
+    return d6present_rope_room_h() and scent_satchel()
+end
+
+function d6present_hand_room_h()
+    return d6present_orb_room_h() and (cape() or (d6present_hit_orb_h() and bombs()))
+end
+
+function d6present_cube_chest_h()
+    return d6present_hand_room_h() and bombs() and hook1()
+end
+
+function d6present_spinner_chest_h()
+    return d6past_spinner() and d6present_hand_room_h() and (feather() or hook1())
+end
+
+function d6present_beamos_chest_h()
+    return d6_openwall_h() and feather() and (flippers() or (hook1() and has("d6_2sk",2)))
+end
+
+function d6present_rng_chest_h()
+    return d6present_beamos_chest_h() and lift1() and (sword() or foolsore() or cane() or hook1() or punch_enemy()) and
+               has("d6_2sk", 3)
+end
+
+function d6present_channel_chest_h()
+    return d6_openwall_h() and hook1() and has("d6_2sk",3)
+end
+
+function d6present_vire_chest_h()
+    return d6present_spinner_chest_h() and has("d6_2sk",3) and hook1()
+end
+

@@ -323,16 +323,24 @@ function d6past_colorroom()
     return feather() and k_switchhook()
 end
 
-function d6past_colorroom_h()
-    return (feather() or mystery()) and k_switchhook()
+function d6past_wizzrobe_chest()
+    return bombs() and k_wizzrobe()
+end
+
+function d6past_pool_chest()
+    return bombs() and ember() and flippers()
 end
 
 function d6_openwall()
-    return bombs() and ember_shooter()
+    return bombs() and ember() and (shooter() or slingshot2())
 end
 
 function d6past_stalfos()
     return ember() and (k_normal_far() or scent_satchel() or feather())
+end
+
+function d6past_rope_chest()
+    return d6_openwall() and mermaid() and (k_underwater() or hook1())
 end
 
 function d6past_spinner()
@@ -340,62 +348,58 @@ function d6past_spinner()
 end
 
 function d6past_boss()
-    return d6past_spinner() and has("d6bk") and mermaid() and any_shooter() and has("d6_1sk", 3)
+    return d6past_spinner() and has("d6bk") and mermaid() and k_octogon() and has("d6_1sk",2) and (cape() or (has("d6_1sk",3) and (any_shooter() or magicboom())))
 end
 
 -- d6 present
-function d6present_roperoom()
-    return (flippers() or hook1()) and (any_shooter() or boomerang() or jump3())
+function d6present_diamond_chest()
+    return hook1()
 end
 
-function d6present_roperoom_h()
-    return (flippers() or bomb_jump3() or hook1()) and
-               (any_shooter() or boomerang() or jump3() or (feather() and sword()))
+function d6present_orb_room()
+    return flippers() or jump3() or hook1()
 end
 
-function d6present_handroom()
-    return (flippers() or hook1()) and (any_shooter() or boomerang())
+function d6present_hit_orb()
+    return d6present_orb_room() and (any_shooter() or boomerang())
 end
 
-function d6present_handroom_h()
-    return (flippers() or bomb_jump3() or hook1()) and (any_shooter() or boomerang() or (feather() and sword()) or
-               (jump3() and (hook1() or ember() or scent() or mystery() or bombs())))
+function d6present_rope_room()
+    return d6present_orb_room() and
+               (jump3() or (d6present_hit_orb() and (any_shooter() or any_slingshot() or boomerang() or bombs())))
 end
 
-function d6present_cube()
-    return d6present_handroom() and bombs() and hook1() and feather()
+function d6present_rope_chest()
+    return d6present_rope_room() and scent_satchel()
 end
 
-function d6present_cube_h()
-    return d6present_handroom_h() and bombs() and hook1()
+function d6present_hand_room()
+    return d6present_orb_room() and (cape() or (d6present_hit_orb() and bombs()))
 end
 
-function d6present_spinner()
-    return d6past_spinner() and d6present_handroom() and (feather() or hook1())
+function d6present_cube_chest()
+    return d6present_hand_room() and bombs() and hook1() and feather()
 end
 
-function d6present_spinner_h()
-    return d6past_spinner() and d6present_handroom_h() and (feather() or hook1())
+function d6present_spinner_chest()
+    return d6past_spinner() and d6present_hand_room() and (feather() or hook1())
 end
 
-function d6present_beamos()
-    return d6_openwall() and feather() and (flippers() or (hook1() and has("d6_2", 2)))
+function d6present_beamos_chest()
+    return d6_openwall() and feather() and (flippers() or (hook1() and has("d6_2sk",2)))
 end
 
-function d6present_rng()
-    return d6present_beamos() and lift1() and (sword() or cane() or hook1() or punch_enemy()) and has("d6_2sk", 3)
+function d6present_rng_chest()
+    return d6present_beamos_chest() and lift1() and (sword() or foolsore() or cane() or hook1() or punch_enemy()) and
+               has("d6_2sk", 3)
 end
 
-function d6present_channel()
-    return d6_openwall() and hook1() and has("d6_2sk", 3)
+function d6present_channel_chest()
+    return d6_openwall() and hook1() and has("d6_2sk",3)
 end
 
-function d6present_vire()
-    return d6present_spinner() and has("d6_2sk", 3) and sword() and hook1()
-end
-
-function d6present_vire_h()
-    return d6present_spinner_h() and has("d6_2sk", 3) and (sword() or expert()) and hook1()
+function d6present_vire_chest()
+    return d6present_spinner_chest() and has("d6_2sk",3) and (sword() or foolsore() or expert()) and hook1()
 end
 
 -- d7
