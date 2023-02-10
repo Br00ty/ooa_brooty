@@ -1568,14 +1568,13 @@
             },
             {
                 "name": "Jabu-Jabu's Belly (D7)",
-                "access_rules": [],
+                "access_rules": ["mermaid"],
                 "children": [
                     {
                         "name": "Spike Chest",
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d7_spike"
                                 ],
                                 "item_count": 1
                             }
@@ -1593,8 +1592,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d7_crab",
-                                    "[l_hard], $d7_crab_h"
+                                    "$d7_crab"
                                 ],
                                 "item_count": 1
                             }
@@ -1666,8 +1664,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d7_stairway,$k_moldorm,mermaid",
-                                    "$d7_stairway,$k_moldorm,$floodd7"
+                                    "$d7_right_wing",
+                                    "[l_hard],$d7_right_wing_h"
                                 ],
                                 "item_count": 1
                             }
@@ -1793,7 +1791,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "hook2,d7sk:7"
+                                    "$floodd7,d7sk:7"
                                 ],
                                 "item_count": 1
                             }
@@ -1811,7 +1809,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$draind7,hook1,[d7sk:7],d7sk:1"
+                                    "$d7_pot_island"
                                 ],
                                 "item_count": 1
                             }
@@ -1829,7 +1827,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "mermaid,d7bk,$floodd7"
+                                    "$d7_boss"
                                 ],
                                 "item_count": 1
                             }
@@ -1847,7 +1845,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "mermaid,d7bk,$floodd7"
+                                    "$d7_boss"
                                 ],
                                 "hosted_item": "d7"
                             }
@@ -1871,8 +1869,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d8_first",
-                                    "[l_hard], $d8_first_h"
+                                    "$d8_first"
                                 ],
                                 "item_count": 1
                             }
@@ -2081,8 +2078,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d8_maze,lift2,feather",
-                                    "[l_hard], $d8_maze_h,lift2,feather"
+                                    "$d8_tileroom",
+                                    "[l_hard],$d8_tileroom_h"
                                 ],
                                 "item_count": 1
                             }
@@ -2100,8 +2097,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d8_maze,lift2,feather",
-                                    "[l_hard], $d8_maze_h,lift2,feather"
+                                    "$d8_tileroom",
+                                    "[l_hard],$d8_tileroom_h"
                                 ],
                                 "item_count": 1
                             }
@@ -2119,8 +2116,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d8_bluepeg, d8sk:5",
-                                    "[l_hard], $d8_bluepeg_h,d8sk:5"
+                                    "$d8_bluepeg,d8sk:5",
+                                    "[l_hard],$d8_bluepeg_h,d8sk:5"
                                 ],
                                 "item_count": 1
                             }
@@ -2138,8 +2135,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d8_maze, d8sk:5, lift1",
-                                    "[l_hard], $d8_maze_h,d8sk:5, lift1"
+                                    "$d8_maze,d8sk:5,lift1",
+                                    "[l_hard],$d8_maze_h,d8sk:5,lift1"
                                 ],
                                 "item_count": 1
                             }
@@ -2157,8 +2154,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d8_maze,lift2,feather,d8bk,d8slate:4",
-                                    "[l_hard], $d8_maze_h,lift2,feather,d8bk,d8slate:4"
+                                    "$d8_boss",
+                                    "[l_hard],$d8_boss_h"
                                 ],
                                 "item_count": 1
                             }
@@ -2176,8 +2173,8 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "$d8_maze,lift2,feather,d8bk,d8slate:4",
-                                    "[l_hard], $d8_maze_h,lift2,feather,d8bk,d8slate:4"
+                                    "$d8_boss",
+                                    "[l_hard],$d8_boss_h"
                                 ],
                                 "hosted_item": "d8"
                             }

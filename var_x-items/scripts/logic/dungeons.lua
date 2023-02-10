@@ -403,16 +403,8 @@ function d6present_vire_chest()
 end
 
 -- d7
-function d7_spike()
-    return mermaid() or floodd7()
-end
-
 function d7_crab()
     return k_underwater() or (draind7() and k_normal())
-end
-
-function d7_crab_h()
-    return k_underwater_h() or (draind7() and k_normal())
 end
 
 function d7_diamondpuzzle()
@@ -420,68 +412,68 @@ function d7_diamondpuzzle()
 end
 
 function d7_flower()
-    return flippers() and hook2() and feather()
+    return hook2() and feather()
 end
 
 function d7_stairway()
-    return hook2() or (draind7() and flippers() and cane() and hook1())
+    return hook2() or (draind7() and cane() and hook1())
+end
+
+function d7_right_wing()
+    return k_moldorm() and (d7_stairway() or (draind7() and cane() and cape() and pegasus_satchel()))
 end
 
 function draind7()
-    return floodd7() or (mermaid() and has("d7sk", 3))
+    return floodd7() or has("d7sk",3)
 end
 
 function floodd7()
     return hook2() and has("d7sk", 4)
 end
 
+function d7_boss()
+    return has("d7bk") and floodd7()
+end
+
 function d7_hallway()
-    return hook2() and has("d7sk", 5)
+    return floodd7() and has("d7sk", 5)
 end
 
 function d7_miniboss()
-    return d7_stairway() and flippers() and feather() and (sword() or boomerang() or scent_shooter()) and has("d7sk", 7)
+    return d7_stairway() and feather() and (sword() or foolsore() or boomerang() or (scent() and shoot_seeds())) and has("d7sk", 7)
+end
+
+function d7_pot_island()
+    return draind7() and hook1 and has("d7sk", 7)
 end
 
 -- d8
 function d8_first()
-    return bombs() and k_normal()
-end
-
-function d8_first_h()
-    return bombs() and k_normal()
+    return bombs() and (k_switchhook() or rodofseasons() or boomerang() or (pegasus() and shoot_seeds()))
 end
 
 function d8_ghini()
-    return d8_first() and has("d8sk", 1) and hook1() and cane() and shooter() and ember()
-end
-
-function d8_ghini_h()
-    return d8_first_h() and has("d8sk", 1) and hook1() and cane() and shooter() and (ember() or mystery())
+    return d8_first() and has("d8sk", 1) and hook1() and cane() and (shooter() or slingshot2()) and ember()
 end
 
 function d8_bluepeg()
     return d8_ghini() and has("d8sk", 2)
 end
 
-function d8_bluepeg_h()
-    return d8_ghini() and has("d8sk", 2)
-end
-
 function d8_maze()
-    return d8_bluepeg() and has("d8sk", 4) and feather() and (sword() or foolsore())
-end
-
-function d8_maze_h()
-    return d8_bluepeg_h() and has("d8sk", 4) and feather() and (sword() or foolsore())
+    return d8_bluepeg() and feather() and (sword() or foolsore()) and has("d8sk",4)
 end
 
 function d8_neslate()
     return d8_maze() and feather() and flippers() and ember()
 end
 
-function d8_neslate_h()
-    return d8_maze_h() and feather() and flippers() and ember()
+function d8_tileroom()
+    return d8_maze() and lift2() and feather()
+end
+
+function d8_boss()
+    return has("d8bk") and d8_tileroom() and has("d8slate",4)
 end
 
 -- dungeon full clear functions

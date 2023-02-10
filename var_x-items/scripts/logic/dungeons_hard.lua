@@ -276,3 +276,32 @@ function d6present_vire_chest_h()
     return d6present_spinner_chest_h() and has("d6_2sk",3) and hook1()
 end
 
+-- d7
+function d7_right_wing_h()
+    return k_moldorm_h() and (d7_stairway() or (draind7() and cane() and cape() and pegasus_satchel()))
+end
+
+-- d8
+function d8_ghini_h()
+    return d8_first() and has("d8sk", 1) and hook1() and cane() and (shooter() or slingshot2()) and (ember() or mystery())
+end
+
+function d8_bluepeg_h()
+    return d8_ghini_h() and has("d8sk", 2)
+end
+
+function d8_maze_h()
+    return d8_bluepeg_h() and feather() and (sword() or foolsore()) and has("d8sk",4)
+end
+
+function d8_neslate_h()
+    return d8_maze_h() and feather() and flippers() and ember()
+end
+
+function d8_tileroom_h()
+    return d8_maze_h() and lift2() and feather()
+end
+
+function d8_boss_h()
+    return has("d8bk") and d8_tileroom_h() and has("d8slate",4)
+end
