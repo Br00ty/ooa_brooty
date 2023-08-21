@@ -1334,5 +1334,572 @@
         "img": "images/dungeons/labels/d8label8.png"
       }
     ]
+  },
+  {
+    "name": "D1 Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark1",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "spiritsgrave1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpresent1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_entrance.png"
+      },
+      {
+        "codes": "moonlitgrotto1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      }
+    ]
+  },
+  {
+    "name": "D2 Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark2",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "spiritsgrave2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpresent2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_entrance.png"
+      },
+      {
+        "codes": "moonlitgrotto2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      }
+    ]
+  },
+  {
+    "name": "D3 Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark3",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "spiritsgrave3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpresent3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_entrance.png"
+      },
+      {
+        "codes": "moonlitgrotto3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      }
+    ]
+  },
+  {
+    "name": "D4 Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark4",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "spiritsgrave4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpresent4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_entrance.png"
+      },
+      {
+        "codes": "moonlitgrotto4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      }
+    ]
+  },
+  {
+    "name": "D5 Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark5",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "spiritsgrave5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpresent5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_entrance.png"
+      },
+      {
+        "codes": "moonlitgrotto5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      }
+    ]
+  },
+  {
+    "name": "D6 Past Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "spiritsgrave6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpresent6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_entrance.png"
+      },
+      {
+        "codes": "moonlitgrotto6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      }
+    ]
+  },
+  {
+    "name": "D6 Present Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark6",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "spiritsgrave6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpresent6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_entrance.png"
+      },
+      {
+        "codes": "moonlitgrotto6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      }
+    ]
+  },
+  {
+    "name": "D7 Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark7",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "spiritsgrave7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpresent7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_entrance.png"
+      },
+      {
+        "codes": "moonlitgrotto7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      }
+    ]
+  },
+  {
+    "name": "D8 Dungeon Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark8",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "spiritsgrave8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpresent8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_entrance.png"
+      },
+      {
+        "codes": "moonlitgrotto8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      }
+    ]
   }
 ]

@@ -1,0 +1,16 @@
+{
+    "versions": [
+        {
+            "package_version": "0.6.1",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.5.2/ooa_brooty.zip",
+            "sha256": "BA67071AFD8FA850708B12010CB3EE5D0F62AB6258DCEA508A2D64D17A362209",
+            "changelog": [
+                "'Fixed' logic for Rolling Ridge in X-Items pack",
+                "Fixed logic for vanilla symmetry city routing with slingshot",
+                "Various other logic fixes throughout Labrynna X-Items",
+                "Adjusted layouts for Vertical/Horizontal packs",
+                "added auto-updating files"
+            ]
+        }
+    ]
+}

@@ -31,28 +31,6 @@
                 "v_alignment": "stretch",
                 "key": "settings_tab"
               }
-            },
-            {
-              "type": "group",
-              "header": "Entrance Rando Tracker",
-              "dock": "bottom",
-              "content": {
-                "type": "layout",
-                "v_alignment": "stretch",
-                "key": "entrance_grid"
-              }
-            },
-            {
-              "type": "group",
-              //"header": "Pinned Locations",
-              "content": {
-                "type": "recentpins",
-                "style": "wrap",
-                "h_alignment": "stretch",
-                "v_alignment": "stretch",
-                "orientation": "vertical",
-                "compact": true
-              }
             }
           ]
         },

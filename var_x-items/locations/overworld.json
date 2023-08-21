@@ -9,11 +9,9 @@
                 "children": [
                     {
                         "name": "Starting Chest",
-                        "access_rules": [],
                         "sections": [
                             {
-                                "item_count": 1,
-                                "access_rules": []
+                                "item_count": 1
                             }
                         ],
                         "map_locations": [
@@ -26,11 +24,9 @@
                     },
                     {
                         "name": "Nayru's House",
-                        "access_rules": [],
                         "sections": [
                             {
-                                "item_count": 1,
-                                "access_rules": []
+                                "item_count": 1
                             }
                         ],
                         "map_locations": [
@@ -144,9 +140,9 @@
                                 "name": "Did you get a key from the Path Chest? (Mark this)",
                                 "hosted_item": "pathkey",
                                 "access_rules": [
-                                    "$maku_tree,$k_normal",
-                                    "$maku_tree,shovel",
-                                    "$lynna_village,shovel"
+                                    "{$maku_tree,$k_normal}",
+                                    "{$maku_tree,shovel}",
+                                    "{$lynna_village,shovel}"
                                 ]
                             },
                             {
@@ -363,9 +359,8 @@
                     {
                         "name": "Cheval's Grave",
                         "access_rules": [
-                            "$graveyard,$k_switchhook",
-                            "[l_hard]$graveyard,$bomb_jump3",
-                            "[l_hard],$graveyard,$k_switchhook"
+                            "$cheval_grave",
+                            "[l_hard],$cheval_grave_h"
                         ],
                         "sections": [
                             {
@@ -1394,7 +1389,7 @@
                     {
                         "name": "Moblin Keep",
                         "access_rules": [
-                            "$west_ridge_present",
+                            "$west_ridge_present"
                         ],
                         "sections": [
                             {
@@ -1407,10 +1402,11 @@
                             {
                                 "name": "Defeat the boss",
                                 "access_rules": [
-                                    "$pegasus_satchel, bracelet"
+                                    "$pegasus_satchel, bracelet",
+                                    "cape, bracelet"
                                 ],
                                 "item_count": 1
-                            },
+                            }
                         ],
                         "map_locations": [
                             {
@@ -1425,8 +1421,10 @@
                         "access_rules": [
                             // Vanilla way, by beating Moblin Keep
                             "$west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
+                            "$west_ridge_present, cape, bracelet, crownkey",
                             // From East Ridge
                             "$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
+                            "$lynna_village, $jump3, mermaid, bracelet, currents, crownkey",
                             "$lynna_village, ages, mermaid, hook1, crownkey",
                             "$lynna_village, ages, mermaid, $jump3, crownkey"
                         ],
@@ -1460,7 +1458,8 @@
                                     "$lynna_village, feather, mermaid, currents",
                                     "$lynna_village, ages, mermaid",
                                     //from the upper cave
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather"
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather",
+                                    "$west_ridge_present, bracelet, cape"
                                 ],
                                 "item_count": 1
                             },
@@ -1471,7 +1470,8 @@
                                     "$lynna_village, feather, mermaid, currents, emblem, brisket",
                                     "$lynna_village, ages, mermaid, emblem, brisket",
                                     //from the upper cave
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, emblem, brisket"
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, emblem, brisket",
+                                    "$west_ridge_present, $jump3, bracelet, emblem, brisket"
                                 ],
                                 "item_count": 1
                             },
@@ -1480,11 +1480,12 @@
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, currents, hook1",
+                                    "$lynna_village, mermaid, currents, cape",
                                     "$lynna_village, feather, mermaid, currents, emblem, $jump3",
                                     "$lynna_village, ages, mermaid, hook1",
                                     //from the upper cave, requires emblem
                                     "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1",
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, $jump3"
+                                    "$west_ridge_present, bracelet, feather, currents, $jump3"
                                 ],
                                 "item_count": 1
                             },
@@ -1493,11 +1494,12 @@
                                 "access_rules": [
                                     //from Lynna, swimming
                                     "$lynna_village, feather, mermaid, currents, hook1, goronade",
+                                    "$lynna_village, mermaid, currents, cape, goronade",
                                     "$lynna_village, feather, mermaid, currents, emblem, goronade",
                                     "$lynna_village, ages, mermaid, hook1, goronade",
                                     //from the upper cave, requires emblem
                                     "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, goronade",
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, $jump3, goronade"
+                                    "$west_ridge_present, bracelet, feather, currents, $jump3, goronade"
                                 ],
                                 "item_count": 1
                             },
@@ -1510,7 +1512,7 @@
                                     "$lynna_village, ages, mermaid, hook1",
                                     //from the upper cave, requires emblem
                                     "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1",
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, $jump3"
+                                    "$west_ridge_present, bracelet, feather, currents, $jump3"
                                 ],
                                 "item_count": 1
                             },
@@ -1582,7 +1584,8 @@
                             "d6keypresent, $lynna_village, feather, mermaid, currents",
                             "d6keypresent, $lynna_village, ages, mermaid",
                             //from the upper cave
-                            "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather"
+                            "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather",
+                            "d6keypresent, $west_ridge_present, $jump3, bracelet"
                         ],
                         "sections": [
                             {
@@ -1612,7 +1615,8 @@
                                     "$lynna_village, feather, mermaid, letter",
                                     "$lynna_village, ages, mermaid, letter",
                                     //from the upper cave, requires emblem
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, letter"
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, letter",
+                                    "$west_ridge_present, $jump3, bracelet, echoes, letter"
                                 ],
                                 "item_count": 1
                             },
@@ -1623,7 +1627,8 @@
                                     "$lynna_village, feather, mermaid, emblem, vase",
                                     "$lynna_village, ages, mermaid, emblem, vase",
                                     //from the upper cave, requires emblem
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, emblem, vase"
+                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, emblem, vase",
+                                    "$west_ridge_present, $jump3, bracelet, echoes, emblem, vase"
                                 ],
                                 "item_count": 1
                             },
@@ -1634,7 +1639,7 @@
                                     "$lynna_village, feather, mermaid, hook1",
                                     "$lynna_village, ages, mermaid, hook1",
                                     //from the upper cave, requires emblem
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, hook1"
+                                    "$west_ridge_present, $jump3, bracelet, echoes, hook1"
                                 ],
                                 "item_count": 1
                             },
@@ -1647,7 +1652,8 @@
                                     "$lynna_village, ages, mermaid, hook1, lavajuice",
                                     //from the upper cave, requires emblem
                                     "$west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, hook1, lavajuice",
-                                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, ages, lavajuice"
+                                    "$west_ridge_present, $jump3, bracelet, echoes, lavajuice",
+                                    "$west_ridge_present, $jump3, bracelet, ages, lavajuice"
                                 ],
                                 "item_count": 1
                             },
@@ -1672,7 +1678,7 @@
                             "$lynna_village, feather, mermaid",
                             "$lynna_village, ages, mermaid",
                             //from the upper cave, requires emblem
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather"
+                            "$west_ridge_present, $jump3, bracelet"
                         ],
                         "sections": [
                             {
@@ -1685,7 +1691,7 @@
                             {
                                 "name": "Diamonds Chest",
                                 "access_rules": [
-                                    "hook1"
+                                    "hook1","cape"
                                 ],
                                 "item_count": 1
                             },
@@ -1710,7 +1716,7 @@
                             "$lynna_village, feather, mermaid, hook1, bombs",
                             "$lynna_village, ages, mermaid, hook1, bombs",
                             //from the upper cave, requires emblem
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, bombs"
+                            "$west_ridge_present, $jump3, bracelet, bombs"
                         ],
                         "sections": [
                             {
@@ -1733,7 +1739,7 @@
                             "$lynna_village, feather, mermaid, currents, hook1, sword, bracelet",
                             "$lynna_village, ages, mermaid, hook1, sword",
                             //from Moblin cave
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, sword"
+                            "$west_ridge_present, $jump3, bracelet, currents, hook1, sword"
                         ],
                         "sections": [
                             {
@@ -1770,10 +1776,10 @@
                             "{$lynna_village, feather, mermaid, emblem, satchel, galeseeds}",
                             "$lynna_village, feather, mermaid, emblem, satchel, galeseeds, $use_seeds, $seed_tree",
                             //from Moblin cave
-                            "{$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1}",
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, currents, hook1, $use_seeds, $seed_tree",
-                            "{$west_ridge_present, $pegasus_satchel, bracelet, feather, satchel, galeseeds}",
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, satchel, galeseeds, $use_seeds, $seed_tree"
+                            "{$west_ridge_present, $jump3, bracelet, currents, hook1}",
+                            "$west_ridge_present, $jump3, bracelet, currents, hook1, $use_seeds, $seed_tree",
+                            "{$west_ridge_present, $jump3, bracelet, satchel, galeseeds}",
+                            "$west_ridge_present, $jump3, bracelet, satchel, galeseeds, $use_seeds, $seed_tree"
                         ],
                         "sections": [
                             {
@@ -1797,7 +1803,7 @@
                             "d6keypast, $lynna_village, feather, mermaid",
                             "d6keypast, $lynna_village, ages, mermaid",
                             //from the upper cave, requires emblem?
-                            "d6keypast, $west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, flippers"
+                            "d6keypast, $west_ridge_present, $jump3, bracelet, echoes, flippers"
                         ],
                         "sections": [
                             {

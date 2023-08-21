@@ -64,5 +64,11 @@
     "location_size": 28,
     "location_border_thickness": 6,
     "img": "images/maps/d8.png"
-  } 
+  },
+  {
+    "name": "gridmaps",
+    "location_size": 28,
+    "location_border_thickness": 6,
+    "img": "images/maps/gridmaps.png"
+  }
 ]

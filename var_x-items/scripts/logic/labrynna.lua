@@ -68,6 +68,14 @@ function graveyard()
     return ember() and use_seeds()
 end
 
+function cheval_grave()
+    return ember() and use_seeds() and k_switchhook()
+end
+
+function cheval_grave_h()
+    return ember() and use_seeds() and bomb_jump3()
+end
+
 function syrup()
     return graveyard() and has("gravekey") and (flippers() or bomb_jump2() or dimitri_flute() or hook2())
 end
@@ -159,7 +167,7 @@ function moosh_nuun()
 end
 
 function nuun()
-    return lynna_city() and (currents() or (fairy_woods() and ember_shooter()))
+    return lynna_city() and (currents() or (fairy_woods() and ember() and shoot_seeds()))
 end
 
 function nuuncave()
@@ -205,13 +213,13 @@ end
 
 -- rolling ridge // fucking messy
 function west_ridge_present()
-    return (feather() or ages()) and ((hook1() and currents()) or -- From start
+    return (feather() or ages()) and (((cape() or hook1()) and currents()) or -- From start
                (lynna_village() and mermaid() and currents() and jump3()))
 end
 
 function west_ridge_past()
-    return (has("bombflower") and hook1() and -- From start
-    (feather() or ages())) or (west_ridge_present() and ages() or (lift1() and echoes())) -- From present ridge
+    return (has("bombflower") and (hook1() or cape()) and -- From start
+    (feather() or ages() or (west_ridge_present() and ages()) or (lift1() and echoes()))) -- From present ridge
 end
 
 -- zora village/zora seas
