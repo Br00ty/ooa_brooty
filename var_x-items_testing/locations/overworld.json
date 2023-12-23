@@ -1533,10 +1533,13 @@
                         "name": "Target Carts Minigame",
                         "access_rules": [
                             //from Lynna, swimming
-                            "$lynna_village, feather, mermaid, currents, hook1, currents",
-                            "$lynna_village, ages, mermaid, hook1",
+                            "$lynna_village, feather, mermaid, currents, hook1, currents, $target_carts_shooter",
+                            "$lynna_village, feather, mermaid, currents, hook1, currents, $target_carts_slingshot",
+                            "$lynna_village, ages, mermaid, hook1, $target_carts_shooter",
+                            "$lynna_village, ages, mermaid, hook1, $target_carts_slingshot",
                             //from Moblin cave
-                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, hook1, currents"
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, hook1, currents, $target_carts_shooter",
+                            "$west_ridge_present, $pegasus_satchel, bracelet, feather, hook1, currents, $target_carts_slingshot"
                         ],
                         "sections": [
                             {

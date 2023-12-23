@@ -1,17 +1,15 @@
 [
     {
-        "name": "Dungeons",
+        "name": "Dungeons (Shuffled)",
         "chest_unopened_img": "images/items/chest.png",
         "chest_opened_img": "images/items/chest_gray.png",
         "visibility_rules": [
-            "dungeon_er_off"
+            "dungeon_er_on"
         ],
         "children": [
             {
                 "name": "Spirit's Grave (D1)",
-                "access_rules": [
-                    "gravekey"
-                ],
+                "access_rules": [],
                 "children": [
                     {
                         "name": "Terrace chest",
@@ -241,10 +239,7 @@
             },
             {
                 "name": "Wing Dungeon (D2)",
-                "access_rules": [
-                    "$deku_forest,bombs",
-                    "$deku_forest,currents"
-                ],
+                "access_rules": [],
                 "children": [
                     {
                         "name": "Bombed terrace",
@@ -266,7 +261,7 @@
                         ]
                     },
                     {
-                        "name": "Moblin drop", // FIX LOGIC
+                        "name": "Moblin drop",
                         "sections": [
                             {
                                 "access_rules": [
@@ -507,9 +502,7 @@
             },
             {
                 "name": "Moonlit Grotto (D3)",
-                "access_rules": [
-                    "$d3_entrance"
-                ],
+                "access_rules": [],
                 "children": [
                     {
                         "name": "Pols Voice chest",
@@ -801,10 +794,7 @@
             },
             {
                 "name": "Skull Dungeon (D4)",
-                "access_rules": [
-                    "$d4_entrance",
-                    "$d4_entrance_h"
-                ],
+                "access_rules": [],
                 "children": [
                     {
                         "name": "Zol chest",
@@ -1014,14 +1004,7 @@
             },
             {
                 "name": "Crown Dungeon (D5)",
-                "access_rules": [
-                    // Vanilla way, by beating Moblin Keep
-                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
-                    // From East Ridge
-                    "$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
-                    "$lynna_village, ages, mermaid, hook1, crownkey",
-                    "$lynna_village, ages, mermaid, $jump3, crownkey"
-                ],
+                "access_rules": [],
                 "children": [
                     {
                         "name": "Like-Like Chest",
@@ -1256,13 +1239,7 @@
             },
             {
                 "name": "Mermaid's Cave [Past] (D6)",
-                "access_rules": [
-                    //from Lynna, swimming
-                    "d6keypast, $lynna_village, feather, mermaid",
-                    "d6keypast, $lynna_village, ages, mermaid",
-                    //from the upper cave, requires emblem?
-                    "d6keypast, $west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, flippers"
-                ],
+                "access_rules": [],
                 "children": [
                     {
                         "name": "Color Room",
@@ -1434,13 +1411,7 @@
             },
             {
                 "name": "Mermaid's Cave [Present] (D6)",
-                "access_rules": [
-                    //from Lynna, swimming
-                    "d6keypresent, $lynna_village, feather, mermaid, currents",
-                    "d6keypresent, $lynna_village, ages, mermaid",
-                    //from the upper cave
-                    "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather"
-                ],
+                "access_rules": [],
                 "children": [
                     {
                         "name": "Diamond Chest",
@@ -1597,9 +1568,7 @@
             },
             {
                 "name": "Jabu-Jabu's Belly (D7)",
-                "access_rules": [
-                    "enterjabu"
-                ],
+                "access_rules": ["mermaid"],
                 "children": [
                     {
                         "name": "Spike Chest",
@@ -1822,7 +1791,7 @@
                         "sections": [
                             {
                                 "access_rules": [
-                                    "hook2,d7sk:7"
+                                    "$floodd7,d7sk:7"
                                 ],
                                 "item_count": 1
                             }
@@ -1893,10 +1862,7 @@
             },
             {
                 "name": "Ancient Tomb (D8)",
-                "access_rules": [
-                    "$d8_entrance",
-                    "[l_hard], $d8_entrance_h"
-                ],
+                "access_rules": [],
                 "children": [
                     {
                         "name": "First Chest",

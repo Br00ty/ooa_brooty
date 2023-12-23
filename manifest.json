@@ -1,7 +1,7 @@
 ﻿{
   "name": "Oracle of Ages Randomizer",
   "game_name": "Oracle of Ages",
-  "package_version": "0.6.1",
+  "package_version": "0.6.2",
   "package_uid": "ooa_brooty",
   "author": "Brooty",
   "variants": {
@@ -19,6 +19,12 @@
      },
      "var_x-items": {
       "display_name": "Map Tracker (Cross-Items)",
+      "flags": [
+        "ap"
+      ]
+     },
+     "var_x-items_testing": {
+      "display_name": "Cross-Items Testing Branch",
       "flags": [
         "ap"
       ]

@@ -1,6 +1,16 @@
 {
     "versions": [
         {
+            "package_version": "0.6.2",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.6.2/ooa_brooty.zip",
+            "sha256": "",
+            "changelog": [
+                "added a variant for the new testing branch of ooa cross-items",
+                "testing variant - required shooter/slingshot2 for target carts minigame",
+                "fixed various logic"
+            ]
+        }
+        {
             "package_version": "0.6.1",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.6.1/ooa_brooty.zip",
             "sha256": "BA67071AFD8FA850708B12010CB3EE5D0F62AB6258DCEA508A2D64D17A362209",
