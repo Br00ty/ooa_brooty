@@ -1,8 +1,3 @@
--- this is an example/ default implementation for AP autotracking
--- it will use the mappings defined in item_mapping.lua and location_mapping.lua to track items and locations via thier ids
--- it will also load the AP slot data in the global SLOT_DATA, keep track of the current index of on_item messages in CUR_INDEX
--- addition it will keep track of what items are local items and which one are remote using the globals LOCAL_ITEMS and GLOBAL_ITEMS
--- this is useful since remote items will not reset but local items might
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 
@@ -10,6 +5,34 @@ CUR_INDEX = -1
 SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
+HOSTED = {}
+
+function onSetReply(key, value, _)
+    local slot_player = "Slot:" .. Archipelago.PlayerNumber
+    if key == slot_player .. ":Current Map" then
+        if Tracker:FindObjectForCode("auto_tab").CurrentStage == 1 then
+            if TABS_MAPPING[value] then
+                CURRENT_ROOM = TABS_MAPPING[value]
+            else
+                CURRENT_ROOM = CURRENT_ROOM_ADDRESS
+            end
+            Tracker:UiHint("ActivateTab", CURRENT_ROOM)
+        end
+    end
+    for long_name, short_name in pairs(data_storage_table) do
+        if key == slot_player .. ":" .. long_name then
+            Tracker:FindObjectForCode(short_name, ITEMS).Active = value
+        end
+    end
+end
+
+function retrieved(key, value)
+    for long_name, short_name in pairs(data_storage_table) do
+        if key == "Slot:" .. Archipelago.PlayerNumber .. ":" .. long_name then
+            Tracker:FindObjectForCode(short_name, ITEMS).Active = value
+        end
+    end
+end
 
 function onClear(slot_data)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -58,18 +81,30 @@ function onClear(slot_data)
             end
         end
     end
+    -- reset hosted items
+    for k, _ in pairs(HOSTED) do
+        local obj = Tracker:FindObjectForCode(k)
+        if obj then
+            obj.Active = false
+        end
+    end
+
+    if SLOT_DATA == nil then
+        return
+    end
+    
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
-    -- manually run snes interface functions after onClear in case we are already ingame
-    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-        -- add snes interface functions here
-    end
+
 end
 
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onItem: %s, %s, %s, %s, %s", index, item_id, item_name, player_number, CUR_INDEX))
+    end
+    if not AUTOTRACKER_ENABLE_ITEM_TRACKING then
+        return
     end
     if index <= CUR_INDEX then
         return
@@ -130,7 +165,7 @@ function onItem(index, item_id, item_name, player_number)
     end
 end
 
---called when a location gets cleared
+-- called when a location gets cleared
 function onLocation(location_id, location_name)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onLocation: %s, %s", location_id, location_name))
@@ -160,7 +195,6 @@ function onScout(location_id, location_name, item_id, item_name, item_player)
         print(string.format("called onScout: %s, %s, %s, %s, %s", location_id, location_name, item_id, item_name,
             item_player))
     end
-    -- not implemented yet :(
 end
 
 -- called when a bounce message is received 
@@ -176,5 +210,6 @@ end
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
+Archipelago:AddSetReplyHandler("set reply handler", onSetReply)
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)

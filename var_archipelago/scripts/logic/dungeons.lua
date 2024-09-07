@@ -1,4 +1,3 @@
----@diagnostic disable: lowercase-global
 ---[[
 function has(item, amount)
     local count = Tracker:ProviderCountForCode(item)
@@ -219,7 +218,7 @@ function d4_cube_chest()
 end
 
 function d4_minecartA()
-    return feather() and (has("d4sk",2))
+    return feather() and (has("d4sk",1))
 end
 
 function d4_first_crystal_switch()
@@ -231,7 +230,7 @@ function d4_minecart_chest()
 end
 
 function d4_minecartB()
-    return d4_minecartA() and lever_minecart() and lift1() and k_stalfos() and has("d4sk",3)
+    return d4_minecartA() and lever_minecart() and lift1() and k_stalfos() and has("d4sk",2)
 end
 
 function d4_second_crystal_switch()
@@ -239,7 +238,7 @@ function d4_second_crystal_switch()
 end
 
 function d4_minecartC()
-    return d4_minecartB() and has("d4sk",4)
+    return d4_minecartB() and has("d4sk",3)
 end
 
 function d4_color_tile_drop()
@@ -247,7 +246,7 @@ function d4_color_tile_drop()
 end
 
 function d4_minecartD()
-    return d4_color_tile_drop() and has("d4sk",5)
+    return d4_color_tile_drop() and has("d4sk",4)
 end
 
 function d4_pre_miniboss()

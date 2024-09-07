@@ -1,0 +1,219 @@
+{
+  "tracker_right_map": {
+    "type": "container",
+    "background": "#212121",
+    "content": {
+      "type": "dock",
+      "dropshadow": "true",
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "orientation": "horizontal",
+          "v_alignment": "stretch",
+          "margin": "0,0,3,0",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Trade",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "trade_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Dungeons/Entrance Tracker",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "instrument_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Settings",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "v_alignment": "stretch",
+                "key": "settings_tab"
+              }
+            },
+            {
+              "type": "group",
+              //"header": "Pinned Locations",
+              "content": {
+                "type": "recentpins",
+                "style": "wrap",
+                "h_alignment": "stretch",
+                "v_alignment": "stretch",
+                "orientation": "vertical",
+                "compact": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "dock",
+          "content": [
+            {
+              "type": "tabbed",
+              "dock": "top",
+              "tabs": [
+                {
+                  "title": "Overworld (Tabs)",
+                  "content": {
+                    "type": "container",
+                    "content": [
+                      {
+                        "type": "tabbed",
+                        "tabs": [
+                          {
+                            "title": "Overworld Map",
+                            "content": {
+                              "type": "array",
+                              "content": [
+                                {
+                                  "type": "array",
+                                  "orientation": "horizontal",
+                                  "style": "wrap",
+                                  "content": [
+                                    {
+                                      "type": "map",
+                                      "maps": [
+                                        "map"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "title": "Animal Companion Maps",
+                            "icon": "",
+                            "content": {
+                              "type": "array",
+                              "content": [
+                                {
+                                  "type": "array",
+                                  "orientation": "horizontal",
+                                  "style": "wrap",
+                                  "content": [
+                                    {
+                                      "type": "map",
+                                      "maps": [
+                                        "animal_regions"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "title": "Spirit's Grave",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d1"
+                    ]
+                  }
+                },
+                {
+                  "title": "Wing Dungeon",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d2"
+                    ]
+                  }
+                },
+                {
+                  "title": "Moonlit Grotto",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d3"
+                    ]
+                  }
+                },
+                {
+                  "title": "Skull Dungeon",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d4"
+                    ]
+                  }
+                },
+                {
+                  "title": "Crown Dungeon",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d5"
+                    ]
+                  }
+                },
+                {
+                  "title": "Mermaid's Cave (Past)",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d6_1"
+                    ]
+                  }
+                },
+                {
+                  "title": "Mermaid's Cave (Present)",
+                  "background": "#00FFFFFF",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d6_2"
+                    ]
+                  }
+                },
+                {
+                  "title": "Jabu-Jabu's Belly",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d7"
+                    ]
+                  }
+                },
+                {
+                  "title": "Ancient Tomb",
+                  "content": {
+                    "type": "map",
+                    "maps": [
+                      "d8"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

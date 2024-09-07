@@ -444,7 +444,7 @@ function d7_miniboss()
 end
 
 function d7_pot_island()
-    return draind7() and hook1 and has("d7sk", 7)
+    return draind7() and hook1() and has("d7sk", 7)
 end
 
 -- d8

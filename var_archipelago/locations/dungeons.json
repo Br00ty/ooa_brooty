@@ -1,0 +1,2337 @@
+[
+    {
+        "name": "Dungeons",
+        "chest_unopened_img": "images/items/chest.png",
+        "chest_opened_img": "images/items/chest_gray.png",
+        "visibility_rules": [
+            "dungeon_er_off"
+        ],
+        "children": [
+            {
+                "name": "Spirit's Grave (D1)",
+                "access_rules": [
+                    "gravekey"
+                ],
+                "children": [
+                    {
+                        "name": "East Terrace",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d1_east_terrace"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 760,
+                                "y": 1080
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ghini Drop",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d1_east_terrace"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 1016,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Crossroad",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d1_east_terrace"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 776,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Crystal Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d1_crystal_room"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 632,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Wide Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d1_wide_room"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 920,
+                                "y": 569
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Two-Buttons Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d1_wide_room"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 840,
+                                "y": 377
+                            }
+                        ]
+                    },
+                    {
+                        "name": "One-Button Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d1_wide_room"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 648,
+                                "y": 441
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Pot Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$pot"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 344,
+                                "y": 1080
+                            }
+                        ]
+                    },
+                    {
+                        "name": "West Terrace",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$pot"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 56,
+                                "y": 1001
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Basement",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d1_basement",
+                                    "$d1_basement_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 88,
+                                "y": 1352
+                            },
+                            {
+                                "map": "d1",
+                                "x": 184,
+                                "y": 744
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Pumpkin Head",
+                        "sections": [
+                            {
+                                "name": "Boss",
+                                "access_rules": [
+                                    "$d1_boss",
+                                    "$d1_boss_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 600,
+                                "y": 259
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eternal Spirit",
+                        "sections": [
+                            {
+                                "name": "Essence",
+                                "access_rules": [
+                                    "$d1_boss",
+                                    "$d1_boss_h"
+                                ],
+                                "hosted_item": "d1"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d1",
+                                "x": 600,
+                                "y": 36
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Wing Dungeon (D2)",
+                "access_rules": [
+                    "$deku_forest,bombs",
+                    "$deku_forest,currents"
+                ],
+                "children": [
+                    {
+                        "name": "(1F): Bombed Terrace",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_bombed_terrace",
+                                    "[l_hard],$d2_bombed_terrace_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 840,
+                                "y": 488
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Moblin Drop",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_moblin_drop",
+                                    "[l_hard],$d2_moblin_drop_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 119,
+                                "y": 263
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Rope Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_rope_room"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1176,
+                                "y": 552
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Ladder Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_ladder_chest"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1320,
+                                "y": 968
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Thwomp Tunnel",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_basement",
+                                    "[l_hard],$d2_basement_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 311,
+                                "y": 1832
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Thwomp Shelf",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_thwomp_shelf",
+                                    "[l_hard],$d2_thwomp_shelf_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 40,
+                                "y": 1720
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Basement Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_basement_chest",
+                                    "[l_hard],$d2_basement_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1319,
+                                "y": 1384
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Basement Drop",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_basement_drop",
+                                    "[l_hard],$d2_basement_drop_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 807,
+                                "y": 1367
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Moblin Platform",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_moblin_platform",
+                                    "[l_hard],$d2_moblin_platform_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1113,
+                                "y": 440
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Statue Puzzle",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_statue_puzzle",
+                                    "[l_hard],$d2_statue_puzzle_h"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1319,
+                                "y": 439
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Color Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d2_color_room",
+                                    "[l_hard],$d2_color_room_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1576,
+                                "y": 264
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Head Thwomp",
+                        "sections": [
+                            {
+                                "name": "(1F): Boss",
+                                "access_rules": [
+                                    "$d2_boss",
+                                    "[l_hard],$d2_boss_h"
+                                ],
+                                "item_count": 1
+                            },
+                            {
+                                "name": "Get Bombs from Head Thwomp",
+                                "access_rules": [
+                                    "[l_hard],$d2_early_bombs"
+                                ],
+                                "hosted_item": "bombs"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 647,
+                                "y": 1175
+                            },
+                            {
+                                "map": "d2",
+                                "x": 1496,
+                                "y": 102
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ancient Wood",
+                        "sections": [
+                            {
+                                "name": "Essence",
+                                "access_rules": [
+                                    "$d2_boss",
+                                    "[l_hard],$d2_boss"
+                                ],
+                                "hosted_item": "d2"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d2",
+                                "x": 1800,
+                                "y": 31
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Moonlit Grotto (D3)",
+                "access_rules": [
+                    "$d3_entrance"
+                ],
+                "children": [
+                    {
+                        "name": "(1F): Pols Voice Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d3_pols_voice"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 376,
+                                "y": 968
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Statue Drop",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d3_statue_drop"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1143,
+                                "y": 615
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Conveyor Belt Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d3_conveyor_belt_room",
+                                    "[l_hard],$d3_conveyor_belt_room_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1592,
+                                "y": 984
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Six Blocs Drop",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d3_six_blocK_drop",
+                                    "[l_hard],$d3_six_blocK_drop_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 183,
+                                "y": 984
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Armos Drop",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d3_armos_drop",
+                                    "[l_hard],$d3_armos_drop"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1047,
+                                "y": 439
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Bush Beetle Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "d3sk:3, [$k_normal]",
+                                    "d3sk:2, [d3sk:3], [$k_normal]",
+                                    "$d3_bush_beetle_room"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 600,
+                                "y": 392
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Mimic Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "d3sk:4, [$k_normal]",
+                                    "d3sk:3, [d3sk:4], [$k_normal]",
+                                    "$d3_mimic_room"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 392,
+                                "y": 88
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Crossroad",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d3_B1F_spinner",
+                                    "[l_hard],$d3_B1F_spinner_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 840,
+                                "y": 615
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Torch Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d3_torch_chest",
+                                    "[l_hard],$d3_torch_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 2120,
+                                "y": 776
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Moldorm Drop",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d3_moldorm_drop",
+                                    "[l_hard],$d3_moldorm_drop_h"
+                                    
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1815,
+                                "y": 87
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Bridge Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d3_bridge_chest",
+                                    "[l_hard],$d3_bridge_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1879,
+                                "y": 488
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): East",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d3_B1F_east",
+                                    "[l_hard],$d3_B1F_east"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 2296,
+                                "y": 392
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Shadow Hag",
+                        "sections": [
+                            {
+                                "name": "(B1F): Boss",
+                                "access_rules": [
+                                    "$d3_boss",
+                                    "[l_hard],$d3_boss_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1558,
+                                "y": 85
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Echoing Howl",
+                        "sections": [
+                            {
+                                "name": "Essence",
+                                "access_rules": [
+                                    "$d3_boss",
+                                    "[l_hard],$d3_boss_h"
+                                ],
+                                "hosted_item": "d3"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1319,
+                                "y": 32
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Get scent seeds in D3's bridge rooms",
+                        "sections": [
+                            {
+                                "name": "Respawnable bushes",
+                                "access_rules": [
+                                    "d3sk:1, $use_seeds, [scentseeds]"
+                                ],
+                                "hosted_item": "scentseeds"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d3",
+                                "x": 1711,
+                                "y": 375
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Skull Dungeon (D4)",
+                "access_rules": [
+                    "$d4_entrance",
+                    "$d4_entrance_h"
+                ],
+                "children": [
+                    {
+                        "name": "(1F): First Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d4_first_chest"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 264,
+                                "y": 952
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Cube Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d4_cube_chest"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 312,
+                                "y": 1192
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Minecart Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d4_minecart_chest"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 1319,
+                                "y": 968
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): First Crystal Switch",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d4_first_crystal_switch",
+                                    "[l_hard], $d4_first_crystal_switch_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 1239,
+                                "y": 1160
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Second Crystal Switch",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d4_second_crystal_switch",
+                                    "[l_hard],$d4_second_crystal_switch_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 1032,
+                                "y": 88
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Color Tile Drop",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d4_color_tile_drop"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 343,
+                                "y": 440
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Small Floor Puzzle",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d4_small_floor_puzzle"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 808,
+                                "y": 808
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Large Floor Puzzle",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d4_large_floor_puzzle",
+                                    "[l_hard], $d4_large_floor_puzzle_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 600,
+                                "y": 1720
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Lava Pot Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d4_lava_pot_chest",
+                                    "[l_hard], $d4_lava_pot_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 152,
+                                "y": 408
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eyesoar",
+                        "sections": [
+                            {
+                                "name": "(B1F): Boss",
+                                "access_rules": [
+                                    "$d4_boss",
+                                    "[l_hard], $d4_boss_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 360,
+                                "y": 1527
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Burning Flame",
+                        "sections": [
+                            {
+                                "name": "Essence",
+                                "access_rules": [
+                                    "$d4_boss",
+                                    "[l_hard], $d4_boss_h"
+                                ],
+                                "hosted_item": "d4"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d4",
+                                "x": 360,
+                                "y": 1297
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Crown Dungeon (D5)",
+                "access_rules": [
+                    // Vanilla way, by beating Moblin Keep
+                    "$west_ridge_present, $pegasus_satchel, bracelet, feather, crownkey",
+                    // From East Ridge
+                    "$lynna_village, feather, mermaid, hook1, bracelet, currents, crownkey",
+                    "$lynna_village, ages, mermaid, hook1, crownkey",
+                    "$lynna_village, ages, mermaid, $jump3, crownkey"
+                ],
+                "children": [
+                    {
+                        "name": "(B1F): Like-Like Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d5_likelike",
+                                    "[l_hard],$d5_likelike_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1800,
+                                "y": 613
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Eyes Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d5_eyes",
+                                    "[l_hard],$d5_eyes_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 360,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Dark Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d5_darkroom",
+                                    "[l_hard],$d5_darkroom_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 2040,
+                                "y": 793
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Two-Statue Puzzle",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d5_2statue",
+                                    "[l_hard],$d5_2statue_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 3000,
+                                "y": 425
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Blue Peg Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d5_switchA",
+                                    "[l_hard],$d5_switchA_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1320,
+                                "y": 905
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Diamond Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d5_crossroads,hook1",
+                                    "[l_hard],$d5_crossroads_h,hook1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1624,
+                                "y": 489
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Three-Statue Puzzle",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d5_3statue",
+                                    "[l_hard],$d5_3statue_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 840,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Six-Statue Puzzle",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d5_6statue",
+                                    "[l_hard],$d5_6statue"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 2216,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Red Peg Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d5_redpeg",
+                                    "[l_hard],$d5_redpeg_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 2312,
+                                "y": 25
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Owl Puzzle",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d5_owl_puzzle",
+                                    "[l_hard],$d5_owl_puzzle"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1992,
+                                "y": 265
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Smog",
+                        "sections": [
+                            {
+                                "name": "(1F): Boss",
+                                "access_rules": [
+                                    "$d5_boss",
+                                    "[l_hard],$d5_boss"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1560,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sacred Soil",
+                        "sections": [
+                            {
+                                "name": "Essence",
+                                "access_rules": [
+                                    "$d5_boss",
+                                    "[l_hard],$d5_boss"
+                                ],
+                                "hosted_item": "d5"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d5",
+                                "x": 1560,
+                                "y": 738
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mermaid's Cave [Past] (D6)",
+                "access_rules": [
+                    //from Lynna, swimming
+                    "d6keypast, $lynna_village, feather, mermaid",
+                    "d6keypast, $lynna_village, ages, mermaid",
+                    //from the upper cave, requires emblem?
+                    "d6keypast, $west_ridge_present, $pegasus_satchel, bracelet, feather, echoes, flippers"
+                ],
+                "children": [
+                    {
+                        "name": "(1F): Color Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6past_colorroom",
+                                    "[l_hard],$d6past_colorroom_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 296,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Wizzrobe",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$k_wizzrobe,bombs",
+                                    "[l_hard],$k_wizzrobe,bombs"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 840,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Pool Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6past_pool_chest"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 760,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Stalfos Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6past_stalfos",
+                                    "[l_hard],$d6past_stalfos_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 808,
+                                "y": 440
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Rope Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6past_rope_chest",
+                                    "[l_hard],$d6past_rope_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 3049,
+                                "y": 617
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Spear Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6past_spinner,mermaid"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 1801,
+                                "y": 217
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Diamond Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6past_spinner,mermaid,hook1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 2329,
+                                "y": 89
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Octogon",
+                        "sections": [
+                            {
+                                "name": "(1F): Boss",
+                                "access_rules": [
+                                    "$d6past_boss"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 120,
+                                "y": 88
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lonely Peak",
+                        "sections": [
+                            {
+                                "name": "Essence",
+                                "access_rules": [
+                                    "$d6past_boss"
+                                ],
+                                "hosted_item": "d6"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_1",
+                                "x": 360,
+                                "y": 35
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Mermaid's Cave [Present] (D6)",
+                "access_rules": [
+                    //from Lynna, swimming
+                    "d6keypresent, $lynna_village, feather, mermaid, currents",
+                    "d6keypresent, $lynna_village, ages, mermaid",
+                    //from the upper cave
+                    "d6keypresent, $west_ridge_present, $pegasus_satchel, bracelet, feather"
+                ],
+                "children": [
+                    {
+                        "name": "Diamond Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "hook1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 296,
+                                "y": 792
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rope Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6present_rope_chest",
+                                    "[l_hard],$d6present_rope_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 776,
+                                "y": 617
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cube Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6present_cube_chest",
+                                    "[l_hard],$d6present_cube_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 360,
+                                "y": 985
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Spinner Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6present_spinner_chest",
+                                    "[l_hard],$d6present_spinner_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 88,
+                                "y": 217
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Beamos Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6present_beamos_chest",
+                                    "[l_hard],$d6present_beamos_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 1496,
+                                "y": 729
+                            }
+                        ]
+                    },
+                    {
+                        "name": "RNG Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6present_rng_chest",
+                                    "[l_hard],$d6present_rng_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 1560,
+                                "y": 553
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Channel Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6present_channel_chest",
+                                    "[l_hard],$d6present_channel_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 1416,
+                                "y": 937
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Vire Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d6present_vire_chest",
+                                    "[l_hard],$d6present_vire_chest_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d6_2",
+                                "x": 840,
+                                "y": 25
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Jabu-Jabu's Belly (D7)",
+                "access_rules": [
+                    "enterjabu"
+                ],
+                "children": [
+                    {
+                        "name": "(2F): Spike Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 280,
+                                "y": 1305
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Crab Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d7_crab"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2280,
+                                "y": 677
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Diamond Puzzle",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d7_diamondpuzzle"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2055,
+                                "y": 868
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Flower Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d7_flower"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 1832,
+                                "y": 324
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Stairway Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d7_stairway"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2296,
+                                "y": 277
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(2F): Right Wing",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d7_right_wing",
+                                    "[l_hard],$d7_right_wing_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 1320,
+                                "y": 1145
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Boxed Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$draind7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2040,
+                                "y": 517
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Cane|Diamond Puzzle",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$draind7,hook2,cane"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2056,
+                                "y": 645
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(3F): Terrace",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$floodd7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 920,
+                                "y": 633
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(2F): Left Wing",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$floodd7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 104,
+                                "y": 1145
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(3F): Hallway Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d7_hallway"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 600,
+                                "y": 40
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Miniboss Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d7_miniboss"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 2440,
+                                "y": 277
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(3F): Post-Hallway Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "hook2,d7sk:7"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 1080,
+                                "y": 89
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(1F): Island Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d7_pot_island"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 1944,
+                                "y": 309
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Plasmarine",
+                        "sections": [
+                            {
+                                "name": "(2F): Boss",
+                                "access_rules": [
+                                    "$d7_boss"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 840,
+                                "y": 1146
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Rolling Sea",
+                        "sections": [
+                            {
+                                "name": "Essence",
+                                "access_rules": [
+                                    "$d7_boss"
+                                ],
+                                "hosted_item": "d7"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d7",
+                                "x": 584,
+                                "y": 1091
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ancient Tomb (D8)",
+                "access_rules": [
+                    "$d8_entrance",
+                    "[l_hard], $d8_entrance_h"
+                ],
+                "children": [
+                    {
+                        "name": "(1F): Single Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_first"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 696,
+                                "y": 1225
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B2F): Ghini Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_ghini",
+                                    "[l_hard], $d8_ghini_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 1864,
+                                "y": 480
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): NW Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_ghini",
+                                    "[l_hard], $d8_ghini_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 344,
+                                "y": 409
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Blue Peg Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_bluepeg",
+                                    "[l_hard], $d8_bluepeg_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 648,
+                                "y": 937
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Blade Trap",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_bluepeg",
+                                    "[l_hard], $d8_bluepeg_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 456,
+                                "y": 937
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Sarcophagus Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_bluepeg,lift2",
+                                    "[l_hard], $d8_bluepeg_h,lift2"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 440,
+                                "y": 777
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Stalfos",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_bluepeg",
+                                    "[l_hard], $d8_bluepeg_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 599,
+                                "y": 472
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B2F): Maze Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_maze",
+                                    "[l_hard], $d8_maze_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 1544,
+                                "y": 128
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B2F): NW Slate Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_maze",
+                                    "[l_hard], $d8_maze_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 1800,
+                                "y": 144
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B2F): NE Slate Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_neslate",
+                                    "[l_hard], $d8_neslate_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 2760,
+                                "y": 144
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B3F): Single Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_maze,lift2",
+                                    "[l_hard], $d8_maze_h,lift2"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 520,
+                                "y": 201
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B2F): Tile Room",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_tileroom",
+                                    "[l_hard],$d8_tileroom_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 2520,
+                                "y": 848
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B2F): SE Slate Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_tileroom",
+                                    "[l_hard],$d8_tileroom_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 2760,
+                                "y": 848
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B1F): Floor Puzzle",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_bluepeg,d8sk:5",
+                                    "[l_hard],$d8_bluepeg_h,d8sk:5"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 1080,
+                                "y": 969
+                            }
+                        ]
+                    },
+                    {
+                        "name": "(B2F): SW Slate Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "access_rules": [
+                                    "$d8_maze,d8sk:5,lift1",
+                                    "[l_hard],$d8_maze_h,d8sk:5,lift1"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 1768,
+                                "y": 1025
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ramrock",
+                        "sections": [
+                            {
+                                "name": "(B3F): Boss",
+                                "access_rules": [
+                                    "$d8_boss",
+                                    "[l_hard],$d8_boss_h"
+                                ],
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 840,
+                                "y": 108
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Falling Star",
+                        "sections": [
+                            {
+                                "name": "Essence",
+                                "access_rules": [
+                                    "$d8_boss",
+                                    "[l_hard],$d8_boss_h"
+                                ],
+                                "hosted_item": "d8"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d8",
+                                "x": 600,
+                                "y": 35
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
