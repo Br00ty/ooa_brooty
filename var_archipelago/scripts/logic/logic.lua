@@ -118,9 +118,9 @@ function rupeefarm()
   return sword() or shovel()
 end
 
-function essences()
-  return (has("d1") and has("d2") and has("d3") and has("d4") and has("d5") and has("d6") and has("d7") and has("d8"))
-end
+--function essences()
+  --return (has("d1") and has("d2") and has("d3") and has("d4") and has("d5") and has("d6") and has("d7") and has("d8"))
+--end
 
 function ricky_flute()
   return (flute() and has("nuun_ricky"))
@@ -513,4 +513,41 @@ end
 
 function k_octogon()
 	return sword() or foolsore() or ember_shooter() or (slingshot() and ember()) or scent_shooter or (slingshot() and scent()) or punch_enemy()
+end
+
+-- REQUIRED ESSENCE LOGIC BELOW
+
+function essences()
+  local amt = 0
+  if has("d1") then
+      amt = amt + 1
+  end
+  if has("d2") then
+      amt = amt + 1
+  end
+  if has("d3") then
+      amt = amt + 1
+  end
+  if has("d4") then
+      amt = amt + 1
+  end
+  if has("d5") then
+      amt = amt + 1
+  end
+  if has("d6") then
+      amt = amt + 1
+  end
+  if has("d7") then
+      amt = amt + 1
+  end
+  if has("d8") then
+      amt = amt + 1
+  end
+  return amt
+end
+
+function goal()
+  local count = Tracker:ProviderCountForCode("allessence")
+  local essences = essences()
+  return (essences >= count)
 end

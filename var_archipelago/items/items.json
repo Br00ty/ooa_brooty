@@ -592,6 +592,17 @@
   },
   // OPTIONS
   {
+    "name": "Required Essence",
+    "type": "consumable",
+    "codes": "allessence",
+    "max_quantity": 8,
+    "initial_quantity": 0,
+    "allow_disabled": false,
+    "overlay_font_size": 28,
+    "overlay_align": "center",
+    "img": "images/essences/essences.png"
+  },
+  {
     "name": "Animal Companion",
     "type": "progressive",
     "allow_disabled": false,
@@ -603,17 +614,17 @@
         "img": "images/items/companions.png"
       },
       {
-        "codes": "nuun_ricky",
+        "codes": "nuun_ricky,companions",
         "inherit_codes": false,
         "img": "images/items/ricky.png"
       },
       {
-        "codes": "nuun_dimitri",
+        "codes": "nuun_dimitri,companions",
         "inherit_codes": false,
         "img": "images/items/dimitri.png"
       },
       {
-        "codes": "nuun_moosh",
+        "codes": "nuun_moosh,companions",
         "inherit_codes": false,
         "img": "images/items/moosh.png"
       }

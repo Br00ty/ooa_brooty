@@ -89,6 +89,38 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data["animal_companion"] then
+        if slot_data["animal_companion"] == "Ricky" then
+            Tracker:FindObjectForCode("companions").CurrentStage = 1
+        elseif slot_data["animal_companion"] == "Dimitri" then
+            Tracker:FindObjectForCode("companions").CurrentStage = 2
+        elseif slot_data["animal_companion"] == "Moosh" then
+            Tracker:FindObjectForCode("companions").CurrentStage = 3
+        end
+    end
+
+    if slot_data["required_essences"] then
+        if slot_data["required_essences"] == "0" then
+            Tracker:FindObjectForCode("allessence").CurrentStage = 0
+        elseif slot_data["required_essences"] == "1" then
+            Tracker:FindObjectForCode("allessence").CurrentStage = 1
+        elseif slot_data["required_essences"] == "2" then
+            Tracker:FindObjectForCode("allessence").CurrentStage = 2
+        elseif slot_data["required_essences"] == "3" then
+            Tracker:FindObjectForCode("allessence").CurrentStage = 3
+        elseif slot_data["required_essences"] == "4" then
+            Tracker:FindObjectForCode("allessence").CurrentStage = 4
+        elseif slot_data["required_essences"] == "5" then
+            Tracker:FindObjectForCode("allessence").CurrentStage = 5
+        elseif slot_data["required_essences"] == "6" then
+            Tracker:FindObjectForCode("allessence").CurrentStage = 6
+        elseif slot_data["required_essences"] == "7" then
+            Tracker:FindObjectForCode("allessence").CurrentStage = 7
+        elseif slot_data["required_essences"] == "8" then
+            Tracker:FindObjectForCode("allessence").CurrentStage = 8
+        end
+    end
+
     if SLOT_DATA == nil then
         return
     end

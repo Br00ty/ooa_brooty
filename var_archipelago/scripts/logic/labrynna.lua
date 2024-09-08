@@ -141,7 +141,7 @@ end
 
 function crescentpresentwest()
     return dimitri_flute() or (lynna_city() and mermaid()) or
-               (crescentpast() and (currents() or (shovel() and echoes())))
+               ((has("raft") or (lynna_city() and mermaid())) and (currents() or (shovel() and echoes())))
 end
 
 --function crescentpresentwest()

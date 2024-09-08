@@ -142,7 +142,7 @@
                                 "name": "",
                                 "hosted_item": "makuseed",
                                 "access_rules": [
-                                    "$maku_seed"
+                                    "$goal"
                                 ]
                             }
                         ],
@@ -150,7 +150,8 @@
                             {
                                 "map": "map",
                                 "x": 1385,
-                                "y": 453
+                                "y": 453,
+                                "size": 60
                             }
                         ]
                     },
@@ -1204,7 +1205,7 @@
                         ],
                         "sections": [
                             {
-                                "name": "Hungry Hungry Tokays!",
+                                "name": "",
                                 "item_count": 1,
                                 "access_rules": []
                             }
@@ -2752,18 +2753,30 @@
                         ]
                     },
                     {
-                        "name": "Jabu-Jabu Area",
+                        "name": "Enter Jabu-Jabu's Belly (D7)",
                         "sections": [
                             {
-                                "name": "Enter Jabu-Jabu's Belly (D7)",
+                                "name": "",
                                 "access_rules": [
                                     "enterjabu"
                                 ],
                                 "chest_unopened_img": "images/bosses/d7.png",
                                 "chest_opened_img": "images/bosses/d7.png"
-                            },
+                            }
+                        ],
+                        "map_locations": [
                             {
-                                "name": "Zora's Reward",
+                                "map": "map",
+                                "x": 56,
+                                "y": 1360
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Zora's Reward",
+                        "sections": [
+                            {
+                                "name": "",
                                 "access_rules": [
                                     "d7"
                                 ]
@@ -2773,7 +2786,7 @@
                             {
                                 "map": "map",
                                 "x": 56,
-                                "y": 1383
+                                "y": 1410
                             }
                         ]
                     }

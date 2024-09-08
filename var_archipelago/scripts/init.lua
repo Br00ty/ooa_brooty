@@ -35,7 +35,7 @@ if not IS_ITEMS_ONLY then -- <--- use variant info to optimize loading
     -- Locations
     Tracker:AddLocations("locations/overworld.json")
     Tracker:AddLocations("locations/dungeons.json")
-    Tracker:AddLocations("locations/dungeons_shuffle.json")
+    --Tracker:AddLocations("locations/dungeons_shuffle.json")
 end
 
 -- Layout

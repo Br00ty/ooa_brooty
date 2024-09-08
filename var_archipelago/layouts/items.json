@@ -351,11 +351,14 @@
     "orientation": "vertical",
     "h_alignment": "center",
     "margin": "0,5,3,0",
-    "item_margin": "5,15",
+    "item_margin": "5,5",
     "item_size": 55,
     "rows": [
       [
         "companions"
+      ],
+      [
+        "allessence"
       ],
       [
         "l_bas"

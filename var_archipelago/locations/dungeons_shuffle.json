@@ -3,9 +3,6 @@
         "name": "Dungeons (Shuffled)",
         "chest_unopened_img": "images/items/chest.png",
         "chest_opened_img": "images/items/chest_gray.png",
-        "visibility_rules": [
-            "dungeon_er_on"
-        ],
         "children": [
             {
                 "name": "Spirit's Grave (D1)",
@@ -17,7 +14,7 @@
                             {
                                 "name": "",
                                 "access_rules": [
-                                    "$d1_east_terrace"
+                                    "dungeon_er_on,$d1_east_terrace"
                                 ],
                                 "item_count": 1
                             }
