@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+            "package_version": "0.7.1.2",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.1.2/ooa_brooty.zip",
+            "sha256": "f59c06a20316a22f7d878938802e8909d9e0af973cabaa186ac6f3034222ea94",
+            "changelog": [
+                "added autotracking for required essences and logic",
+                "fixed big goron sword not acting like a sword"
+            ]
+        },
+        {
             "package_version": "0.7.1.1",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.1.1/ooa_brooty.zip",
             "sha256": "363028bfa566fe484b4eabfd507771b707e2a04b56f96994f2a4d5fecf0c577a",
@@ -16,7 +25,7 @@
             "changelog": [
                 "removed tokay market for now since it isnt implemented",
                 "seperate the tuni nuts",
-                "fix middle man location",
+                "fix middle man location"
             ]
         },
         {

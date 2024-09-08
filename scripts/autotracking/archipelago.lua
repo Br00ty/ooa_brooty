@@ -99,26 +99,18 @@ function onClear(slot_data)
         end
     end
 
-    if slot_data["required_essences"] then
-        if slot_data["required_essences"] == "0" then
-            Tracker:FindObjectForCode("allessence").CurrentStage = 0
-        elseif slot_data["required_essences"] == "1" then
-            Tracker:FindObjectForCode("allessence").CurrentStage = 1
-        elseif slot_data["required_essences"] == "2" then
-            Tracker:FindObjectForCode("allessence").CurrentStage = 2
-        elseif slot_data["required_essences"] == "3" then
-            Tracker:FindObjectForCode("allessence").CurrentStage = 3
-        elseif slot_data["required_essences"] == "4" then
-            Tracker:FindObjectForCode("allessence").CurrentStage = 4
-        elseif slot_data["required_essences"] == "5" then
-            Tracker:FindObjectForCode("allessence").CurrentStage = 5
-        elseif slot_data["required_essences"] == "6" then
-            Tracker:FindObjectForCode("allessence").CurrentStage = 6
-        elseif slot_data["required_essences"] == "7" then
-            Tracker:FindObjectForCode("allessence").CurrentStage = 7
-        elseif slot_data["required_essences"] == "8" then
-            Tracker:FindObjectForCode("allessence").CurrentStage = 8
+    if slot_data["logic_difficulty"] then
+        if slot_data["logic_difficulty"] == "0" then
+            Tracker:FindObjectForCode("logic").CurrentStage = 1
+        --elseif slot_data["logic_difficulty"] == "1" then
+            --Tracker:FindObjectForCode("logic").CurrentStage = 2
+        elseif slot_data["logic_difficulty"] == "2" then
+            Tracker:FindObjectForCode("logic").CurrentStage = 2
         end
+    end
+
+    if slot_data["required_essences"] then
+        Tracker:FindObjectForCode("allessence").AcquiredCount = slot_data["required_essences"]
     end
 
     if SLOT_DATA == nil then

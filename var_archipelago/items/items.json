@@ -701,12 +701,12 @@
     "stages": [
       {
         "img": "images/items/l_bas.png",
-        "codes": "l_bas",
+        "codes": "l_bas, logic",
         "inherit_codes": false
       },
       {
         "img": "images/items/l_hard.png",
-        "codes": "l_hard",
+        "codes": "l_hard, logic",
         "inherit_codes": false
       }
     ]
@@ -1525,7 +1525,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/goron sword.png",
-    "codes": "bigsword, sword2"
+    "codes": "bigsword, sword, sword2"
   },
   // TRADE ITEMS
   {
