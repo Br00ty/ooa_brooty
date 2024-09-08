@@ -1366,32 +1366,32 @@
             {
                 "name": "Nuun Highlands|Symmetry City|Talus Peaks",
                 "children": [
-                    {
-                        "name": "Check Nuun Highlands and talk to Foreman to start Carpenter Quest and build the Bridge!",
-                        "access_rules": [
-                            "$nuun"
-                        ],
-                        "sections": [
-                            {
-                                "name": "Note: Move down one screen and compare your screen to the ones in the `Animal Companion Maps` tab",
-                                "hosted_item": "carpenterboss",
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "map",
-                                "x": 872,
-                                "y": 351
-                            }
-                        ]
-                    },
+                    //{
+                    //    "name": "Check Nuun Highlands and talk to Foreman to start Carpenter Quest and build the Bridge!",
+                    //    "access_rules": [
+                    //        "$nuun"
+                    //    ],
+                    //    "sections": [
+                    //        {
+                    //            "name": "Note: Move down one screen and compare your screen to the ones in the `Animal Companion Maps` tab",
+                    //            "hosted_item": "carpenterboss",
+                    //            "access_rules": []
+                    //        }
+                    //    ],
+                    //    "map_locations": [
+                    //        {
+                    //            "map": "map",
+                    //            "x": 872,
+                    //            "y": 351
+                    //        }
+                    //    ]
+                    //},
                     // Moosh Carpenters
                     {
                         "name": "Carpenter 1",
                         "access_rules": [
-                            "$moosh_flute,carpenterboss",
-                            "nuun_moosh,currents,carpenterboss"
+                            "$moosh_flute",
+                            "nuun_moosh,currents"
                         ],
                         "sections": [
                             {
@@ -1414,8 +1414,8 @@
                     {
                         "name": "Carpenter 2",
                         "access_rules": [
-                            "$moosh_flute,carpenterboss",
-                            "nuun_moosh,currents,carpenterboss"
+                            "$moosh_flute",
+                            "nuun_moosh,currents"
                         ],
                         "sections": [
                             {
@@ -1438,8 +1438,8 @@
                     {
                         "name": "Carpenter 3",
                         "access_rules": [
-                            "$moosh_flute,carpenterboss",
-                            "nuun_moosh,currents,carpenterboss"
+                            "$moosh_flute",
+                            "nuun_moosh,currents"
                         ],
                         "sections": [
                             {
@@ -1463,8 +1463,8 @@
                     {
                         "name": "Carpenter 1",
                         "access_rules": [
-                            "$ricky_flute,carpenterboss",
-                            "nuun_ricky,currents,carpenterboss"
+                            "$ricky_flute",
+                            "nuun_ricky,currents"
                         ],
                         "sections": [
                             {
@@ -1487,8 +1487,8 @@
                     {
                         "name": "Carpenter 2",
                         "access_rules": [
-                            "$ricky_flute,carpenterboss",
-                            "nuun_ricky,currents,carpenterboss"
+                            "$ricky_flute",
+                            "nuun_ricky,currents"
                         ],
                         "sections": [
                             {
@@ -1511,8 +1511,8 @@
                     {
                         "name": "Carpenter 3",
                         "access_rules": [
-                            "$ricky_flute,carpenterboss",
-                            "nuun_ricky,currents,carpenterboss"
+                            "$ricky_flute",
+                            "nuun_ricky,currents"
                         ],
                         "sections": [
                             {
@@ -1536,8 +1536,8 @@
                     {
                         "name": "Carpenter 1",
                         "access_rules": [
-                            "$dimitri_flute,carpenterboss",
-                            "nuun_dimitri,currents,carpenterboss"
+                            "$dimitri_flute",
+                            "nuun_dimitri,currents"
                         ],
                         "sections": [
                             {
@@ -1560,8 +1560,8 @@
                     {
                         "name": "Carpenter 2",
                         "access_rules": [
-                            "$dimitri_flute,carpenterboss",
-                            "nuun_dimitri,currents,carpenterboss"
+                            "$dimitri_flute",
+                            "nuun_dimitri,currents"
                         ],
                         "sections": [
                             {
@@ -1584,8 +1584,8 @@
                     {
                         "name": "Carpenter 3",
                         "access_rules": [
-                            "$dimitri_flute,carpenterboss",
-                            "nuun_dimitri,currents,carpenterboss"
+                            "$dimitri_flute",
+                            "nuun_dimitri,currents"
                         ],
                         "sections": [
                             {

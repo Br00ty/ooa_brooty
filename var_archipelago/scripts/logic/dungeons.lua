@@ -174,22 +174,22 @@ function d3_traverse2()
 end
 
 function d3_bridge_chest()
-    return has("d3sk", 1) and (d3_traverse1() or (d3_post_subterror() and has("d3sk", 4)) and jump3())
+    return has("d3sk", 1) and (d3_traverse1() or (d3_post_subterror() and has("d3sk", 3)) and jump3())
 end
 
 function d3_B1F_east()
     return d3_B1F_spinner() and k_subterror() and
-               (d3_W_crystal() or (has("d3sk", 4) and d3_traverse1() and (d3_traverse2() or jump3()))) and
+               (d3_W_crystal() or (has("d3sk", 3) and d3_traverse1() and (d3_traverse2() or jump3()))) and
                (magicboom() or any_shooter())
 end
 
 function d3_post_subterror()
-    return d3_boss_door() or (d3_B1F_spinner() and k_subterror()) or (d3_traverse1() and has("d3sk", 4) and jump3())
+    return d3_boss_door() or (d3_B1F_spinner() and k_subterror()) or (d3_traverse1() and has("d3sk", 3) and jump3())
 end
 
 function d3_boss_door()
-    return (((d3_B1F_spinner() and k_subterror()) or (d3_traverse1() and has("d3sk", 4) and jump3())) and jump3() and
-               d3_traverse2()) or (has("d3sk", 4) and d3_traverse1() and d3_traverse2())
+    return (((d3_B1F_spinner() and k_subterror()) or (d3_traverse1() and has("d3sk", 3) and jump3())) and jump3() and
+               d3_traverse2()) or (has("d3sk", 3) and d3_traverse1() and d3_traverse2())
 end
 
 function d3_moldorm_drop()

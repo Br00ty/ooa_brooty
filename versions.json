@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "0.7.1.1",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.1.1/ooa_brooty.zip",
+            "sha256": "d85af9007e04a7c934d6880e1ce6cc14a1bd07e38c35df4c445ed1eb9a1f1c6c",
+            "changelog": [
+                "fixed some d2 logic"
+            ]
+        },
+        {
             "package_version": "0.7.1",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.1/ooa_brooty.zip",
             "sha256": "e609308f1f23f1f1ec2bfb7053c12cb9a7ec9c3484203fba24b2e4ba7fd3ba53",
