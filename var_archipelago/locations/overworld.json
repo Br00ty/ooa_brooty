@@ -2574,17 +2574,15 @@
                             {
                                 "name": "Zora King Gift",
                                 "access_rules": [
-                                    // Access to Syrup's Shop in Yoll Graveyard to buy a potion
-                                    "$use_seeds, emberseeds, [gravekey], flippers, curezora",
-                                    "$use_seeds, emberseeds, [gravekey], $jump3, curezora"
+                                    "curezora"
                                 ],
                                 "item_count": 1
                             },
                             {
                                 "name": "King Zora Permission to enter Jabu",
                                 "access_rules": [
-                                    "$use_seeds, emberseeds, [gravekey], flippers, curefairy, curezora",
-                                    "$use_seeds, emberseeds, [gravekey], $jump3, curefairy, curezora"
+                                    "curefairy, curezora",
+                                    "curefairy, curezora"
                                 ],
                                 "hosted_item": "enterjabu",
                                 "item_count": 0
@@ -2602,11 +2600,9 @@
                         "name": "Zora Palace (Past)",
                         "sections": [
                             {
-                                "name": "Cure King Zora in the past\n(use magic potion from Maple's shop)",
+                                "name": "Cure King Zora in the past",
                                 "access_rules": [
-                                    // Access to Syrup's Shop in Yoll Graveyard to buy a potion
-                                    "$use_seeds, emberseeds, [gravekey], flippers, potion",
-                                    "$use_seeds, emberseeds, [gravekey], $jump3, potion"
+                                    "potion"
                                 ],
                                 "hosted_item": "curezora"
                             }
