@@ -307,17 +307,60 @@
     "codes": "d1key, gravekey"
   },
   // D4 Access
+  //{
+  //  "name": "Tuni Nut",
+  //  "type": "progressive",
+  //  "stages": [
+  //    {
+  //      "img": "images/items/tuninut.png",
+  //      "codes": "tuninut, tuniupgrade"
+  //    },
+  //    {
+  //      "img": "images/items/tuninut_repaired.png",
+  //      "codes": "repairednut, tuniupgrade"
+  //    }
+  //  ]
+  //},
   {
-    "name": "Tuni Nut",
-    "type": "progressive",
-    "stages": [
+    "name": "Tuni Nut Broken",
+    "type": "toggle",
+    //"loop": true,
+    "img": "images/items/tuninut.png",
+    "codes": "tuninut"
+  },
+  {
+    "name": "Tuni Nut Repaired",
+    "type": "toggle",
+    //"loop": true,
+    "img": "images/items/tuninut_repaired.png",
+    "codes": "repairednut"
+  },
+  {
+    "name": "Both Tuni Nuts",
+    "type": "composite_toggle",
+    "item_left": "repairednut",
+    "item_right": "tuninut",
+    "codes": "bothtuninuts",
+    "images": [
       {
-        "img": "images/items/tuninut.png",
-        "codes": "tuninut, tuniupgrade"
+        "left": false,
+        "right": false,
+        "img": "images/items/bothtuni_a.png"
       },
       {
-        "img": "images/items/tuninut_repaired.png",
-        "codes": "repairednut, tuniupgrade"
+        "left": true,
+        "right": false,
+        "img": "images/items/bothtuni_b.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/bothtuni_c.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/bothtuni_d.png"
       }
     ]
   },

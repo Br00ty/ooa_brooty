@@ -1133,31 +1133,31 @@
             {
                 "name": "Crescent Island",
                 "children": [
-                    {
-                        "name": "Tokay Market",
-                        "access_rules": [
-                            "$crescentpast"
-                        ],
-                        "sections": [
-                            {
-                                "name": "First Item",
-                                "item_count": 1,
-                                "access_rules": ["mysteryseeds"]
-                            },
-                            {
-                                "name": "Second Item",
-                                "item_count": 1,
-                                "access_rules": ["scentseeds"]
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "map",
-                                "x": 4507,
-                                "y": 1300
-                            }
-                        ]
-                    },
+                    //{
+                    //    "name": "Tokay Market",
+                    //    "access_rules": [
+                    //        "$crescentpast"
+                    //    ],
+                    //    "sections": [
+                    //        {
+                    //            "name": "First Item",
+                    //            "item_count": 1,
+                    //            "access_rules": ["mysteryseeds"]
+                    //        },
+                    //        {
+                    //            "name": "Second Item",
+                    //            "item_count": 1,
+                    //            "access_rules": ["scentseeds"]
+                    //        }
+                    //    ],
+                    //    "map_locations": [
+                    //        {
+                    //            "map": "map",
+                    //            "x": 4507,
+                    //            "y": 1300
+                    //        }
+                    //    ]
+                    //},
                     {
                         "name": "Tokay Crystal Cave",
                         "access_rules": [
@@ -1714,15 +1714,20 @@
                         ]
                     },
                     {
-                        "name": "Symmetry City Brothers",
+                        "name": "Symmetry City Main House",
                         "access_rules": [
                             "$symmetrypast"
                         ],
                         "sections": [
                             {
-                                "name": "first talk to sister, then the two brothers to the NE|NW",
+                                "name": "Symmetry City Brothers",
                                 "item_count": 1,
                                 "access_rules": []
+                            },
+                            {
+                                "name": "Middle Man Trade",
+                                "item_count": 1,
+                                "access_rules": ["dumbbell"]
                             }
                         ],
                         "map_locations": [
@@ -1730,26 +1735,6 @@
                                 "map": "map",
                                 "x": 2900,
                                 "y": 192
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Middle Man Trade",
-                        "access_rules": [
-                            "$symmetrypast,dumbbell"
-                        ],
-                        "sections": [
-                            {
-                                "name": "",
-                                "item_count": 1,
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "map",
-                                "x": 3050,
-                                "y": 180
                             }
                         ]
                     },
@@ -1783,7 +1768,7 @@
                             {
                                 "name": "",
                                 //"name": "Climb the wall to restore the tuninut",
-                                "hosted_item": "repairednut",
+                                "item_count": 1,
                                 "access_rules": []
                             }
                         ],

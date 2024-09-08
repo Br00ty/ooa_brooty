@@ -1,6 +1,16 @@
 {
     "versions": [
         {
+            "package_version": "0.7.1",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.1/ooa_brooty.zip",
+            "sha256": "e609308f1f23f1f1ec2bfb7053c12cb9a7ec9c3484203fba24b2e4ba7fd3ba53",
+            "changelog": [
+                "removed tokay market for now since it isnt implemented",
+                "seperate the tuni nuts",
+                "fix middle man location",
+            ]
+        },
+        {
             "package_version": "0.7",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7/ooa_brooty.zip",
             "sha256": "88e24da93bd7d9c096d64a19820629257898baf93b9078dac640a8d4157deeb2",

@@ -93,8 +93,8 @@ ITEM_MAPPING = {
     [BASE + 108] = {"seedling", "toggle"},
     [BASE + 109] = {"d8slate", "consumable"},
     [BASE + 110] = {"eyeball", "toggle"},
-    [BASE + 111] = {"tuniupgrade", "progressive"},
-    [BASE + 112] = {"tuniupgrade", "progressive"},
+    [BASE + 111] = {"tuninut", "toggle"},
+    [BASE + 112] = {"repairednut", "toggle"},
     [BASE + 113] = {"scale", "toggle"},
     -- RINGS
     [BASE + 125] = {"ring_expert", "toggle"}, -- FISXED
