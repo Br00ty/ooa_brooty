@@ -1,6 +1,17 @@
 {
     "versions": [
         {
+            "package_version": "0.7.2",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.2/ooa_brooty.zip",
+            "sha256": "c6f80a1474b898ad90e84c1ed240e623bc0f89602a039f6d522037feff6cead4",
+            "changelog": [
+                "fixed crescent island logic (needed currents not echoes)",
+                "adjusted logic for goron sword, cant use it for shooting gallery or ramrock",
+                "shifted item ids to accomodate new zora potion",
+                "fixed autotracking for nuun highlands chest"
+            ]
+        },
+        {
             "package_version": "0.7.1.2",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.1.2/ooa_brooty.zip",
             "sha256": "f59c06a20316a22f7d878938802e8909d9e0af973cabaa186ac6f3034222ea94",

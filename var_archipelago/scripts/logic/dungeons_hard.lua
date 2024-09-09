@@ -303,5 +303,5 @@ function d8_tileroom_h()
 end
 
 function d8_boss_h()
-    return has("d8bk") and d8_tileroom_h() and has("d8slate",4)
+    return has("d8bk") and d8_tileroom_h() and has("d8slate",4) and has("gallery")
 end

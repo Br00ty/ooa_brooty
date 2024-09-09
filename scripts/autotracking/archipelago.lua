@@ -211,6 +211,18 @@ function onLocation(location_id, location_name)
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onLocation: could not find object for code %s", v[1]))
     end
+    --if location_name == "Nuun Highlands Cave" then
+    --    obj = Tracker:FindObjectForCode("@Overworld/Nuun Highlands|Symmetry City|Talus Peaks/Nuun Highlands Cave - Ricky/")
+    --    obj.AvailableChestCount = obj.AvailableChestCount - 1
+    --end
+    --if location_name == "Nuun Highlands Cave" then
+    --    obj = Tracker:FindObjectForCode("@Overworld/Nuun Highlands|Symmetry City|Talus Peaks/Nuun Highlands Cave - Dimitri/")
+    --    obj.AvailableChestCount = obj.AvailableChestCount - 1
+    --end
+    --if location_name == "Nuun Highlands Cave" then
+    --    obj = Tracker:FindObjectForCode("@Overworld/Nuun Highlands|Symmetry City|Talus Peaks/Nuun Highlands Cave - Moosh/")
+    --    obj.AvailableChestCount = obj.AvailableChestCount - 1
+    --end
 end
 
 -- called when a locations is scouted

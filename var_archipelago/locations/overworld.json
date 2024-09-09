@@ -1606,7 +1606,7 @@
                         ]
                     },
                     {
-                        "name": "Nuun Cave - Ricky",
+                        "name": "Nuun Highlands Cave",
                         "access_rules": [
                             "$nuuncave"
                         ],
@@ -1614,9 +1614,6 @@
                             {
                                 "name": "",
                                 "item_count": 1,
-                                "visibility_rules": [
-                                    "nuun_ricky"
-                                ],
                                 "access_rules": []
                             }
                         ],
@@ -1630,57 +1627,11 @@
                                 "map": "animal_regions",
                                 "x": 407,
                                 "y": 214
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Nuun Cave - Dimitri",
-                        "access_rules": [
-                            "$nuuncave"
-                        ],
-                        "sections": [
-                            {
-                                "name": "",
-                                "item_count": 1,
-                                "visibility_rules": [
-                                    "nuun_dimitri"
-                                ],
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "map",
-                                "x": 1207,
-                                "y": 343
                             },
                             {
                                 "map": "animal_regions",
                                 "x": 831,
                                 "y": 278
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Nuun Cave - Moosh",
-                        "access_rules": [
-                            "$nuuncave"
-                        ],
-                        "sections": [
-                            {
-                                "name": "",
-                                "item_count": 1,
-                                "visibility_rules": [
-                                    "nuun_moosh"
-                                ],
-                                "access_rules": []
-                            }
-                        ],
-                        "map_locations": [
-                            {
-                                "map": "map",
-                                "x": 1207,
-                                "y": 343
                             },
                             {
                                 "map": "animal_regions",
@@ -2407,10 +2358,10 @@
                         "name": "Goron Shooting Gallery",
                         "access_rules": [
                             //from Lynna, swimming
-                            "$lynna_village, feather, mermaid, currents, hook1, sword, bracelet",
-                            "$lynna_village, ages, mermaid, hook1, sword",
+                            "$lynna_village, feather, mermaid, currents, hook1, gallery, bracelet",
+                            "$lynna_village, ages, mermaid, hook1, gallery",
                             //from Moblin cave
-                            "$west_ridge_present, $jump3, bracelet, currents, hook1, sword"
+                            "$west_ridge_present, $jump3, bracelet, currents, hook1, gallery"
                         ],
                         "sections": [
                             {

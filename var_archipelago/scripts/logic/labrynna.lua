@@ -114,7 +114,7 @@ end
 
 -- crescent island
 function crescentpast()
-    return has("raft") or (lynna_city() and mermaid()) or (crescentpresentwest() and echoes())
+    return has("raft") or (lynna_city() and mermaid()) or (crescentpresentwest() and currents())
 end
 
 function tokaycrystalcave()

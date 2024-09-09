@@ -473,7 +473,7 @@ function d8_tileroom()
 end
 
 function d8_boss()
-    return has("d8bk") and d8_tileroom() and has("d8slate",4)
+    return has("d8bk") and d8_tileroom() and has("d8slate",4) and has("gallery")
 end
 
 -- dungeon full clear functions
