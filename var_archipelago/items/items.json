@@ -697,11 +697,16 @@
     "name": "Logic",
     "type": "progressive",
     "allow_disabled": false,
-    "loop": true,
+    "loop": false,
     "stages": [
       {
         "img": "images/items/l_bas.png",
         "codes": "l_bas, logic",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/l_med.png",
+        "codes": "l_med, logic",
         "inherit_codes": false
       },
       {
@@ -929,6 +934,11 @@
         "img": "images/dungeons/questionlabel.png"
       },
       {
+        "codes": "makupath1",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
         "codes": "spiritsgrave1",
         "inherit_codes": false,
         "img": "images/dungeons/d1_entrance.png"
@@ -938,11 +948,11 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      {
-        "codes": "wingdungeonpresent1",
-        "inherit_codes": false,
-        "img": "images/dungeons/d2_entrance.png"
-      },
+      //{
+      //  "codes": "wingdungeonpresent1",
+      //  "inherit_codes": false,
+      //  "img": "images/dungeons/d2_entrance.png"
+      //},
       {
         "codes": "moonlitgrotto1",
         "inherit_codes": false,
@@ -992,6 +1002,11 @@
         "img": "images/dungeons/questionlabel.png"
       },
       {
+        "codes": "makupath2",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
         "codes": "spiritsgrave2",
         "inherit_codes": false,
         "img": "images/dungeons/d1_entrance.png"
@@ -1001,11 +1016,11 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      {
-        "codes": "wingdungeonpresent2",
-        "inherit_codes": false,
-        "img": "images/dungeons/d2_entrance.png"
-      },
+      //{
+      //  "codes": "wingdungeonpresent2",
+      //  "inherit_codes": false,
+      //  "img": "images/dungeons/d2_entrance.png"
+      //},
       {
         "codes": "moonlitgrotto2",
         "inherit_codes": false,
@@ -1055,6 +1070,11 @@
         "img": "images/dungeons/questionlabel.png"
       },
       {
+        "codes": "makupath3",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
         "codes": "spiritsgrave3",
         "inherit_codes": false,
         "img": "images/dungeons/d1_entrance.png"
@@ -1064,11 +1084,11 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      {
-        "codes": "wingdungeonpresent3",
-        "inherit_codes": false,
-        "img": "images/dungeons/d2_entrance.png"
-      },
+      //{
+      //  "codes": "wingdungeonpresent3",
+      //  "inherit_codes": false,
+      //  "img": "images/dungeons/d2_entrance.png"
+      //},
       {
         "codes": "moonlitgrotto3",
         "inherit_codes": false,
@@ -1118,6 +1138,11 @@
         "img": "images/dungeons/questionlabel.png"
       },
       {
+        "codes": "makupath4",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
         "codes": "spiritsgrave4",
         "inherit_codes": false,
         "img": "images/dungeons/d1_entrance.png"
@@ -1127,11 +1152,11 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      {
-        "codes": "wingdungeonpresent4",
-        "inherit_codes": false,
-        "img": "images/dungeons/d2_entrance.png"
-      },
+      //{
+      //  "codes": "wingdungeonpresent4",
+      //  "inherit_codes": false,
+      //  "img": "images/dungeons/d2_entrance.png"
+      //},
       {
         "codes": "moonlitgrotto4",
         "inherit_codes": false,
@@ -1181,6 +1206,11 @@
         "img": "images/dungeons/questionlabel.png"
       },
       {
+        "codes": "makupath5",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
         "codes": "spiritsgrave5",
         "inherit_codes": false,
         "img": "images/dungeons/d1_entrance.png"
@@ -1190,11 +1220,11 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      {
-        "codes": "wingdungeonpresent5",
-        "inherit_codes": false,
-        "img": "images/dungeons/d2_entrance.png"
-      },
+      //{
+      //  "codes": "wingdungeonpresent5",
+      //  "inherit_codes": false,
+      //  "img": "images/dungeons/d2_entrance.png"
+      //},
       {
         "codes": "moonlitgrotto5",
         "inherit_codes": false,
@@ -1244,6 +1274,11 @@
         "img": "images/dungeons/questionlabel.png"
       },
       {
+        "codes": "makupath6p",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
         "codes": "spiritsgrave6p",
         "inherit_codes": false,
         "img": "images/dungeons/d1_entrance.png"
@@ -1253,11 +1288,11 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      {
-        "codes": "wingdungeonpresent6p",
-        "inherit_codes": false,
-        "img": "images/dungeons/d2_entrance.png"
-      },
+      //{
+      //  "codes": "wingdungeonpresent6p",
+      //  "inherit_codes": false,
+      //  "img": "images/dungeons/d2_entrance.png"
+      //},
       {
         "codes": "moonlitgrotto6p",
         "inherit_codes": false,
@@ -1307,6 +1342,11 @@
         "img": "images/dungeons/questionlabel.png"
       },
       {
+        "codes": "makupath6",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
         "codes": "spiritsgrave6",
         "inherit_codes": false,
         "img": "images/dungeons/d1_entrance.png"
@@ -1316,11 +1356,11 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      {
-        "codes": "wingdungeonpresent6",
-        "inherit_codes": false,
-        "img": "images/dungeons/d2_entrance.png"
-      },
+      //{
+      //  "codes": "wingdungeonpresent6",
+      //  "inherit_codes": false,
+      //  "img": "images/dungeons/d2_entrance.png"
+      //},
       {
         "codes": "moonlitgrotto6",
         "inherit_codes": false,
@@ -1370,6 +1410,11 @@
         "img": "images/dungeons/questionlabel.png"
       },
       {
+        "codes": "makupath7",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
         "codes": "spiritsgrave7",
         "inherit_codes": false,
         "img": "images/dungeons/d1_entrance.png"
@@ -1379,11 +1424,11 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      {
-        "codes": "wingdungeonpresent7",
-        "inherit_codes": false,
-        "img": "images/dungeons/d2_entrance.png"
-      },
+      //{
+      //  "codes": "wingdungeonpresent7",
+      //  "inherit_codes": false,
+      //  "img": "images/dungeons/d2_entrance.png"
+      //},
       {
         "codes": "moonlitgrotto7",
         "inherit_codes": false,
@@ -1433,6 +1478,11 @@
         "img": "images/dungeons/questionlabel.png"
       },
       {
+        "codes": "makupath8",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
         "codes": "spiritsgrave8",
         "inherit_codes": false,
         "img": "images/dungeons/d1_entrance.png"
@@ -1442,11 +1492,11 @@
         "inherit_codes": false,
         "img": "images/dungeons/d2_past_entrance.png"
       },
-      {
-        "codes": "wingdungeonpresent8",
-        "inherit_codes": false,
-        "img": "images/dungeons/d2_entrance.png"
-      },
+      //{
+      //  "codes": "wingdungeonpresent8",
+      //  "inherit_codes": false,
+      //  "img": "images/dungeons/d2_entrance.png"
+      //},
       {
         "codes": "moonlitgrotto8",
         "inherit_codes": false,

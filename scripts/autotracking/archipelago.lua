@@ -100,11 +100,11 @@ function onClear(slot_data)
     end
 
     if slot_data["logic_difficulty"] then
-        if slot_data["logic_difficulty"] == "0" then
+        if slot_data["logic_difficulty"] == 0 then
+            Tracker:FindObjectForCode("logic").CurrentStage = 0
+        elseif slot_data["logic_difficulty"] == 1 then
             Tracker:FindObjectForCode("logic").CurrentStage = 1
-        --elseif slot_data["logic_difficulty"] == "1" then
-            --Tracker:FindObjectForCode("logic").CurrentStage = 2
-        elseif slot_data["logic_difficulty"] == "2" then
+        elseif slot_data["logic_difficulty"] == 2 then
             Tracker:FindObjectForCode("logic").CurrentStage = 2
         end
     end

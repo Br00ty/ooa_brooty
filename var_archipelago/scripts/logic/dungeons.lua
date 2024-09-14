@@ -40,7 +40,7 @@ function d1_u_room()
 end
 
 function d1_basement()
-    return d1_u_room() and ember()
+    return d1_u_room() and (ember() or mystery())
 end
 
 -- d2
@@ -53,7 +53,7 @@ function d2_moblin_drop()
 end
 
 function d2_enter_swoop()
-    return (k_spikedbeetle() and feather()) or has("d2sk",2)
+    return (k_spikedbeetle() and feather() and (pegasus() or medium())) or has("d2sk",2)
 end
 
 function d2_basement()

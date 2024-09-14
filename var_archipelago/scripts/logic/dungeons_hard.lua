@@ -8,7 +8,7 @@ function d1_u_room_h()
 end
 
 function d1_basement_h()
-    return d1_u_room_h() and ember()
+    return d1_u_room_h() and (ember() or mystery())
 end
 
 -- d2

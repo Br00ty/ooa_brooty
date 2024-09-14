@@ -105,7 +105,7 @@ LOCATION_MAPPING = {
     [BASE + 94] = {"@Overworld/Rolling Ridge West/Old Zora Trade/"},
     -- HEART PIECES
     [BASE + 95] = {"@Overworld/Lynna|South Shore|Palace/Black Tower Heart Piece/"},
-    [BASE + 96] = {"@Overworld/Lynna|South Shore|Palace/Maku Path/Heart Piece"},
+    [BASE + 96] = {"@Dungeons/Maku Path (D0)/Heart Piece"},
     [BASE + 97] = {"@Overworld/Yoll Graveyard/Yoll Graveyard Heart Piece/"},
     [BASE + 98] = {"@Overworld/Fairies' Woods/Deku Forest Heart Piece/"},
     [BASE + 99] = {"@Overworld/Fairies' Woods/Restoration Wall Heart Piece/"},
@@ -113,8 +113,8 @@ LOCATION_MAPPING = {
     [BASE + 101] = {"@Overworld/Rolling Ridge West/Rolling Ridge Entrance/Ridge West Heart Piece"},
     [BASE + 102] = {"@Overworld/Rolling Ridge East (Past)/Ridge Upper Heart Piece/"},
     -- MAKU PATH
-    [BASE + 103] = {"@Overworld/Lynna|South Shore|Palace/Maku Path/Key Chest"},
-    [BASE + 104] = {"@Overworld/Lynna|South Shore|Palace/Maku Path/Basement"},
+    [BASE + 103] = {"@Dungeons/Maku Path (D0)/Key Chest"},
+    [BASE + 104] = {"@Dungeons/Maku Path (D0)/Basement"},
     -- SPIRITS GRAVE
     [BASE + 105] = {"@Dungeons/Spirit's Grave (D1)/One-Button Chest/"},
     [BASE + 106] = {"@Dungeons/Spirit's Grave (D1)/Two-Buttons Chest/"},

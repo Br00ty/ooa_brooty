@@ -9,6 +9,15 @@ function has(item, amount)
     end
 end
 
+-- logic macros
+function medium()
+  return has("l_med")
+end
+
+function hard()
+  return has("l_hard")
+end
+
 -- item macros
 function sword()
   return has("sword")
@@ -99,7 +108,7 @@ function jump1()
 end
 
 function bomb_jump2() --hard logic
-  return jump3() or (feather() and bombs())
+  return jump3() or (hard() and feather() and bombs())
 end
 
 function jump3()
@@ -107,7 +116,7 @@ function jump3()
 end
 
 function bomb_jump3() --hard logic
-  return cape() or (jump3() and bombs())
+  return cape() or (hard() and jump3() and bombs())
 end
 
 function farm()
@@ -321,7 +330,7 @@ function punch_object()
 end
 
 function punch_enemy()
-  return (has ("ring_expert") or (has("l_hard") and has("ring_fist")))
+  return (has ("ring_expert") or (hard() and has("ring_fist")))
 end
 
 function punch_enemy_h()

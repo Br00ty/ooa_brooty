@@ -156,43 +156,18 @@
                         ]
                     },
                     {
-                        "name": "Maku Path",
-                        "access_rules": [],
+                        "name": "Enter Maku Path (D0)",
+                        "access_rules": [
+                            "$maku_tree",
+                            "$lynna_village,shovel"
+                        ],
                         "sections": [
                             {
-                                "name": "Key Chest",
+                                "name": "",
                                 "item_count": 1,
-                                "access_rules": [
-                                    "$maku_tree,$k_normal,pathkey",
-                                    "$maku_tree,shovel,pathkey",
-                                    "$lynna_village,shovel"
-                                ]
-                            },
-                            //{
-                            //    "name": "Did you get a key from the Path Chest? (Mark this)",
-                            //    "hosted_item": "pathkey",
-                            //    "access_rules": [
-                            //        "{$maku_tree,$k_normal}",
-                            //        "{$maku_tree,shovel}",
-                            //        "{$lynna_village,shovel}"
-                            //    ]
-                            //},
-                            {
-                                "name": "Basement",
-                                "item_count": 1,
-                                "access_rules": [
-                                    "$maku_tree,$k_normal",
-                                    "$maku_tree,shovel",
-                                    "$lynna_village,shovel,pathkey"
-                                ]
-                            },
-                            {
-                                "name": "Heart Piece",
-                                "item_count": 1,
-                                "access_rules": [
-                                    "$maku_tree,$k_normal",
-                                    "$lynna_village,shovel,pathkey,$k_normal"
-                                ]
+                                "chest_unopened_img": "images/dungeons/d0_entrance.png",
+                                "chest_opened_img": "images/dungeons/d0_entrance.png",
+                                "access_rules": []
                             }
                         ],
                         "map_locations": [
@@ -1776,7 +1751,7 @@
                     {
                         "name": "Bomb Fairy",
                         "access_rules": [
-                            "$symmetrypast,song2,lift1"
+                            "$symmetrypast,song2,lift1,bombs"
                         ],
                         "sections": [
                             {
@@ -1816,8 +1791,7 @@
                     {
                         "name": "Enter Skull Dungeon (D4)",
                         "access_rules": [
-                            "$d4_entrance",
-                            "[l_hard],$d4_entrance_h"
+                            "$d4_entrance"
                         ],
                         "sections": [
                             {

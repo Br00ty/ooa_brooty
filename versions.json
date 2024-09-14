@@ -1,6 +1,19 @@
 {
     "versions": [
         {
+            "package_version": "0.7.3",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.3/ooa_brooty.zip",
+            "sha256": "81afa9ec316dccab30148ace018a3e1e438fc41659fb59d4160473d800a3d57f",
+            "changelog": [
+                "made maku path a dungeon with its own tab",
+                "added maku path as an entrance for dungeon shuffle",
+                "fixed autotracking",
+                "super early beginning of Medium logic",
+                "some quick logic fixes",
+                "do some last minute maku path logic fixes"
+            ]
+        },
+        {
             "package_version": "0.7.2",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.2/ooa_brooty.zip",
             "sha256": "c6f80a1474b898ad90e84c1ed240e623bc0f89602a039f6d522037feff6cead4",

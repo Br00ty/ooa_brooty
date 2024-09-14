@@ -208,12 +208,12 @@ function wallpatch_h()
 end
 
 function d4_entrance()
-    return symmetrypresent() and has("repairednut") and wallpatch()
+    return symmetrypresent() and has("repairednut")
 end
 
-function d4_entrance_h()
-    return symmetrypresent() and has("repairednut") and wallpatch_h()
-end
+--function d4_entrance_h()
+    --return symmetrypresent() and has("repairednut") and wallpatch_h()
+--end
 
 -- rolling ridge // fucking messy
 function west_ridge_present()

@@ -5,6 +5,95 @@
         "chest_opened_img": "images/items/chest_gray.png",
         "children": [
             {
+                "name": "Maku Path (D0)",
+                "children": [
+                    {
+                        "name": "Key Chest",
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$maku_tree,$k_normal,pathkey,dungeon_er_off",
+                                    "$maku_tree,shovel,pathkey,dungeon_er_off",
+                                    "$lynna_village,shovel,dungeon_er_off",
+                                    "$k_normal,dungeon_er_on",
+                                    "shovel,dungeon_er_on"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d0",
+                                "x": 599,
+                                "y": 80
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Basement",
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$maku_tree,$k_normal,dungeon_er_off",
+                                    "$maku_tree,shovel,dungeon_er_off",
+                                    "$lynna_village,shovel,pathkey,dungeon_er_off",
+                                    "pathkey,dungeon_er_on"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d0",
+                                "x": 167,
+                                "y": 199
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Heart Piece",
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$maku_tree,$k_normal,dungeon_er_off",
+                                    "$maku_tree,shovel,dungeon_er_off",
+                                    "$lynna_village,shovel,pathkey,dungeon_er_off",
+                                    "pathkey,dungeon_er_on"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d0",
+                                "x": 71,
+                                "y": 55
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Have Maku Path Key?",
+                        "sections": [
+                            {
+                                "access_rules": ["{}"],
+                                "hosted_item": "pathkey"
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "d0",
+                                "x": 599,
+                                "y": 449,
+                                "size": 50
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "name": "Spirit's Grave (D1)",
                 "access_rules": [
                     "gravekey,dungeon_er_off","dungeon_er_on"
@@ -841,7 +930,6 @@
                 "name": "Skull Dungeon (D4)",
                 "access_rules": [
                     "dungeon_er_off,$d4_entrance",
-                    "dungeon_er_off,$d4_entrance_h",
                     "dungeon_er_on"
                 ],
                 "children": [
