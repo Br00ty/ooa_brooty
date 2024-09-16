@@ -76,11 +76,25 @@
   },
   {
     "name": "Bombs",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/bombs.png",
-    "codes": "bomb, bombs"
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/bombs.png",
+        "codes": "bomb, bombs"
+      },
+      {
+        "img": "images/items/bombs_plus.png",
+        "codes": "bomb, bombs, bombplus, bombsplus"
+      }
+    ]
   },
+  //{
+  //  "name": "Bombs",
+  //  "type": "toggle",
+  //  "loop": true,
+  //  "img": "images/items/bombs.png",
+  //  "codes": "bomb, bombs"
+  //},
   {
     "name": "Flute",
     "type": "toggle",

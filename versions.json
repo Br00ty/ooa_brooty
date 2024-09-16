@@ -1,6 +1,17 @@
 {
     "versions": [
         {
+            "package_version": "0.7.3.1",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.3.1/ooa_brooty.zip",
+            "sha256": "7d75ac11b14bf34cb89f211f60d84767343c9177c2ae79932abf84eb8104dc4f",
+            "changelog": [
+                "make bombs progressive",
+                "fix logic for treasure seeking goron",
+                "fix an autotracking error",
+                "remove testing branch lol"
+            ]
+        },
+        {
             "package_version": "0.7.3",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.3/ooa_brooty.zip",
             "sha256": "81afa9ec316dccab30148ace018a3e1e438fc41659fb59d4160473d800a3d57f",

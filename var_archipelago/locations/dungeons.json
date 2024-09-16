@@ -78,6 +78,7 @@
                         "name": "Have Maku Path Key?",
                         "sections": [
                             {
+                                "name": "",
                                 "access_rules": ["{}"],
                                 "hosted_item": "pathkey"
                             }
