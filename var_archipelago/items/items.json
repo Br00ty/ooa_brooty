@@ -649,6 +649,25 @@
   },
   // OPTIONS
   {
+    "name": "Advance Shop Toggle",
+    "type": "toggle",
+    "codes": "advanceshop",
+    "img": "images/items/advanceshop.png",
+    //"initial_active_state": true
+    //"img": "images/items/bosskey.png"
+  },
+  {
+    "name": "Required Slates",
+    "type": "consumable",
+    "codes": "requiredslates",
+    "max_quantity": 4,
+    "initial_quantity": 0,
+    "allow_disabled": false,
+    "overlay_font_size": 28,
+    "overlay_align": "center",
+    "img": "images/items/slate.png"
+  },
+  {
     "name": "Required Essence",
     "type": "consumable",
     "codes": "allessence",
@@ -1547,6 +1566,13 @@
         "img": "images/dungeons/d8_entrance.png"
       }
     ]
+  },
+  {
+    "name": "Found Maku Road",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/foundmakuroad.png",
+    "codes": "foundmakuroad"
   },
   // CROSS-ITEMS LIST
   {

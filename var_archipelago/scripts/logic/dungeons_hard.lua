@@ -66,7 +66,7 @@ function d3_N_crystal_h()
 end
 
 function d3_armos_drop_h()
-    return has("d3sk", 1) and (bombs() or cane() or magicboom() or (scent() and shoot_seeds()) or scent_satchel())
+    return has("d3sk", 1) and (bombs() or bigsword() or cane() or magicboom() or (scent() and shoot_seeds()) or scent_satchel())
 end
 
 function d3_six_blocK_drop_h()
@@ -75,7 +75,7 @@ function d3_six_blocK_drop_h()
 end
 
 function d3_conveyor_belt_room_h()
-    return d3_six_blocK_drop_h() and (bombs() or cane() or magicboom() or (scent() and (shooter() or slingshot())) or scent_satchel())
+    return d3_six_blocK_drop_h() and (bombs() or bigsword() or cane() or magicboom() or (scent() and (shooter() or slingshot())) or scent_satchel())
 end
 
 function d3_B1F_spinner_h()
@@ -96,7 +96,7 @@ function d3_traverse2_h()
     return d3_traverse2() or
                (feather() and
                    (sword() or rodofseasons() or foolsore() or (bomb_jump2() and (ember() or scent() or mystery()))) and
-                   (jump3() or hook1() or slingshot() or (lift1() and has("d3sk", 4))))
+                   (jump3() or hook1() or slingshot() or (lift1() and has("d3sk", 3))))
 end
 
 function d3_bridge_chest_h()
@@ -105,18 +105,18 @@ end
 
 function d3_B1F_east_h()
     return d3_B1F_spinner_h() and k_subterror() and
-               (d3_W_crystal() or (has("d3sk", 4) and d3_traverse1() and (d3_traverse2() or jump3() or feather()))) and
+               (d3_W_crystal() or (has("d3sk", 3) and d3_traverse1() and (d3_traverse2() or jump3() or feather()))) and
                (magicboom() or any_shooter() or sword())
 end
 
 function d3_post_subterror_h()
-    return d3_boss_door_h() or (d3_B1F_spinner_h() and k_subterror()) or (d3_traverse1_h() and has("d3sk", 4) and (jump3() or feather()))
+    return d3_boss_door_h() or (d3_B1F_spinner_h() and k_subterror()) or (d3_traverse1_h() and has("d3sk", 3) and (jump3() or feather()))
 end
 
 function d3_boss_door_h()
     return ((((d3_B1F_spinner_h() and k_subterror()) or
-               (d3_traverse1_h() and has("d3sk", 4) and (jump3() or feather()))) and (jump3() or feather()) and
-               d3_traverse2_h())) or (has("d3sk", 4) and d3_traverse1_h() and d3_traverse2_h())
+               (d3_traverse1_h() and has("d3sk", 3) and (jump3() or feather()))) and (jump3() or feather()) and
+               d3_traverse2_h())) or (has("d3sk", 3) and d3_traverse1_h() and d3_traverse2_h())
 end
 
 function d3_moldorm_drop_h()
@@ -303,5 +303,5 @@ function d8_tileroom_h()
 end
 
 function d8_boss_h()
-    return has("d8bk") and d8_tileroom_h() and has("d8slate",4) and has("gallery")
+    return has("d8bk") and d8_tileroom_h() and requiredslates() and has("gallery")
 end

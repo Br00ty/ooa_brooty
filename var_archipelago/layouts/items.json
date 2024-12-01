@@ -135,7 +135,8 @@
                 "d1",
                 "questionmark1",
                 "d2",
-                "questionmark2"
+                "questionmark2",
+                "foundmakuroad"
               ]
             ]
           }
@@ -350,9 +351,9 @@
     "background": "#303841",
     "orientation": "vertical",
     "h_alignment": "center",
-    "margin": "0,5,3,0",
-    "item_margin": "5,5",
-    "item_size": 55,
+    "margin": "0,2",
+    "item_margin": "10,0",
+    "item_size": 44,
     "rows": [
       [
         "companions"
@@ -361,10 +362,16 @@
         "allessence"
       ],
       [
+        "requiredslates"
+      ],
+      [
         "l_bas"
       ],
       [
         "dungeon_er_off"
+      ],
+      [
+        "advanceshop"
       ]
     ]
   },
@@ -552,5 +559,5 @@
         "key": "trade2"
       }
     ]
-  },
+  }
 }

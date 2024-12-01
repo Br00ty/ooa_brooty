@@ -14,7 +14,7 @@
                 "rows": [
                     [
                         "sword",
-                        "foolsore",
+                        "bigsword",
                         "shield1",
                         "lift1",
                         "shooter",
@@ -31,7 +31,7 @@
                         "bombs",
                         "satchel",
                         "boomerang",
-                        "harp",
+                        "echoes",
                         "flute"
                     ]
                 ]
@@ -82,11 +82,11 @@
                     ],
                     [
                         "gravekey",
-                        "tuninut",
+                        "bothtuninuts",
                         "crownkey",
                         "d6keypast",
                         "d6keypresent",
-                        "powder",
+                        "powderpotion",
                         "eyeball"
                     ]
                 ]

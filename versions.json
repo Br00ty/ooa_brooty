@@ -1,6 +1,20 @@
 {
     "versions": [
         {
+            "package_version": "0.7.4",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.4/ooa_brooty.zip",
+            "sha256": "9547f4070e5a8f69a4bbc17fcbc745406f43e5af70f034f95c3c8bf44d5a3798",
+            "changelog": [
+                "so many old changes i forget alot so lets see",
+                "added advanced shop toggle",
+                "added auto tracking of more settings through slot data",
+                "added a button for when a player has found maku path, even tho it doesnt do a lot right now and what i really want it to do, but it does do some logic",
+                "i guess i added required slates with this update?",
+                "changed broadcast view/item grid a bit i guess",
+                "theres probably more, and im sure people will point shit out lmao"
+            ]
+        },
+        {
             "package_version": "0.7.3.1",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.3.1/ooa_brooty.zip",
             "sha256": "7d75ac11b14bf34cb89f211f60d84767343c9177c2ae79932abf84eb8104dc4f",

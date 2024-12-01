@@ -122,7 +122,8 @@
                                 "name": "",
                                 "item_count": 1,
                                 "access_rules": [
-                                    "$maku_tree"
+                                    "$maku_tree",
+                                    "foundmakuroad,$k_normal,pathkey"
                                 ]
                             }
                         ],
@@ -175,6 +176,41 @@
                                 "map": "map",
                                 "x": 3700,
                                 "y": 457
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Maku Tree (Rear Entrance)",
+                        "access_rules": [],
+                        "visibility_rules": ["dungeon_er_on"],
+                        "sections": [
+                            {
+                                "name": "Key Chest",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$rescue_nayru,$k_normal,pathkey"
+                                ]
+                            },
+                            {
+                                "name": "Basement",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$rescue_nayru,$k_normal"
+                                ]
+                            },
+                            {
+                                "name": "Heart Piece",
+                                "item_count": 1,
+                                "access_rules": [
+                                    "$rescue_nayru,$k_normal"
+                                ]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3650,
+                                "y": 495
                             }
                         ]
                     },
@@ -361,6 +397,7 @@
                     },
                     {
                         "name": "Advance Shop",
+                        "visibility_rules": ["advanceshop"],
                         "access_rules": [],
                         "sections": [
                             {
@@ -967,8 +1004,8 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 2556,
-                                "y": 1095
+                                "x": 2700,
+                                "y": 990
                             }
                         ]
                     },
@@ -1751,7 +1788,8 @@
                     {
                         "name": "Bomb Fairy",
                         "access_rules": [
-                            "$symmetrypast,song2,lift1,bombs"
+                            "$symmetrypast,song2,lift1,bombs",
+                            "$symmetrypast,ages,bombs"
                         ],
                         "sections": [
                             {
@@ -1818,9 +1856,8 @@
                         "name": "Old Zora Trade",
                         "access_rules": [
                             "$lynna_village,ages,seaukulele",
-                            "$lynna_village,$moosh_flute,seaukulele",
-                            "$lynna_village,$jump1,hook1,seaukulele",
-                            "#lynna_village,$jump1,mermaid,seaukulele"
+                            "$lynna_village,feather,hook1,seaukulele",
+                            "$lynna_village,feather,mermaid,seaukulele"
                         ],
                         "sections": [
                             {
@@ -2308,10 +2345,10 @@
                         "name": "Treasure Hunting Goron",
                         "access_rules": [
                             //from Lynna, swimming
-                            "$lynna_village, echoes, feather, mermaid, hook1, bombsplus, emberseeds, lift1",
-                            "$lynna_village, ages, mermaid, hook1, bombsplus, emberseeds, lift1",
+                            "$lynna_village, echoes, feather, mermaid, hook1, bombsplus, $ember_satchel, lift1",
+                            "$lynna_village, ages, mermaid, hook1, bombsplus, $ember_satchel, lift1",
                             //from the upper cave, requires emblem
-                            "$west_ridge_present, $jump3, bracelet, bombsplus, emberseeds"
+                            "$west_ridge_present, $jump3, bracelet, bombsplus, $ember_satchel"
                         ],
                         "sections": [
                             {

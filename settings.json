@@ -1,3 +1,4 @@
 {
-    "disabled_image_filter": "grayscale, dim"
+    "disabled_image_filter": "grayscale, dim",
+    "smooth_map_scaling": false
 }

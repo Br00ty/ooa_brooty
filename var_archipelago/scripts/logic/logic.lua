@@ -27,6 +27,22 @@ function sword2()
   return has("sword2")
 end
 
+function sword3()
+  return has("sword3")
+end
+
+function bigsword()
+  return has("bigsword")
+end
+
+function has_sword()
+  return sword() or sword2() or sword3() or bigsword()
+end
+
+function has_small_sword()
+  return has("sword1") or has("royalsword") or has("mastersword")
+end
+
 function shield()
   return has("shield1")
 end
@@ -112,7 +128,7 @@ function bomb_jump2() --hard logic
 end
 
 function jump3()
-  return (feather() and pegasus_satchel()) or cape()
+  return (medium() and feather() and pegasus_satchel()) or cape()
 end
 
 function bomb_jump3() --hard logic
@@ -417,11 +433,11 @@ function k_stalfos()
 end
 
 function k_underwater()
-  return (sword() or shooter_weapon() or punch_enemy() or foolsore())
+  return (has_small_sword() or shooter_weapon() or punch_enemy() or foolsore())
 end
 
 function k_underwater_h()
-  return (sword() or shooter_weapon() or punch_enemy_h() or foolsore())
+  return (has_small_sword() or shooter_weapon() or punch_enemy_h() or foolsore())
 end
 
 function k_switchhook()
@@ -559,4 +575,27 @@ function goal()
   local count = Tracker:ProviderCountForCode("allessence")
   local essences = essences()
   return (essences >= count)
+end
+
+function slates()
+  local amt = 0
+  if has("d8slate", 1) then
+      amt = amt + 1
+  end
+  if has("d8slate", 2) then
+      amt = amt + 1
+  end
+  if has("d8slate", 3) then
+      amt = amt + 1
+  end
+  if has("d8slate", 4) then
+      amt = amt + 1
+  end
+  return amt
+end
+
+function requiredslates()
+  local count = Tracker:ProviderCountForCode("requiredslates")
+  local slates = slates()
+  return (slates >= count)
 end

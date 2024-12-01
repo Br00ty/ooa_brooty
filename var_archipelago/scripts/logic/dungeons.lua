@@ -138,7 +138,7 @@ function d3_stone_soldiers_owl()
 end
 
 function d3_armos_drop()
-    return has("d3sk", 1) and (bombs() or cane() or magicboom() or (scent() and (shooter() or slingshot())))
+    return has("d3sk", 1) and (bombs() or bigsword() or cane() or magicboom() or (scent() and (shooter() or slingshot())))
 end
 
 function d3_six_blocK_drop()
@@ -148,7 +148,7 @@ function d3_six_blocK_drop()
 end
 
 function d3_conveyor_belt_room()
-    return d3_six_blocK_drop() and (bombs() or cane() or magicboom() or (scent() and (shooter() or slingshot())))
+    return d3_six_blocK_drop() and (bombs() or bigsword() or cane() or magicboom() or (scent() and (shooter() or slingshot())))
 end
 
 function d3_break_crystal_switch()
@@ -180,7 +180,7 @@ end
 function d3_B1F_east()
     return d3_B1F_spinner() and k_subterror() and
                (d3_W_crystal() or (has("d3sk", 3) and d3_traverse1() and (d3_traverse2() or jump3()))) and
-               (magicboom() or any_shooter())
+               (magicboom() or any_shooter() or (hard() and has_sword()))
 end
 
 function d3_post_subterror()
@@ -473,8 +473,11 @@ function d8_tileroom()
 end
 
 function d8_boss()
-    return has("d8bk") and d8_tileroom() and has("d8slate",4) and has("gallery")
+    return has("d8bk") and d8_tileroom() and requiredslates() and has("gallery")
 end
+
+
+
 
 -- dungeon full clear functions
 function d1clear()

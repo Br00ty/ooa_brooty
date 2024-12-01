@@ -109,10 +109,29 @@ function onClear(slot_data)
         end
     end
 
+    if slot_data["shuffle_dungeons"] then
+        if slot_data["shuffle_dungeons"] == 0 then
+            Tracker:FindObjectForCode("dungeon_er_off").CurrentStage = 0
+        elseif slot_data["shuffle_dungeons"] == 1 then
+            Tracker:FindObjectForCode("dungeon_er_on").CurrentStage = 1
+        end
+    end
+
     if slot_data["required_essences"] then
         Tracker:FindObjectForCode("allessence").AcquiredCount = slot_data["required_essences"]
     end
 
+    if slot_data["advance_shop"] then
+        local obj = Tracker:FindObjectForCode("advanceshop")
+        if obj then
+            obj.Active = slot_data["advance_shop"] == 1
+        end
+    end
+
+    if slot_data["required_slates"] then
+        Tracker:FindObjectForCode("requiredslates").AcquiredCount = slot_data["required_slates"]
+    end
+    
     if SLOT_DATA == nil then
         return
     end
@@ -211,18 +230,18 @@ function onLocation(location_id, location_name)
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onLocation: could not find object for code %s", v[1]))
     end
-    --if location_name == "Nuun Highlands Cave" then
-    --    obj = Tracker:FindObjectForCode("@Overworld/Nuun Highlands|Symmetry City|Talus Peaks/Nuun Highlands Cave - Ricky/")
-    --    obj.AvailableChestCount = obj.AvailableChestCount - 1
-    --end
-    --if location_name == "Nuun Highlands Cave" then
-    --    obj = Tracker:FindObjectForCode("@Overworld/Nuun Highlands|Symmetry City|Talus Peaks/Nuun Highlands Cave - Dimitri/")
-    --    obj.AvailableChestCount = obj.AvailableChestCount - 1
-    --end
-    --if location_name == "Nuun Highlands Cave" then
-    --    obj = Tracker:FindObjectForCode("@Overworld/Nuun Highlands|Symmetry City|Talus Peaks/Nuun Highlands Cave - Moosh/")
-    --    obj.AvailableChestCount = obj.AvailableChestCount - 1
-    --end
+    if location_name == "Maku Path: Key Chest" then
+        obj = Tracker:FindObjectForCode("@Overworld/Lynna|South Shore|Palace/Maku Tree (Rear Entrance)/Key Chest")
+        obj.AvailableChestCount = obj.AvailableChestCount - 1
+    end
+    if location_name == "Maku Path: Basement" then
+        obj = Tracker:FindObjectForCode("@Overworld/Lynna|South Shore|Palace/Maku Tree (Rear Entrance)/Basement")
+        obj.AvailableChestCount = obj.AvailableChestCount - 1
+    end
+    if location_name == "Maku Path Heart Piece" then
+        obj = Tracker:FindObjectForCode("@Overworld/Lynna|South Shore|Palace/Maku Tree (Rear Entrance)/Heart Piece")
+        obj.AvailableChestCount = obj.AvailableChestCount - 1
+    end
 end
 
 -- called when a locations is scouted
