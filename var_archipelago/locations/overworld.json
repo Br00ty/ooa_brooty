@@ -180,7 +180,7 @@
                         ]
                     },
                     {
-                        "name": "Maku Tree (Rear Entrance)",
+                        "name": "Maku Path (Rear Entrance)",
                         "access_rules": [],
                         "visibility_rules": ["dungeon_er_on"],
                         "sections": [
@@ -426,6 +426,26 @@
                             {
                                 "map": "map",
                                 "x": 3660,
+                                "y": 690
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lynna Village Shooting Gallery",
+                        "access_rules": [
+                            "$has_sword"
+                        ],
+                        "sections": [
+                            {
+                                "name": "",
+                                "item_count": 1,
+                                "access_rules": []
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 3700,
                                 "y": 690
                             }
                         ]

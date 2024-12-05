@@ -231,15 +231,15 @@ function onLocation(location_id, location_name)
         print(string.format("onLocation: could not find object for code %s", v[1]))
     end
     if location_name == "Maku Path: Key Chest" then
-        obj = Tracker:FindObjectForCode("@Overworld/Lynna|South Shore|Palace/Maku Tree (Rear Entrance)/Key Chest")
+        obj = Tracker:FindObjectForCode("@Overworld/Lynna|South Shore|Palace/Maku Path (Rear Entrance)/Key Chest")
         obj.AvailableChestCount = obj.AvailableChestCount - 1
     end
     if location_name == "Maku Path: Basement" then
-        obj = Tracker:FindObjectForCode("@Overworld/Lynna|South Shore|Palace/Maku Tree (Rear Entrance)/Basement")
+        obj = Tracker:FindObjectForCode("@Overworld/Lynna|South Shore|Palace/Maku Path (Rear Entrance)/Basement")
         obj.AvailableChestCount = obj.AvailableChestCount - 1
     end
     if location_name == "Maku Path Heart Piece" then
-        obj = Tracker:FindObjectForCode("@Overworld/Lynna|South Shore|Palace/Maku Tree (Rear Entrance)/Heart Piece")
+        obj = Tracker:FindObjectForCode("@Overworld/Lynna|South Shore|Palace/Maku Path (Rear Entrance)/Heart Piece")
         obj.AvailableChestCount = obj.AvailableChestCount - 1
     end
 end

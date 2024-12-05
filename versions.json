@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+            "package_version": "0.7.4.1",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.4.1/ooa_brooty.zip",
+            "sha256": "3569801f1d7727ff1990bdb659412a1284f6d57df8f1d99c42e76f5a0ebb7bb9",
+            "changelog": [
+                "fixed autotracking of locations",
+                "added Lynna Village Shooting Range"
+            ]
+        },
+        {
             "package_version": "0.7.4",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.4/ooa_brooty.zip",
             "sha256": "9547f4070e5a8f69a4bbc17fcbc745406f43e5af70f034f95c3c8bf44d5a3798",

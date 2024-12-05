@@ -1,8 +1,8 @@
 [
   {
     "name": "map",
-    "location_size": 40,
-    "location_border_thickness": 12,
+    "location_size": 37,
+    "location_border_thickness": 9,
     "img": "images/maps/worldmap.png"
   },
   {
