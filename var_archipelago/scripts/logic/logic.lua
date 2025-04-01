@@ -380,15 +380,15 @@ function push_enemy()
 end
 
 function lever()
-  return (sword() or (shoot_seeds() and (ember() or scent() or mystery())) or hook1() or boomerang() or punch_object() or foolsore() or rodofseasons())
+  return (sword() or (shoot_seeds() and (ember() or scent() or mystery() or pegasus())) or hook1() or boomerang() or punch_object() or foolsore() or rodofseasons())
 end
 
 function lever_minecart()
-  return (sword() or (shoot_seeds() and (ember() or scent() or mystery())) or  boomerang() or punch_object() or foolsore() or rodofseasons())
+  return (sword() or (shoot_seeds() and (ember() or scent() or mystery() or pegasus())) or  boomerang() or punch_object() or foolsore() or rodofseasons())
 end
 
 function lever_minecartabove()
-  return (sword() or rodofseasons() or (shoot_seeds() and (ember() or scent() or mystery())) or boomerang())
+  return (sword() or rodofseasons() or (shoot_seeds() and (ember() or scent() or mystery() or pegasus())) or boomerang())
 end
 
 function switch()

@@ -2365,7 +2365,7 @@
                         "name": "Treasure Hunting Goron",
                         "access_rules": [
                             //from Lynna, swimming
-                            "$lynna_village, echoes, feather, mermaid, hook1, bombsplus, $ember_satchel, lift1",
+                            "$lynna_village, currents, feather, mermaid, hook1, bombsplus, $ember_satchel, lift1",
                             "$lynna_village, ages, mermaid, hook1, bombsplus, $ember_satchel, lift1",
                             //from the upper cave, requires emblem
                             "$west_ridge_present, $jump3, bracelet, bombsplus, $ember_satchel"

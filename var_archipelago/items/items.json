@@ -593,6 +593,60 @@
     "img": "images/items/smallkey.png"
   },
   {
+    "name": "D1 Master Key",
+    "type": "toggle",
+    "codes": "d1mk",
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D2 Master Key",
+    "type": "toggle",
+    "codes": "d2mk",
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D3 Master Key",
+    "type": "toggle",
+    "codes": "d3mk",
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D4 Master Key",
+    "type": "toggle",
+    "codes": "d4mk",
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D5 Master Key",
+    "type": "toggle",
+    "codes": "d5mk",
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D6 Past Master Key",
+    "type": "toggle",
+    "codes": "d6_1mk",
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D6 Present Master Key",
+    "type": "toggle",
+    "codes": "d6_2mk",
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D7 Master Key",
+    "type": "toggle",
+    "codes": "d7mk",
+    "img": "images/items/smallkey.png"
+  },
+  {
+    "name": "D8 Master Key",
+    "type": "toggle",
+    "codes": "d8mk",
+    "img": "images/items/smallkey.png"
+  },
+  {
     "name": "D8 Slates",
     "type": "consumable",
     "codes": "d8slate",

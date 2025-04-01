@@ -733,6 +733,7 @@
                                 "name": "",
                                 "access_rules": [
                                     "d3sk:3, [$k_normal]",
+                                    "d3mk, [$k_normal]",
                                     "d3sk:2, [d3sk:3], [$k_normal]",
                                     "$d3_bush_beetle_room"
                                 ],
@@ -754,6 +755,7 @@
                                 "name": "",
                                 "access_rules": [
                                     "d3sk:4, [$k_normal]",
+                                    "d3mk, [$k_normal]",
                                     "d3sk:3, [d3sk:4], [$k_normal]",
                                     "$d3_mimic_room"
                                 ],
@@ -2009,7 +2011,8 @@
                             {
                                 "name": "",
                                 "access_rules": [
-                                    "hook2,d7sk:7"
+                                    "hook2,d7sk:7",
+                                    "hook2,d7mk"
                                 ],
                                 "item_count": 1
                             }
