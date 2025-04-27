@@ -159,7 +159,7 @@
                     {
                         "name": "Enter Maku Path (D0)",
                         "access_rules": [
-                            "$maku_tree",
+                            "$maku_tree,pathkey,$k_normal",
                             "$lynna_village,shovel"
                         ],
                         "sections": [
@@ -1165,31 +1165,31 @@
             {
                 "name": "Crescent Island",
                 "children": [
-                    //{
-                    //    "name": "Tokay Market",
-                    //    "access_rules": [
-                    //        "$crescentpast"
-                    //    ],
-                    //    "sections": [
-                    //        {
-                    //            "name": "First Item",
-                    //            "item_count": 1,
-                    //            "access_rules": ["mysteryseeds"]
-                    //        },
-                    //        {
-                    //            "name": "Second Item",
-                    //            "item_count": 1,
-                    //            "access_rules": ["scentseeds"]
-                    //        }
-                    //    ],
-                    //    "map_locations": [
-                    //        {
-                    //            "map": "map",
-                    //            "x": 4507,
-                    //            "y": 1300
-                    //        }
-                    //    ]
-                    //},
+                    {
+                        "name": "Tokay Market",
+                        "access_rules": [
+                            "$crescentpast"
+                        ],
+                        "sections": [
+                            {
+                                "name": "First Item",
+                                "item_count": 1,
+                                "access_rules": ["mysteryseeds"]
+                            },
+                            {
+                                "name": "Second Item",
+                                "item_count": 1,
+                                "access_rules": ["scentseeds"]
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "map",
+                                "x": 4507,
+                                "y": 1300
+                            }
+                        ]
+                    },
                     {
                         "name": "Tokay Crystal Cave",
                         "access_rules": [

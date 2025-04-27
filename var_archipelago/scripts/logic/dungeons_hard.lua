@@ -256,11 +256,11 @@ function d6present_cube_chest_h()
 end
 
 function d6present_spinner_chest_h()
-    return d6past_spinner() and d6present_hand_room_h() and (feather() or hook1())
+    return d6past_spinner() and d6present_hand_room_h() and (feather() or hook1()) and (has("mermaidkey") or foundd6past())
 end
 
 function d6present_beamos_chest_h()
-    return d6_openwall_h() and feather() and (flippers() or (hook1() and has("d6_2sk",2)))
+    return d6_openwall_h() and feather() and (flippers() or (hook1() and has("d6_2sk",2))) and (has("mermaidkey") or foundd6past())
 end
 
 function d6present_rng_chest_h()
@@ -269,7 +269,7 @@ function d6present_rng_chest_h()
 end
 
 function d6present_channel_chest_h()
-    return d6_openwall_h() and hook1() and has("d6_2sk",3)
+    return d6_openwall_h() and hook1() and has("d6_2sk",3) and (has("mermaidkey") or foundd6past())
 end
 
 function d6present_vire_chest_h()

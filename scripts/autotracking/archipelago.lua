@@ -88,7 +88,7 @@ function onClear(slot_data)
             obj.Active = false
         end
     end
-
+    -- companions
     if slot_data["animal_companion"] then
         if slot_data["animal_companion"] == "Ricky" then
             Tracker:FindObjectForCode("companions").CurrentStage = 1
@@ -98,7 +98,7 @@ function onClear(slot_data)
             Tracker:FindObjectForCode("companions").CurrentStage = 3
         end
     end
-
+    -- logic 
     if slot_data["logic_difficulty"] then
         if slot_data["logic_difficulty"] == 0 then
             Tracker:FindObjectForCode("logic").CurrentStage = 0
@@ -108,7 +108,7 @@ function onClear(slot_data)
             Tracker:FindObjectForCode("logic").CurrentStage = 2
         end
     end
-
+    --dungeon er
     if slot_data["shuffle_dungeons"] then
         if slot_data["shuffle_dungeons"] == 0 then
             Tracker:FindObjectForCode("dungeon_er_off").CurrentStage = 0
@@ -116,20 +116,51 @@ function onClear(slot_data)
             Tracker:FindObjectForCode("dungeon_er_on").CurrentStage = 1
         end
     end
-
+    --essences
     if slot_data["required_essences"] then
         Tracker:FindObjectForCode("allessence").AcquiredCount = slot_data["required_essences"]
     end
-
+    --advance_shop
     if slot_data["advance_shop"] then
         local obj = Tracker:FindObjectForCode("advanceshop")
         if obj then
             obj.Active = slot_data["advance_shop"] == 1
         end
     end
-
+    --slates
     if slot_data["required_slates"] then
         Tracker:FindObjectForCode("requiredslates").AcquiredCount = slot_data["required_slates"]
+    end
+    --starting seed
+    if slot_data["default_seed"] then
+        local obj = Tracker:FindObjectForCode("emberseeds")
+        if obj then
+            obj.Active = slot_data["default_seed"] == "Ember Seeds"
+        end
+    end
+    if slot_data["default_seed"] then
+        local obj = Tracker:FindObjectForCode("scentseeds")
+        if obj then
+            obj.Active = slot_data["default_seed"] == "Scent Seeds"
+        end
+    end
+    if slot_data["default_seed"] then
+        local obj = Tracker:FindObjectForCode("pegasusseeds")
+        if obj then
+            obj.Active = slot_data["default_seed"] == "Pegasus Seeds"
+        end
+    end
+    if slot_data["default_seed"] then
+        local obj = Tracker:FindObjectForCode("galeseeds")
+        if obj then
+            obj.Active = slot_data["default_seed"] == "Gale Seeds"
+        end
+    end
+    if slot_data["default_seed"] then
+        local obj = Tracker:FindObjectForCode("mysteryseeds")
+        if obj then
+            obj.Active = slot_data["default_seed"] == "Mystery Seeds"
+        end
     end
     
     if SLOT_DATA == nil then

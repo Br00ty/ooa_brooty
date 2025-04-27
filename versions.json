@@ -1,6 +1,20 @@
 {
     "versions": [
         {
+            "package_version": "0.8",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.8/ooa_brooty.zip",
+            "sha256": "12f3e7547cb979ee63f5c014ef8cb592a61e5a6c4330459cf7dfb0370263a9c4",
+            "changelog": [
+                "fixed logic for D6 Present to properly look for D6 Past shenanigans",
+                "added starting seed autotracking",
+                "added maku path tracking to dungeon tracker",
+                "added maku path small key to tracker",
+                "removed seasons items that arent in yet",
+                "added tokay market back in",
+                "fixed some d3 boss logic"
+            ]
+        },
+        {
             "package_version": "0.7.5",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.7.5/ooa_brooty.zip",
             "sha256": "5ddd3f3f44e719f447389bf5754bcb551628bbd1e054cfd1ada4bd258dcda46d",

@@ -18,6 +18,10 @@ function maku_basement()
     return (rescue_nayru() or (lynna_village() and shovel()))
 end
 
+function maku_key_chest()
+    return (has("dungeon_er_on") and (foundmakupath() or (rescue_nayru() and k_normal() and has("pathkey"))))
+end
+
 -- d1
 function d1_east_terrace()
     return k_switchhook()
@@ -184,11 +188,11 @@ function d3_B1F_east()
 end
 
 function d3_post_subterror()
-    return d3_boss_door() or (d3_B1F_spinner() and k_subterror()) or (d3_traverse1() and (has("d3sk", 4) or has("d3mk")) and jump3())
+    return d3_boss_door() or (d3_B1F_spinner() and k_subterror()) or (d3_traverse1() and (has("d3sk", 4) or has("d3mk")) and jump2())
 end
 
 function d3_boss_door()
-    return (((d3_B1F_spinner() and k_subterror()) or (d3_traverse1() and (has("d3sk", 3) or has("d3mk")) and jump3())) and jump3() and
+    return (((d3_B1F_spinner() and k_subterror()) or (d3_traverse1() and (has("d3sk", 3) or has("d3mk")) and jump3())) and jump2() and
                d3_traverse2()) or ((has("d3sk", 4) or has("d3mk")) and d3_traverse1() and d3_traverse2())
 end
 
@@ -383,11 +387,11 @@ function d6present_cube_chest()
 end
 
 function d6present_spinner_chest()
-    return d6past_spinner() and d6present_hand_room() and (feather() or hook1())
+    return d6past_spinner() and d6present_hand_room() and (feather() or hook1()) and ((has("mermaidkey") and has("dungeon_er_off")) or (foundd6past()) and has("dungeon_er_on"))
 end
 
 function d6present_beamos_chest()
-    return d6_openwall() and feather() and (flippers() or (hook1() and (has("d6_2sk",2) or has("d6_2mk"))))
+    return d6_openwall() and ((has("mermaidkey") and has("dungeon_er_off")) or (foundd6past()) and has("dungeon_er_on")) and feather() and (flippers() or (hook1() and (has("d6_2sk",2) or has("d6_2mk"))))
 end
 
 function d6present_rng_chest()
@@ -396,7 +400,7 @@ function d6present_rng_chest()
 end
 
 function d6present_channel_chest()
-    return d6_openwall() and hook1() and (has("d6_2sk",3) or has("d6_2mk"))
+    return d6_openwall() and hook1() and (has("d6_2sk",3) or has("d6_2mk")) and ((has("mermaidkey") and has("dungeon_er_off")) or (foundd6past()) and has("dungeon_er_on"))
 end
 
 function d6present_vire_chest()
@@ -592,3 +596,43 @@ function d8clear_h()
             has("powerglove") and has("feather") and has("sword1")
 end
 
+-- functions to combine all dungeons for er rando
+function foundmakupath()
+    return has("makupath0") or has("spiritsgrave0") or has("wingdungeonpast0") or has("moonlitgrotto0") or has("skulldungeon0") or has("crowndungeon0") or has("mermaidscavepast0") or has("mermaidscavepresent0") or has("jabujabusbelly0") or has("ancienttomb0")
+end
+
+function foundd1()
+    return has("makupath1") or has("spiritsgrave1") or has("wingdungeonpast1") or has("moonlitgrotto1") or has("skulldungeon1") or has("crowndungeon1") or has("mermaidscavepast1") or has("mermaidscavepresent1") or has("jabujabusbelly1") or has("ancienttomb1")
+end
+
+function foundd2()
+    return has("makupath2") or has("spiritsgrave2") or has("wingdungeonpast2") or has("moonlitgrotto2") or has("skulldungeon2") or has("crowndungeon2") or has("mermaidscavepast2") or has("mermaidscavepresent2") or has("jabujabusbelly2") or has("ancienttomb2")
+end
+
+function foundd3()
+    return has("makupath3") or has("spiritsgrave3") or has("wingdungeonpast3") or has("moonlitgrotto3") or has("skulldungeon3") or has("crowndungeon3") or has("mermaidscavepast3") or has("mermaidscavepresent3") or has("jabujabusbelly3") or has("ancienttomb3")
+end
+
+function foundd4()
+    return has("makupath4") or has("spiritsgrave4") or has("wingdungeonpast4") or has("moonlitgrotto4") or has("skulldungeon4") or has("crowndungeon4") or has("mermaidscavepast4") or has("mermaidscavepresent4") or has("jabujabusbelly4") or has("ancienttomb4")
+end
+
+function foundd5()
+    return has("makupath5") or has("spiritsgrave5") or has("wingdungeonpast5") or has("moonlitgrotto5") or has("skulldungeon5") or has("crowndungeon5") or has("mermaidscavepast5") or has("mermaidscavepresent5") or has("jabujabusbelly5") or has("ancienttomb5")
+end
+
+function foundd6past()
+    return has("makupath6p") or has("spiritsgrave6p") or has("wingdungeonpast6p") or has("moonlitgrotto6p") or has("skulldungeon6p") or has("crowndungeon6p") or has("mermaidscavepast6p") or has("mermaidscavepresent6p") or has("jabujabusbelly6p") or has("ancienttomb6p")
+end
+
+function foundd6present()
+    return has("makupath6") or has("spiritsgrave6") or has("wingdungeonpast6") or has("moonlitgrotto6") or has("skulldungeon6") or has("crowndungeon6") or has("mermaidscavepast6") or has("mermaidscavepresent6") or has("jabujabusbelly6") or has("ancienttomb6")
+end
+
+function foundd7()
+    return has("makupath7") or has("spiritsgrave7") or has("wingdungeonpast7") or has("moonlitgrotto7") or has("skulldungeon7") or has("crowndungeon7") or has("mermaidscavepast7") or has("mermaidscavepresent7") or has("jabujabusbelly7") or has("ancienttomb7")
+end
+
+function foundd8()
+    return has("makupath8") or has("spiritsgrave8") or has("wingdungeonpast8") or has("moonlitgrotto8") or has("skulldungeon8") or has("crowndungeon8") or has("mermaidscavepast8") or has("mermaidscavepresent8") or has("jabujabusbelly8") or has("ancienttomb8")
+end

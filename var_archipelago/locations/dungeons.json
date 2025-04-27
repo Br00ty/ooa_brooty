@@ -17,9 +17,7 @@
                                     "$maku_tree,$k_normal,pathkey,dungeon_er_off",
                                     "$maku_tree,shovel,pathkey,dungeon_er_off",
                                     "$lynna_village,shovel,dungeon_er_off",
-                                    "$k_normal,dungeon_er_on",
-                                    "shovel,dungeon_er_on",
-                                    "$rescue_nayru,$k_normal,pathkey,dungeon_er_on"
+                                    "$maku_key_chest"
                                 ]
                             }
                         ],

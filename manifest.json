@@ -1,22 +1,22 @@
 ﻿{
   "name": "Oracle of Ages Randomizer",
   "game_name": "Oracle of Ages",
-  "package_version": "0.7.5",
+  "package_version": "0.8",
   "package_uid": "ooa_brooty",
   "author": "Brooty",
   "variants": {
-    "standard": {
-      "display_name": "Map Tracker (Vertical)"
+    //"standard": {
+      //"display_name": "Map Tracker (Vertical)"
       //"flags": [
       //  "ap"
       //]
-    },
-    "var_horizontal": {
-      "display_name": "Map Tracker (Horizontal)"
+    //},
+    //"var_horizontal": {
+      //"display_name": "Map Tracker (Horizontal)"
       //"flags": [
       //  "ap"
       //]
-     },
+     //},
      "var_x-items": {
       "display_name": "Map Tracker (Cross-Items)"
       //"flags": [
@@ -28,13 +28,13 @@
       "flags": [
         "ap"
       ]
-     },
-    "var_itemsonly": {
-     "display_name": "Items Only"
+     }
+    //"var_itemsonly": {
+     //"display_name": "Items Only"
      //"flags": [
      //  "ap"
      //]
-    }
+    //}
   },
   "versions_url": "https://raw.githubusercontent.com/Br00ty/ooa_brooty/master/versions.json",
   "min_poptracker_version": "0.27.0"

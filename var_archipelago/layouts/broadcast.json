@@ -10,7 +10,7 @@
                 "h_alignment": "center",
                 "margin": "3,0,0,0",
                 "item_margin": "-2,1",
-                "item_size": 33,
+                "item_size": 37,
                 "rows": [
                     [
                         "sword",
@@ -20,14 +20,14 @@
                         "shooter",
                         "flippers",
                         "cane",
-                        "rodofseasons",
+                        //"rodofseasons",
                         "shovel"
                     ],
                     [
                         "feather",
                         "hook1",
-                        "magnet",
-                        "slingshot",
+                        //"magnet",
+                        //"slingshot",
                         "bombs",
                         "satchel",
                         "boomerang",

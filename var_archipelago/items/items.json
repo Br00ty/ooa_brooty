@@ -471,35 +471,35 @@
   {
     "name": "Ember Seeds",
     "type": "toggle",
-    "loop": true,
+    "loop": false,
     "img": "images/items/seedember.png",
     "codes": "emberseeds"
   },
   {
     "name": "Mystery Seeds",
     "type": "toggle",
-    "loop": true,
+    "loop": false,
     "img": "images/items/seedmystery.png",
     "codes": "mysteryseeds"
   },
   {
     "name": "Scent Seeds",
     "type": "toggle",
-    "loop": true,
+    "loop": false,
     "img": "images/items/seedscent.png",
     "codes": "scentseeds"
   },
   {
     "name": "Pegasus Seeds",
     "type": "toggle",
-    "loop": true,
+    "loop": false,
     "img": "images/items/seedpegasus.png",
     "codes": "pegasusseeds"
   },
   {
     "name": "Gale Seeds",
     "type": "toggle",
-    "loop": true,
+    "loop": false,
     "img": "images/items/seedgale.png",
     "codes": "galeseeds"
   },
@@ -929,6 +929,15 @@
   },
   // Dungeon Entrances
   {
+    "name": "Maku Road Entrance",
+    "type": "toggle",
+    "loop": true,
+    //"allow_disabled": false,
+    "initial_active_state": true,
+    "img": "images/dungeons/d0_entrance.png",
+    "codes": "mrer"
+  },
+  {
     "name": "D1 Entrance",
     "type": "toggle",
     "loop": true,
@@ -1009,6 +1018,74 @@
     "codes": "d8er"
   },
   // Dungeon Texts (lots of duplicates here to make it work lol)
+  {
+    "name": "Maku Road Entrances",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "codes": "questionmark0",
+        "inherit_codes": false,
+        "img": "images/dungeons/questionlabel.png"
+      },
+      {
+        "codes": "makupath0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d0_entrance.png"
+      },
+      {
+        "codes": "spiritsgrave0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d1_entrance.png"
+      },
+      {
+        "codes": "wingdungeonpast0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d2_past_entrance.png"
+      },
+      //{
+      //  "codes": "wingdungeonpresent0",
+      //  "inherit_codes": false,
+      //  "img": "images/dungeons/d2_entrance.png"
+      //},
+      {
+        "codes": "moonlitgrotto0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d3_entrance.png"
+      },
+      {
+        "codes": "skulldungeon0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d4_entrance.png"
+      },
+      {
+        "codes": "crowndungeon0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d5_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepast0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_past_entrance.png"
+      },
+      {
+        "codes": "mermaidscavepresent0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d6_present_entrance.png"
+      },
+      {
+        "codes": "jabujabusbelly0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d7_entrance.png"
+      },
+      {
+        "codes": "ancienttomb0",
+        "inherit_codes": false,
+        "img": "images/dungeons/d8_entrance.png"
+      }
+    ]
+  },
   {
     "name": "D1 Dungeon Entrances",
     "type": "progressive",

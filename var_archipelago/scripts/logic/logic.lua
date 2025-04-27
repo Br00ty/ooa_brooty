@@ -127,6 +127,10 @@ function bomb_jump2() --hard logic
   return jump3() or (hard() and feather() and bombs())
 end
 
+function jump2()
+  return (feather() and (medium() or pegasus_satchel())) or moosh_flute() or ricky_flute()
+end
+
 function jump3()
   return (medium() and feather() and pegasus_satchel()) or cape()
 end
