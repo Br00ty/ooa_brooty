@@ -425,7 +425,7 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 3660,
+                                "x": 3700,
                                 "y": 690
                             }
                         ]
@@ -445,7 +445,7 @@
                         "map_locations": [
                             {
                                 "map": "map",
-                                "x": 3700,
+                                "x": 3660,
                                 "y": 690
                             }
                         ]
@@ -967,7 +967,7 @@
                         "access_rules": [
                             "$deku_forest,bracelet,feather",
                             "$deku_forest,bracelet,hook1",
-                            "$deku_forest,bracelet,emberseeds",
+                            "$deku_forest,bracelet,$use_ember",
                             "$deku_forest,bracelet,ages",
                             "$deku_forest,bracelet,$gale_satchel"
                         ],
@@ -1034,7 +1034,7 @@
                         "access_rules": [
                             "[trick],$deku_forest,bracelet,feather",
                             "[trick],$deku_forest,bracelet,hook1",
-                            "[trick],$deku_forest,bracelet,ember",
+                            "[trick],$deku_forest,bracelet,$use_ember",
                             "[trick],$deku_forest,bracelet,ages",
                             "[trick],$deku_forest,bracelet,$gale_satchel"
                         ],
@@ -1058,7 +1058,7 @@
                         "access_rules": [
                             "[trick],$deku_forest,bracelet,feather",
                             "[trick],$deku_forest,bracelet,hook1",
-                            "[trick],$deku_forest,bracelet,ember",
+                            "[trick],$deku_forest,bracelet,$use_ember",
                             "[trick],$deku_forest,bracelet,ages",
                             "[trick],$deku_forest,bracelet,$gale_satchel"
                         ],

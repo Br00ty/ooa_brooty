@@ -297,6 +297,10 @@ end
 function use_ember()
   return ember() and (shoot_seeds() or satchel())
 end
+
+function use_mystery()
+  return mystery() and (shoot_seeds() or satchel())
+end
 -- Get the number of seeds the player has
 function seed_number()
 	local n = 0
@@ -404,15 +408,15 @@ function switch_far()
 end
 
 function bush_safe()
-  return (sword() or hook1() or lift1() or bombs() or ember() or magicboom() or gale_shooter() or (slingshot() and gale()))
+  return (sword() or hook1() or lift1() or bombs() or use_ember() or magicboom() or gale_shooter() or (slingshot() and gale()))
 end
 
 function bush()
-  return (sword() or hook1() or lift1() or magicboom() or ember() or bombs() or (gale() and (shooter() or slingshot())))
+  return (sword() or hook1() or lift1() or magicboom() or use_ember() or bombs() or (gale() and (shooter() or slingshot())))
 end
 
 function destroy_bush_flute()
-  return (sword() or hook1() or lift1() or bombs() or ember() or gale_shooter() or flute() or (slingshot() and gale()))
+  return (sword() or hook1() or lift1() or bombs() or use_ember() or gale_shooter() or flute() or (slingshot() and gale()))
 end
 
 function satchel_weapon()

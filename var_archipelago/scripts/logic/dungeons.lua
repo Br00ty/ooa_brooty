@@ -28,7 +28,7 @@ function d1_east_terrace()
 end
 
 function d1_crystal_room()
-    return d1_east_terrace() and ember() and crystal()
+    return d1_east_terrace() and use_ember() and crystal()
 end
 
 function d1_wide_room()
@@ -44,7 +44,7 @@ function d1_u_room()
 end
 
 function d1_basement()
-    return d1_u_room() and (ember() or mystery())
+    return d1_u_room() and (use_ember() or use_mystery())
 end
 
 -- d2
@@ -340,7 +340,7 @@ function d6_openwall()
 end
 
 function d6past_stalfos()
-    return ember() and (k_normal_far() or scent_satchel() or feather())
+    return use_ember() and (k_normal_far() or scent_satchel() or feather())
 end
 
 function d6past_rope_chest()
@@ -470,7 +470,7 @@ function d8_maze()
 end
 
 function d8_neslate()
-    return d8_maze() and feather() and flippers() and ember()
+    return d8_maze() and feather() and flippers() and use_ember()
 end
 
 function d8_tileroom()

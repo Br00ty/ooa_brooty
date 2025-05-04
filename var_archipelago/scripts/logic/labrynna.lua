@@ -65,15 +65,15 @@ end
 
 -- yoll graveyard
 function graveyard()
-    return ember() and use_seeds()
+    return use_ember()
 end
 
 function cheval_grave()
-    return ember() and use_seeds() and k_switchhook()
+    return use_ember and k_switchhook()
 end
 
 function cheval_grave_h()
-    return ember() and use_seeds() and bomb_jump3()
+    return use_ember and bomb_jump3()
 end
 
 function syrup()
@@ -100,7 +100,7 @@ end
 
 function forest_tree()
     return deku_forest() and (seed_tree()) and
-               (ember() or ages() or hook1() or gale_satchel() or feather())
+               (use_ember() or ages() or hook1() or gale_satchel() or feather())
 end
 
 function d2_entrance()

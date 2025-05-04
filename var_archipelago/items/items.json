@@ -706,7 +706,7 @@
     "name": "Advance Shop Toggle",
     "type": "toggle",
     "codes": "advanceshop",
-    "img": "images/items/advanceshop.png",
+    "img": "images/items/advanceshop.png"
     //"initial_active_state": true
     //"img": "images/items/bosskey.png"
   },
