@@ -69,11 +69,11 @@ function graveyard()
 end
 
 function cheval_grave()
-    return use_ember and k_switchhook()
+    return use_ember() and k_switchhook()
 end
 
 function cheval_grave_h()
-    return use_ember and bomb_jump3()
+    return use_ember() and bomb_jump3()
 end
 
 function syrup()
@@ -130,13 +130,11 @@ function tokaygame()
 end
 
 function crescenttree()
-    return crescentpast() and has("seedling") and (seed_tree()) and seed_item() and
-               (ages() or (lift1() and echoes()))
+    return crescentpast() and has("seedling") and (ages() or (lift1() and echoes()))
 end
 
 function crescenttree_h()
-    return crescentpast() and has("seedling") and (seed_tree()) and seed_item() and
-               (ages() or (lift1() and (echoes() or (gale_satchel() and mermaid()))))
+    return crescentpast() and has("seedling") and (ages() or (lift1() and (echoes() or (gale_satchel() and mermaid()))))
 end
 
 function crescentpresentwest()

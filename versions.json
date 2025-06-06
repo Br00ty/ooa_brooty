@@ -1,6 +1,16 @@
 {
     "versions": [
         {
+            "package_version": "0.8.2",
+            "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.8.2/ooa_brooty.zip",
+            "sha256": "6d46835da6efa5b523035097b641fcbe85525225e56fc0f21473a3489dc7b593",
+            "changelog": [
+                "fixed a function that wasnt accounting for ember seeds",
+                "fixed graveyard not needing a seed shooter/satchel",
+                "fixed some medium logic ish"
+            ]
+        },
+        {
             "package_version": "0.8.1",
             "download_url": "https://github.com/Br00ty/ooa_brooty/releases/download/0.8.1/ooa_brooty.zip",
             "sha256": "e53bc377673a26bce97bc60080615220b16a85c05ae9050a60526908e8459791",

@@ -330,31 +330,31 @@ end
 
 -- ring macros
 function fist()
-  return has ("ring_fist")
+  return has("ring_fist")
 end
 
 function expert()
-  return has ("ring_expert")
+  return has("ring_expert")
 end
 
 function energy()
-  return has ("ring_energy")
+  return has("ring_energy")
 end
 
 function toss()
-  return has ("ring_toss")
+  return has("ring_toss")
 end
 
 function peace()
-  return has ("ring_peace")
+  return has("ring_peace")
 end
 
 function punch_object()
-  return (has ("ring_fist") or has("ring_expert"))
+  return (has("ring_fist") or has("ring_expert"))
 end
 
 function punch_enemy()
-  return (has ("ring_expert") or (hard() and has("ring_fist")))
+  return (has("ring_expert") or (medium() and has("ring_fist")))
 end
 
 function punch_enemy_h()
