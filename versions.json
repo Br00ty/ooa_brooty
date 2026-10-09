@@ -1,6 +1,13 @@
 {
   "versions": [
     {
+      "package_version": "0.9.11",
+      "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.11/ooa.zip",
+      "sha256": "8b5ed3369034238d08179913e923b198b0b1e1c28d3adea5d673d932f722e03c",
+      "changelog": [
+        "CHORE: added platform to manifest"
+      ]
+    },{
       "package_version": "0.9.10",
       "download_url": "https://github.com/Dranzior/ooa_brooty/releases/download/0.9.10/ooa.zip",
       "sha256": "f4590604cc70de9134d9a1d6745e5db72109ed32c2ebe3ba6214fe7ec2146814",
